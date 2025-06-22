@@ -398,7 +398,7 @@ return {
 
                     -- send keymaps (<leader>is prefix currently):
                     send_motion = "<space>ism", -- motion right after!
-                    visual_send = "<space>rr", -- send selection
+                    visual_send = "<D-Enter>",-- "<space>rr", -- send selection
                     send_file = "<space>isf", -- *
                     send_line = "<space>isl", -- *
                     send_paragraph = "<space>isp", -- * think {}

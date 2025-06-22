@@ -99,3 +99,12 @@ vim.keymap.set('n', '<C-o>', ':BufferLineCycleNext<CR>', { noremap = true, desc 
 vim.keymap.set('n', '<C-n>', ':BufferLineCyclePrev<CR>', { noremap = true, desc = 'Previous buffer (bufferline order)' })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in popup at cursor" })
 vim.keymap.set('n', '<leader>w', ':write<CR>', { noremap = true, desc = 'Save file' })
+vim.g.slime_target = "kitty"
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "python",
+--   callback = function()
+--     vim.g.slime_target = "kitty"
+--     -- Optionally, prompt for window ID or set defaults
+--     vim.cmd("SlimeConfig")
+--   end,
+-- })
