@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "window",
+        "options",
+        "null_ls"
+    ]
+}

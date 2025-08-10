@@ -1,0 +1,5 @@
+font-size = 19
+background = #000000
+# keybind = ctrl+page_up=previous_tab
+# keybind = ctrl+page_down=next_tab
+window-decoration = none
