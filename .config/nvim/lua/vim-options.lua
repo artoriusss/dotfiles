@@ -104,7 +104,11 @@ vim.keymap.set('n', '<C-u>', '10kzz', { noremap = true, desc = 'Up 10 lines & ce
 vim.keymap.set('n', '<C-y>', '10jzz', { noremap = true, desc = 'Down 10 lines & center' })
 
 -- Escape the highlighting after search instead of doing `:noh`
-vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
+-- vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
+vim.keymap.set("n", "<Esc>", function()
+  require("notify").dismiss({ silent = true, pending = true })
+  vim.cmd("noh", {silent=true})
+end, { desc = "Dismiss notifications and clear hlsearch" })
 
 -- Make `Y` behave like `D` and `C`
 vim.keymap.set("n","Y","y$")
