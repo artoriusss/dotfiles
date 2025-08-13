@@ -103,30 +103,16 @@ vim.opt.laststatus = 3
 vim.keymap.set('n', '<C-u>', '10kzz', { noremap = true, desc = 'Up 10 lines & center' })
 vim.keymap.set('n', '<C-y>', '10jzz', { noremap = true, desc = 'Down 10 lines & center' })
 
--- Escape the highlighting after search without doing `:noh`
+-- Escape the highlighting after search instead of doing `:noh`
 vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
 
--- Make Y behave like `D` and `C`
+-- Make `Y` behave like `D` and `C`
 vim.keymap.set("n","Y","y$")
 
 -- Just some nice stuff
 vim.keymap.set('n', '<leader>w', ':write<CR>', { silent=true, noremap = true, desc = 'Save file' })
 vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, desc = 'Yank to system clipboard' })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in popup at cursor" })
-
--- Navigation between files
-vim.keymap.set('n', '<C-PageDown>', ':BufferLineCycleNext<CR>', { silent=true, noremap = true, desc = 'Next buffer (bufferline order)' })
-vim.keymap.set('n', '<C-PageUp>', ':BufferLineCyclePrev<CR>', { silent=true, noremap = true, desc = 'Previous buffer (bufferline order)' })
-
--- Molten nvim
--- I find auto open annoying, keep in mind setting this option will require setting
--- a keybind for `:noautocmd MoltenEnterOutput` to open the output again
-vim.g.molten_auto_open_output = false
--- this guide will be using image.nvim
--- Don't forget to setup and install the plugin if you want to view image outputs
-vim.g.molten_image_provider = "image.nvim"
--- optional, I like wrapping. works for virt text and the output window
-vim.g.molten_wrap_output = true
 
 -- mini.files
 vim.keymap.set('n', '<leader>b', function()

@@ -1,5 +1,6 @@
 font-size = 16
 background = #000000
-# keybind = ctrl+page_up=previous_tab
-# keybind = ctrl+page_down=next_tab
+keybind = ctrl+page_up=unbind
+keybind = ctrl+page_down=unbind
+keybind = ctrl+enter=unbind
 window-decoration = none
