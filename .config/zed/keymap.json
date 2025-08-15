@@ -1,0 +1,89 @@
+[
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-shift-6": "outline::Toggle",
+      "ctrl-g": "go_to_line::Toggle"
+    }
+  },
+  {
+    "context": "Editor && jupyter && !ContextEditor",
+    "bindings": {
+      "super-enter": "repl::Run",
+      "alt-enter": "repl::RunInPlace"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "f6": "git_panel::ToggleFocus",
+      "f7": "project_panel::ToggleFocus",
+      "f8": "terminal_panel::ToggleFocus",
+      "f9": "agent::ToggleFocus",
+      "ctrl-shift-o": "workspace::Open",
+      "ctrl-shift-a": "workspace::ActivatePaneLeft",
+      "ctrl-shift-t": "workspace::ActivatePaneRight",
+      "super-b": "workspace::ToggleLeftDock",
+      "super-r": "workspace::ToggleRightDock",
+      "super-j": "workspace::ToggleBottomDock",
+      "super-t": "project_symbols::Toggle",
+      "super-alt-p": "file_finder::Toggle",
+      "super-shift-p": "command_palette::Toggle",
+      "ctrl-o": "pane::ActivateNextItem",
+      "ctrl-n": "pane::ActivatePreviousItem",
+      "alt-e": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+      "alt-i": ["workspace::DecreaseActiveDockSize", { "px": 0 }]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "super-f": "buffer_search::Deploy",
+      "super-space": "terminal::ToggleViMode",
+      "ctrl-o": "pane::ActivateNextItem",
+      "super-w": "pane::CloseActiveItem",
+      "super-t": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "super-b": "workspace::ToggleLeftDock",
+      "super-k super-s": "workspace::Save",
+      "super-s": "workspace::SaveWithoutFormat",
+      "f6": "git_panel::ToggleFocus",
+      "f7": "project_panel::ToggleFocus",
+      "f8": "terminal_panel::ToggleFocus",
+      "f9": "agent::ToggleFocus",
+      "f12": "editor::ToggleBreakpoint",
+      "ctrl-o": "pane::ActivateNextItem",
+      "ctrl-n": "pane::ActivatePreviousItem",
+      "ctrl-u": ["workspace::SendKeystrokes", "1 0 k z z"],
+      "ctrl-y": ["workspace::SendKeystrokes", "1 0 j z z"],
+      "ctrl-q": "pane::CloseInactiveItems",
+      "super-w": "pane::CloseActiveItem",
+      "super-f": "buffer_search::Deploy",
+      "ctrl-;": null
+    }
+  },
+  {
+    "context": "VimControl && !menu && vim_mode != operator",
+    "bindings": {
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "ctrl-i": "vim::LineDown",
+      "ctrl-e": "vim::LineUp",
+      // "ctrl-y": "vim::ScrollDown",
+      // "ctrl-u": "vim::ScrollUp"
+    }
+  }
+]
+
+
