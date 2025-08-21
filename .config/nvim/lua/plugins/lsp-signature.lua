@@ -1,12 +1,15 @@
 return {
   "ray-x/lsp_signature.nvim",
   event = "VeryLazy",
-  opts = {}, -- use defaults, customize as needed
+  opts = {},
   config = function()
-    require("lsp_signature").setup({
-      floating_window = true,
-      hint_prefix = " ", -- or any emoji/icon you like
-      -- You can tweak more options, see plugin README
-    })
-  end
+  require("lsp_signature").setup({
+    floating_window = false,
+    hint_prefix = " ",
+    toggle_key = "<C-s>",
+    bind = true,
+    doc_lines = 0,
+    auto_trigger = false,
+  })
+  end,
 }

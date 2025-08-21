@@ -1,3 +1,4 @@
+vim.lsp.handlers["textDocument/signatureHelp"] = function() end
 return {
   {
     "williamboman/mason.nvim",
@@ -19,29 +20,27 @@ return {
     end,
   },
   {
-    "neovim/nvim-lspconfig",
-    config = function()
-      local capabilities = require("cmp_nvim_lsp").default_capabilities()
-      local lspconfig= require("lspconfig")
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.ts_ls.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.ruff.setup({
-        capabilities = capabilities,
-        init_options = {
-          settings = {},
+    'neovim/nvim-lspconfig',
+    dependencies = { 'saghen/blink.cmp' },
+    opts = {
+      servers = {
+        lua_ls = {},
+        ts_ls = {},
+        pyright = {},
+        ruff = {
+          init_options = { settings = {} },
         },
-      })
-      lspconfig.pyright.setup({
-        capabilities = capabilities,
-      })
-
+      }
+    },
+    config = function(_, opts)
+      local lspconfig = require('lspconfig')
+      for server, config in pairs(opts.servers) do
+        config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
+        lspconfig[server].setup(config)
+      end
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
     end,
-  },
+  }
 }

@@ -2,6 +2,13 @@ return {
   "folke/noice.nvim",
   config = function()
     require("noice").setup({
+        lsp = {
+          signature = {
+            auto_open = {
+              enabled = false,
+            }
+          }
+        },
       -- add any options here
       routes = {
         {
