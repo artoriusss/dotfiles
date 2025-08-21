@@ -93,7 +93,6 @@ vim.opt.undofile = true
 
 -- "UI" niceties
 vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
@@ -114,8 +113,9 @@ end, { desc = "Dismiss notifications and clear hlsearch" })
 vim.keymap.set("n","Y","y$")
 
 -- Just some nice stuff
-vim.keymap.set('n', '<leader>w', ':write<CR>', { silent=true, noremap = true, desc = 'Save file' })
-vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, desc = 'Yank to system clipboard' })
+vim.keymap.set('n', '<leader>w', ':write<CR>', { silent=true, noremap = true, desc = "Save file" })
+vim.keymap.set("n", "<leader>p", '"+p', { noremap = true, desc = "Paste from system clipboard" })
+vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, desc = "Yank to system clipboard" })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in popup at cursor" })
 
 -- mini.files
