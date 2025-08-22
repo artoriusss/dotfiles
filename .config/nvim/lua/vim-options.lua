@@ -92,11 +92,12 @@ vim.opt.undodir = vim.fn.expand('~/.vim/undodir')
 vim.opt.undofile = true
 
 -- "UI" niceties
-vim.opt.updatetime = 250
+vim.opt.updatetime = 50
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
 vim.opt.laststatus = 3
+vim.opt.guicursor = "n-v-c:block-blinkon500-blinkoff500-blinkwait700,i-ci-ve:ver25-blinkon500-blinkoff500-blinkwait700,r-cr-o:hor20-blinkon500-blinkoff500-blinkwait700"
 
 -- Quicker file movement
 vim.keymap.set('n', '<C-u>', '10kzz', { noremap = true, desc = 'Up 10 lines & center' })

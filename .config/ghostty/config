@@ -1,4 +1,5 @@
 theme = BlueBerryPie
+cursor-style-blink = true
 
 keybind = ctrl+page_up=unbind
 keybind = ctrl+page_down=unbind
