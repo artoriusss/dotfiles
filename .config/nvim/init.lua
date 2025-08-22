@@ -24,5 +24,6 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+vim.cmd("colorscheme blueberrypie")
 require("vim-options")
 require("lazy").setup("plugins")
