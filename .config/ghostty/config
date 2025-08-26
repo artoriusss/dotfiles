@@ -1,4 +1,5 @@
 theme = BlueBerryPie
+cursor-style = block
 cursor-style-blink = true
 
 keybind = ctrl+page_up=unbind
@@ -12,7 +13,7 @@ window-padding-y = 0
 adjust-cell-height = 1%
 # window-padding-color = extend
 
-# some other theme variants
+# some theme variants
 # theme = coffee_theme # light
 # theme = Builtin Tango Dark
 # theme = Cyberdyne
