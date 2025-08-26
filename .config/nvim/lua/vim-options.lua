@@ -113,6 +113,9 @@ end, { desc = "Dismiss notifications and clear hlsearch" })
 -- Make `Y` behave like `D` and `C`
 vim.keymap.set("n","Y","y$")
 
+-- Close buffers
+vim.keymap.set('n', '<leader>q', ':bp|bd #<CR>', { noremap = true, silent = true, desc = "Close current buffer" })
+
 -- Just some nice stuff
 vim.keymap.set('n', '<leader>w', ':write<CR>', { silent=true, noremap = true, desc = "Save file" })
 vim.keymap.set("n", "<leader>p", '"+p', { noremap = true, desc = "Paste from system clipboard" })
