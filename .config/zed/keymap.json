@@ -44,12 +44,22 @@
       "super-w": "pane::CloseActiveItem",
       "super-t": "workspace::NewTerminal"
     }
-  },
+  },	
+  {
+		"context": "Editor && VimControl && !VimWaiting && !menu",
+		"bindings": {
+  		"shift-k": "editor::Hover",
+		  "space w": "workspace::SaveWithoutFormat",
+			"space t": "tab_switcher::Toggle",
+		  "space f w": "workspace::Save",
+			"space l": "editor::Format"
+		}
+	},
   {
     "context": "Editor",
     "bindings": {
       "super-b": "workspace::ToggleLeftDock",
-      "super-k super-s": "workspace::Save",
+      "super-k super-s": "workspace::Save", 
       "super-s": "workspace::SaveWithoutFormat",
       "f6": "git_panel::ToggleFocus",
       "f7": "project_panel::ToggleFocus",
