@@ -102,6 +102,10 @@ vim.opt.guicursor = "n-v-c:block-blinkon500-blinkoff500-blinkwait700,i-ci-ve:ver
 -- Quicker file movement
 vim.keymap.set('n', '<C-u>', '10kzz', { noremap = true, desc = 'Up 10 lines & center' })
 vim.keymap.set('n', '<C-y>', '10jzz', { noremap = true, desc = 'Down 10 lines & center' })
+vim.keymap.set('v', '<C-u>', '10kzz', { noremap = true, desc = 'Extend selection 10 lines up & center' })
+vim.keymap.set('v', '<C-y>', '10jzz', { noremap = true, desc = 'Extend selection 10 lines down & center' })
+
+
 
 -- Escape the highlighting after search instead of doing `:noh`
 -- vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
