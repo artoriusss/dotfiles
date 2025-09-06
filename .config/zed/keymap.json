@@ -38,28 +38,33 @@
   {
     "context": "Terminal",
     "bindings": {
-      "super-f": "buffer_search::Deploy",
+      "ctrl-f": "buffer_search::Deploy",
       "super-space": "terminal::ToggleViMode",
       "ctrl-o": "pane::ActivateNextItem",
       "super-w": "pane::CloseActiveItem",
       "super-t": "workspace::NewTerminal"
     }
-  },	
+  },
   {
-		"context": "Editor && VimControl && !VimWaiting && !menu",
-		"bindings": {
-  		"shift-k": "editor::Hover",
-		  "space w": "workspace::SaveWithoutFormat",
-			"space t": "tab_switcher::Toggle",
-		  "space f w": "workspace::Save",
-			"space l": "editor::Format"
-		}
-	},
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "n": "search::SelectNextMatch",
+      "shift-n": "search::SelectPreviousMatch", 
+      "space f": "buffer_search::Deploy",
+      "space t": "tab_switcher::Toggle",
+      "space w": "workspace::SaveWithoutFormat",
+      "space W": "workspace::Save",
+      "space l": "editor::FormatSelections",
+      "space L": "editor::Format",
+      "ctrl-i": "vim::LineDown",
+      "ctrl-e": "vim::LineUp"
+    }
+  },
   {
     "context": "Editor",
     "bindings": {
       "super-b": "workspace::ToggleLeftDock",
-      "super-k super-s": "workspace::Save", 
+      "super-k super-s": "workspace::Save",
       "super-s": "workspace::SaveWithoutFormat",
       "f6": "git_panel::ToggleFocus",
       "f7": "project_panel::ToggleFocus",
@@ -70,10 +75,11 @@
       "ctrl-n": "pane::ActivatePreviousItem",
       "ctrl-u": ["workspace::SendKeystrokes", "1 0 k z z"],
       "ctrl-y": ["workspace::SendKeystrokes", "1 0 j z z"],
-      "ctrl-q": "pane::CloseInactiveItems",
-      "super-w": "pane::CloseActiveItem",
-      "super-f": "buffer_search::Deploy",
-      "ctrl-;": null
+      "ctrl-q": "pane::CloseOtherItems",
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-;": null,
+      "ctrl-up": "vim::SelectLargerSyntaxNode",
+      "ctrl-down": "vim::SelectSmallerSyntaxNode"
     }
   },
   {
@@ -88,12 +94,6 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "ctrl-i": "vim::LineDown",
-      "ctrl-e": "vim::LineUp",
-      // "ctrl-y": "vim::ScrollDown",
-      // "ctrl-u": "vim::ScrollUp"
     }
   }
 ]
-
-
