@@ -7,9 +7,9 @@ return {
         init = function()
             vim.g.molten_image_provider = "image.nvim"
             vim.g.molten_output_win_max_height = 20
-            vim.g.molten_image_provider = "image.nvim"
             vim.g.molten_wrap_output = true
             vim.g.molten_auto_open_output = false
+            vim.g.molten_enter_output_behavior = "open_and_enter"
             vim.keymap.set("n", "<C-CR>", ":MoltenEvaluateLine<CR>", { silent=true, desc = "evaluate line"})
             vim.keymap.set("v", "<C-CR>", ":<C-u>MoltenEvaluateVisual<CR>gv", { silent = true, desc = "evaluate visual selection" })
             vim.keymap.set("n", ";", ":MoltenShowOutput<CR>", { silent=true, desc = "show output"})
