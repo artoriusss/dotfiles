@@ -2,14 +2,13 @@
   {
     "context": "Editor && mode == full",
     "bindings": {
-      "ctrl-shift-6": "outline::Toggle",
       "ctrl-g": "go_to_line::Toggle"
     }
   },
   {
     "context": "Editor && jupyter && !ContextEditor",
     "bindings": {
-      "super-enter": "repl::Run",
+      "ctrl-enter": "repl::Run",
       "alt-enter": "repl::RunInPlace"
     }
   },
@@ -27,8 +26,6 @@
       "super-r": "workspace::ToggleRightDock",
       "super-j": "workspace::ToggleBottomDock",
       "super-t": "project_symbols::Toggle",
-      "super-alt-p": "file_finder::Toggle",
-      "super-shift-p": "command_palette::Toggle",
       "ctrl-o": "pane::ActivateNextItem",
       "ctrl-n": "pane::ActivatePreviousItem",
       "alt-e": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
@@ -41,21 +38,23 @@
       "ctrl-f": "buffer_search::Deploy",
       "super-space": "terminal::ToggleViMode",
       "ctrl-o": "pane::ActivateNextItem",
-      "super-w": "pane::CloseActiveItem",
-      "super-t": "workspace::NewTerminal"
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-t": "workspace::NewTerminal"
     }
   },
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
       "n": "search::SelectNextMatch",
-      "shift-n": "search::SelectPreviousMatch", 
+      "shift-n": "search::SelectPreviousMatch",
       "space f": "buffer_search::Deploy",
       "space t": "tab_switcher::Toggle",
       "space w": "workspace::SaveWithoutFormat",
       "space W": "workspace::Save",
       "space l": "editor::FormatSelections",
       "space L": "editor::Format",
+      "space m": "outline::Toggle",
+      "space y": "editor::Copy",
       "ctrl-i": "vim::LineDown",
       "ctrl-e": "vim::LineUp"
     }
@@ -64,8 +63,8 @@
     "context": "Editor",
     "bindings": {
       "super-b": "workspace::ToggleLeftDock",
-      "super-k super-s": "workspace::Save",
-      "super-s": "workspace::SaveWithoutFormat",
+      "ctrl-k ctrl-s": "workspace::Save",
+      "ctrl-s": "workspace::SaveWithoutFormat",
       "f6": "git_panel::ToggleFocus",
       "f7": "project_panel::ToggleFocus",
       "f8": "terminal_panel::ToggleFocus",
@@ -93,7 +92,6 @@
   },
   {
     "context": "VimControl && !menu",
-    "bindings": {
-    }
+    "bindings": {}
   }
 ]
