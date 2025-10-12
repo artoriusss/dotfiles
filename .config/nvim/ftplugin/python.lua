@@ -1,0 +1,16 @@
+local map = function(mode, lhs, rhs, opts)
+  vim.keymap.set(mode, lhs, rhs, vim.tbl_extend("force", { buffer = true, desc = "Molten" }, opts or {}))
+end
+
+map("n", "<C-CR>", function() vim.cmd("MoltenEvaluateLine") end,   { desc = "Molten: Evaluate line" })
+map("v", "<C-CR>", function() vim.cmd("MoltenEvaluateVisual") end, { desc = "Molten: Evaluate selection" })
+map("n", ";", function() vim.cmd("MoltenShowOutput") end,          { desc = "Molten: Show output" })
+map("n", "q", function() vim.cmd("MoltenHideOutput") end,          { desc = "Molten: Hide output" })
+map("n", "<leader>mo", function() vim.cmd("noautocmd MoltenEnterOutput") end, { desc = "Molten: Enter output" })
+map("n", "<C-o>", function() vim.cmd("MoltenNext") end,            { desc = "Molten: Next cell" })
+map("n", "<C-n>", function() vim.cmd("MoltenPrev") end,            { desc = "Molten: Prev cell" })
+map("n", "<leader>mm", function() vim.cmd("MoltenInit") end,       { desc = "Molten: Init Kernel" })
+map("n", "<leader>mi", function() vim.cmd("MoltenInterrupt") end,  { desc = "Molten: Interrupt" })
+map("n", "<leader>mr", function() vim.cmd("MoltenRestart") end,    { desc = "Molten: Restart" })
+map("n", "<leader>mim", function() vim.cmd("MoltenImagePopup") end, { desc = "Molten: Pop up image" })
+map('n', '<leader><CR>', function() vim.cmd("MoltenReevaluateCell") end, { desc = "Molten: Re-evaluate cell" })
