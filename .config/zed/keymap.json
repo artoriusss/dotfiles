@@ -15,6 +15,8 @@
   {
     "context": "Workspace",
     "bindings": {
+      "alt-f6": "workspace::ToggleLeftDock",
+      "alt-f8": "workspace::ToggleBottomDock",
       "f6": "git_panel::ToggleFocus",
       "f7": "project_panel::ToggleFocus",
       "f8": "terminal_panel::ToggleFocus",
@@ -22,12 +24,7 @@
       "ctrl-shift-o": "workspace::Open",
       "ctrl-shift-a": "workspace::ActivatePaneLeft",
       "ctrl-shift-t": "workspace::ActivatePaneRight",
-      "super-b": "workspace::ToggleLeftDock",
-      "super-r": "workspace::ToggleRightDock",
-      "super-j": "workspace::ToggleBottomDock",
-      "super-t": "project_symbols::Toggle",
-      "ctrl-o": "pane::ActivateNextItem",
-      "ctrl-n": "pane::ActivatePreviousItem",
+      "ctrl-p": "file_finder::Toggle",
       "alt-e": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
       "alt-i": ["workspace::DecreaseActiveDockSize", { "px": 0 }]
     }
@@ -36,10 +33,14 @@
     "context": "Terminal",
     "bindings": {
       "ctrl-f": "buffer_search::Deploy",
-      "super-space": "terminal::ToggleViMode",
       "ctrl-o": "pane::ActivateNextItem",
       "ctrl-w": "pane::CloseActiveItem",
-      "ctrl-t": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "ProjectSearchBar",
+    "bindings": {
+      "ctrl-f": "search::FocusSearch"
     }
   },
   {
@@ -62,23 +63,39 @@
   {
     "context": "Editor",
     "bindings": {
-      "super-b": "workspace::ToggleLeftDock",
       "ctrl-k ctrl-s": "workspace::Save",
       "ctrl-s": "workspace::SaveWithoutFormat",
       "f6": "git_panel::ToggleFocus",
+      "alt-f6": "workspace::ToggleLeftDock",
       "f7": "project_panel::ToggleFocus",
       "f8": "terminal_panel::ToggleFocus",
       "f9": "agent::ToggleFocus",
       "f12": "editor::ToggleBreakpoint",
-      "ctrl-o": "pane::ActivateNextItem",
-      "ctrl-n": "pane::ActivatePreviousItem",
       "ctrl-u": ["workspace::SendKeystrokes", "1 0 k z z"],
       "ctrl-y": ["workspace::SendKeystrokes", "1 0 j z z"],
       "ctrl-q": "pane::CloseOtherItems",
       "ctrl-w": "pane::CloseActiveItem",
       "ctrl-;": null,
       "ctrl-up": "vim::SelectLargerSyntaxNode",
-      "ctrl-down": "vim::SelectSmallerSyntaxNode"
+      "ctrl-down": "vim::SelectSmallerSyntaxNode",
+      "ctrl-shift-p": [
+        "task::Spawn",
+        { "task_name": "File Finder", "reveal_target": "center" }
+      ]
+      // "ctrl-shift-f": [
+      //   "task::Spawn",
+      //   { "task_name": "Find in Files", "reveal_target": "center" }
+      // ]
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "ctrl-b": "workspace::ToggleLeftDock",
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "ctrl-r": "workspace::ToggleRightDock",
+      "ctrl-t": "project_symbols::Toggle",
+      "ctrl-f": null
     }
   },
   {
@@ -91,7 +108,9 @@
     }
   },
   {
-    "context": "VimControl && !menu",
-    "bindings": {}
-  }
+      "context": "Pane",
+      "bindings": {
+        "ctrl-f": "project_search::ToggleFocus"
+      }
+    }
 ]
