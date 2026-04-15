@@ -1,85 +1,89 @@
-[save]
-autosave = "after_delay"
-format_on_save = false
-autosave_delay = 1000
+[snippets]
+include_default_snippets = true
+custom_paths = []
+
+[ai]
+inline_tooltip = false
+mode = "manual"
+rules = ""
+
+[ai.custom_providers]
+
+[ai.models]
+displayed_models = []
+custom_models = []
+
+[formatting]
+line_length = 79
+
+[package_management]
+manager = "uv"
+
+[completion]
+signature_hint_on_typing = false
+copilot = false
+activate_on_typing = true
 
 [mcp]
 presets = []
 
 [mcp.mcpServers]
 
-[runtime]
-watcher_on_save = "lazy"
-default_sql_output = "auto"
-on_cell_change = "autorun"
-dotenv = []
-default_auto_download = []
-reactive_tests = true
-auto_instantiate = true
-auto_reload = "off"
-std_stream_max_bytes = 1000000
-output_max_bytes = 8000000
+[experimental]
+
+[server]
+follow_symlink = false
+browser = "default"
+
+[save]
+autosave_delay = 1000
+format_on_save = false
+autosave = "after_delay"
 
 [diagnostics]
-
-[package_management]
-manager = "uv"
-
-[snippets]
-custom_paths = []
-include_default_snippets = true
-
-[completion]
-copilot = false
-activate_on_typing = true
-
-[ai]
-inline_tooltip = false
-rules = ""
-mode = "manual"
-
-[ai.models]
-displayed_models = []
-custom_models = []
+sql_linter = true
 
 [keymap]
-destructive_delete = true
 preset = "vim"
-vimrc = "/home/artur/marimo.vimrc"
+destructive_delete = true
 
 [keymap.overrides]
 "command.pasteCell" = "Alt-v"
 "command.copyCell" = "Alt-c"
 
-[formatting]
-line_length = 79
-
-[server]
-browser = "default"
-follow_symlink = false
-
-[language_servers.basedpyright]
-enabled = true
+[runtime]
+default_csv_encoding = "utf-8"
+std_stream_max_bytes = 1000000
+auto_instantiate = false
+on_cell_change = "autorun"
+reactive_tests = true
+default_sql_output = "auto"
+dotenv = []
+watcher_on_save = "lazy"
+output_max_bytes = 8000000
+auto_reload = "off"
+default_auto_download = []
 
 [language_servers.ty]
 
 [language_servers.pylsp]
-enable_flake8 = false
-enable_pyflakes = false
-enable_mypy = true
-enabled = true
-enable_pydocstyle = false
 enable_ruff = true
+enable_pyflakes = false
+enable_flake8 = false
 enable_pylint = false
+enable_pydocstyle = false
+enabled = true
+enable_mypy = true
+
+[language_servers.basedpyright]
+enabled = true
 
 [display]
-theme = "dark"
-default_table_page_size = 10
-dataframes = "rich"
-code_editor_font_size = 18
-cell_output = "below"
+code_editor_font_size = 20
+default_width = "full"
 reference_highlighting = false
 default_table_max_columns = 50
-default_width = "full"
-
-[experimental]
+cell_output = "below"
+default_table_page_size = 10
+dataframes = "rich"
+theme = "dark"

@@ -1,4 +1,5 @@
 theme = BlueBerryPie
+font-size = 16
 cursor-style = block
 cursor-style-blink = true
 
