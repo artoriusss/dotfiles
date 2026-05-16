@@ -26,7 +26,9 @@
       "ctrl-shift-t": "workspace::ActivatePaneRight",
       "ctrl-p": "file_finder::Toggle",
       "alt-e": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
-      "alt-i": ["workspace::DecreaseActiveDockSize", { "px": 0 }]
+      "alt-i": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
+      "ctrl-r": "workspace::ToggleRightDock",
+      "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar"
     }
   },
   {
@@ -94,6 +96,7 @@
       "ctrl-b": "workspace::ToggleLeftDock",
       "ctrl-j": "workspace::ToggleBottomDock",
       "ctrl-r": "workspace::ToggleRightDock",
+      "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
       "ctrl-t": "project_symbols::Toggle",
       "ctrl-f": null
     }
@@ -106,6 +109,13 @@
       "e": "vim::NextSubwordEnd",
       "g e": "vim::PreviousSubwordEnd"
     }
+  },
+  {
+    "context": "ThreadsSidebar",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
+    },
   },
   {
       "context": "Pane",
