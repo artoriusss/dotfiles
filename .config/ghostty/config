@@ -1,4 +1,5 @@
 theme = BlueBerryPie
+font-size = 16
 cursor-style = block
 cursor-style-blink = true
 
@@ -6,6 +7,8 @@ keybind = ctrl+page_up=unbind
 keybind = ctrl+page_down=unbind
 keybind = ctrl+enter=unbind
 window-decoration = none
+
+scrollback-limit = 10000000
 
 # window padding pain
 window-padding-x = 0
