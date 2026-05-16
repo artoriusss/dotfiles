@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+current=$(tmux display-message -p "#{session_name}")
+
+mapfile -t sessions < <(
+    tmux list-sessions -F "#{session_name}" | grep -v '^_'
+)
+
+count=${#sessions[@]}
+
+for ((i=0; i<count; i++)); do
+    if [[ "${sessions[$i]}" == "$current" ]]; then
+        prev_index=$(( (i - 1 + count) % count ))
+        tmux switch-client -t "${sessions[$prev_index]}"
+        exit
+    fi
+done
