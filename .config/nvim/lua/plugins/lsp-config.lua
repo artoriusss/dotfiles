@@ -14,7 +14,7 @@ return {
           "lua_ls",
           "ts_ls",
           "ruff",
-          "pyright",
+          "ty",
         },
       })
     end,
@@ -26,7 +26,7 @@ return {
       servers = {
         lua_ls = {},
         ts_ls = {},
-        pyright = {},
+        ty = {},
         ruff = {
           init_options = { settings = {} },
         },
@@ -41,6 +41,7 @@ return {
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP: Rename symbol" })
     end,
   }
 }
