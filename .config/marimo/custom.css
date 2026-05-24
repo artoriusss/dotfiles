@@ -1,0 +1,12 @@
+/* Import JetBrains Mono from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Apply the font using marimo's CSS variables */
+:root {
+  /* This sets the font for code blocks and terminal text */
+  --marimo-monospace-font: "JetBrains Mono", monospace;
+  /* You can also set it for regular text and headings if desired */
+  /* --marimo-text-font: "JetBrains Mono", monospace; */
+  /* --marimo-heading-font: "JetBrains Mono", monospace; */
+}
+
