@@ -126,6 +126,10 @@ vim.keymap.set("n", "<leader>p", '"+p', { noremap = true, desc = "Paste from sys
 vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, desc = "Yank to system clipboard" })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in popup at cursor" })
 
+-- Terminal
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = 'Exit terminal mode' })
+
+
 -- mini.files
 vim.keymap.set('n', '<leader>b', function()
   require('mini.files').open()
