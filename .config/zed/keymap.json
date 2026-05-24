@@ -25,10 +25,14 @@
       "ctrl-shift-a": "workspace::ActivatePaneLeft",
       "ctrl-shift-t": "workspace::ActivatePaneRight",
       "ctrl-p": "file_finder::Toggle",
-      "alt-e": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
-      "alt-i": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
+      "alt-shift-e": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+      "alt-shift-i": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
       "ctrl-r": "workspace::ToggleRightDock",
-      "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar"
+      "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
+      "alt-o": "workspace::ActivatePaneRight",
+      "alt-n": "workspace::ActivatePaneLeft",
+      "alt-e": "workspace::ActivatePaneUp",
+      "alt-i": "workspace::ActivatePaneDown"
     }
   },
   {
@@ -98,7 +102,7 @@
       "ctrl-r": "workspace::ToggleRightDock",
       "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
       "ctrl-t": "project_symbols::Toggle",
-      "ctrl-f": null
+      "ctrl-f": "buffer_search::Deploy",
     }
   },
   {
