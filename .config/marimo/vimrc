@@ -1,0 +1,32 @@
+" ==========================================
+"  Colemak Arrow Key Fix
+" ==========================================
+noremap <Up> k
+noremap <Down> j
+noremap <Left> h
+noremap <Right> l
+
+" ==========================================
+"  Options
+" ==========================================
+" Case-insensitive searching unless capital letters are used
+set ignorecase
+set smartcase
+
+" Set leader key to Space
+let mapleader=" "
+
+" ==========================================
+"  Keymaps
+" ==========================================
+" Make `Y` behave like `D` and `C` (Yank to end of line)
+nnoremap Y y$
+
+" Quicker file movement (Jump 10 lines & center)
+nnoremap <C-u> 10kzz
+nnoremap <C-y> 10jzz
+vnoremap <C-u> 10kzz
+vnoremap <C-y> 10jzz
+
+" Escape clears search highlighting
+nnoremap <Esc> :noh<CR><Esc>
