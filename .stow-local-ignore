@@ -1,2 +1,4 @@
 .*\.ini$
 \.git$
+^no-stow$
+^no-stow/.*
