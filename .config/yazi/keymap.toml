@@ -1,0 +1,15 @@
+[[mgr.prepend_keymap]]
+on   = ["<C-u>"]
+run  = "plugin custom-shell -- custom auto 'ghostty --directory=\"$YAZI_CWD\"'"
+desc = "Open Ghostty in focused dir"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "m" ]
+run  = 'cd /mnt'
+desc = "Go /mnt"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "w" ]
+run  = 'cd ~/Workspace'
+desc = "Go ~/Workspace"
+
