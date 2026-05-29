@@ -1,6 +1,6 @@
 Tmux:
 1. `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
-2. `tmux source-file tmux.conf`
+2. `tmux source-file .tmux.conf`
 3. Within tmux: `prefix+I` to install plugins.
 
 GNOME:
