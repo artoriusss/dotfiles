@@ -1,0 +1,8 @@
+[[plugin.prepend_previewers]]
+mime = "application/pdf"
+run = "noop"
+
+[preview]
+max_width = 500
+max_height = 500
+
