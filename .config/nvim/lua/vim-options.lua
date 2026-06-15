@@ -105,7 +105,12 @@ vim.keymap.set('n', '<C-y>', '10jzz', { noremap = true, desc = 'Down 10 lines & 
 vim.keymap.set('v', '<C-u>', '10kzz', { noremap = true, desc = 'Extend selection 10 lines up & center' })
 vim.keymap.set('v', '<C-y>', '10jzz', { noremap = true, desc = 'Extend selection 10 lines down & center' })
 
+vim.keymap.set('n', '<C-i>', '<C-e>', { noremap = true, silent = true, desc = 'Scroll window down' })
+vim.keymap.set('n', '<C-e>', '<C-y>', { noremap = true, silent = true, desc = 'Scroll window up' })
 
+-- (need to explicitly handling selection scrolling)
+vim.keymap.set('x', '<C-i>', [[:<C-u>normal! <C-v><C-e><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll down' })
+vim.keymap.set('x', '<C-e>', [[:<C-u>normal! <C-v><C-y><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll up' })
 
 -- Escape the highlighting after search instead of doing `:noh`
 -- vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
@@ -129,8 +134,15 @@ vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagn
 -- Terminal
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = 'Exit terminal mode' })
 
-
 -- mini.files
-vim.keymap.set('n', '<leader>b', function()
+vim.keymap.set('n', '<leader>fs', function()
   require('mini.files').open()
 end, { desc = 'Open mini.files' })
+
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'MiniFilesBufferCreate',
+  callback = function(args)
+    local buf_id = args.data.buf_id
+    vim.keymap.set('n', '<Esc>', require('mini.files').close, { buffer = buf_id, desc = 'Close mini.files' })
+  end,
+})
