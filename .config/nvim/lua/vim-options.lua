@@ -4,6 +4,8 @@ vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+require("vim._core.ui2").enable({ enabled = true })
+
 -- Disable Vi compatibility mode
 vim.opt.compatible = false
 
@@ -113,11 +115,7 @@ vim.keymap.set('x', '<C-i>', [[:<C-u>normal! <C-v><C-e><CR>gv]], { noremap = tru
 vim.keymap.set('x', '<C-e>', [[:<C-u>normal! <C-v><C-y><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll up' })
 
 -- Escape the highlighting after search instead of doing `:noh`
--- vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
-vim.keymap.set("n", "<Esc>", function()
-  require("notify").dismiss({ silent = true, pending = true })
-  vim.cmd("noh", {silent=true})
-end, { desc = "Dismiss notifications and clear hlsearch" })
+vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
 
 -- Make `Y` behave like `D` and `C`
 vim.keymap.set("n","Y","y$")
