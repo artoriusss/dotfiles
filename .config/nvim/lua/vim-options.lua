@@ -4,7 +4,8 @@ vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-require("vim._core.ui2").enable({ enabled = true })
+-- require("vim._core.ui2").enable({ enabled = true })
+require("vim._core.ui2").enable({})
 
 -- Disable Vi compatibility mode
 vim.opt.compatible = false
