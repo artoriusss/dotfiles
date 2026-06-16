@@ -8,3 +8,6 @@ GNOME:
 2. `dconf load /org/gnome/settings-daemon/plugins/media-keys/ < gnome-media-shortcuts.ini`
 
 (note that this does not remove the default keybindings that are in conflict with these settings)
+
+Zoxide (required by `tv` and `sesh`). Add to `.zshrc`:
+```eval "$(zoxide init zsh)"```
