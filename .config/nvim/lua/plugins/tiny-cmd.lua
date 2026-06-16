@@ -10,7 +10,7 @@ return {
     end,
     opts = {
       width = { min = 40, max = 60 },
-      native_types = { "/", "?" }, 
+      native_types = {"/", "?"},
     },
   }
 }
