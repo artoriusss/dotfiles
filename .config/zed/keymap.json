@@ -28,7 +28,7 @@
       "alt-shift-e": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
       "alt-shift-i": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
       "ctrl-r": "workspace::ToggleRightDock",
-      "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
+      // "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
       "alt-o": "workspace::ActivatePaneRight",
       "alt-n": "workspace::ActivatePaneLeft",
       "alt-e": "workspace::ActivatePaneUp",
@@ -100,7 +100,7 @@
       "ctrl-b": "workspace::ToggleLeftDock",
       "ctrl-j": "workspace::ToggleBottomDock",
       "ctrl-r": "workspace::ToggleRightDock",
-      "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
+      // "ctrl-a": "multi_workspace::ToggleWorkspaceSidebar",
       "ctrl-t": "project_symbols::Toggle",
       "ctrl-f": "buffer_search::Deploy",
     }
