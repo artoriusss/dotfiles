@@ -19,9 +19,10 @@ return {
       vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Telescope: Live Grep" })
       vim.keymap.set('n', '<leader>s', builtin.lsp_dynamic_workspace_symbols, { desc = "Telescope: Workspace Symbols" })
       vim.keymap.set('n', '<leader>ts', builtin.lsp_document_symbols, { desc = "Telescope: All Buffer LSP Symbols" })
-      
       vim.keymap.set('n', '<leader>b', function()
         builtin.buffers({
+          sort_lastused = true,
+          sort_mru = true,
           layout_strategy = "bottom_pane",
           layout_config = {
             height = 0.4,

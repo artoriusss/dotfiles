@@ -36,16 +36,15 @@ return {
       for server, config in pairs(opts.servers) do
         -- Inject blink.cmp capabilities into the config
         config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-        
         -- Native Neovim 0.11+ API configuration & initialization
         vim.lsp.config(server, config)
         vim.lsp.enable(server)
       end
 
       -- LSP Keymaps
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-      vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP: hover" })
+      vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "LSP: Buffer Definition" })
+      vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP: Buffer Code Action" })
       vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP: Rename symbol" })
     end,
   }
