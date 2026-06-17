@@ -1,0 +1,8162 @@
+==============================
+📁 Directory Tree of: "."
+==============================
+
+├── lua/
+├── lua/plugins/
+├── lua/plugins/markview.lua
+├── lua/plugins/nvim-treesitter-objects.lua.bak
+├── lua/plugins/alpha.lua
+├── lua/plugins/lsp-config.lua
+├── lua/plugins/snacks.lua
+├── lua/plugins/zk.lua
+├── lua/plugins/lualine.lua
+├── lua/plugins/mini.lua
+├── lua/plugins/tiny-cmd.lua
+├── lua/plugins/telescope.lua
+├── lua/plugins/blink.lua
+├── lua/plugins/lsp-signature.lua
+├── lua/plugins/null-ls.lua
+├── lua/plugins/treesitter.lua.bak
+├── lua/vim-options.lua
+├── lua/plugins.lua
+├── init.lua
+├── colors/
+├── colors/blueberrypie.lua
+├── queries/
+├── queries/glsl/
+├── queries/glsl/textobjects.scm
+├── queries/vim/
+├── queries/vim/textobjects.scm
+├── queries/bibtex/
+├── queries/bibtex/textobjects.scm
+├── queries/lua/
+├── queries/lua/textobjects.scm
+├── queries/elixir/
+├── queries/elixir/textobjects.scm
+├── queries/haskell/
+├── queries/haskell/textobjects.scm
+├── queries/php/
+├── queries/php/textobjects.scm
+├── queries/bash/
+├── queries/bash/textobjects.scm
+├── queries/terraform/
+├── queries/terraform/textobjects.scm
+├── queries/rust/
+├── queries/rust/textobjects.scm
+├── queries/tsx/
+├── queries/tsx/textobjects.scm
+├── queries/c_sharp/
+├── queries/c_sharp/textobjects.scm
+├── queries/ruby/
+├── queries/ruby/textobjects.scm
+├── queries/fennel/
+├── queries/fennel/textobjects.scm
+├── queries/matlab/
+├── queries/matlab/textobjects.scm
+├── queries/odin/
+├── queries/odin/textobjects.scm
+├── queries/apex/
+├── queries/apex/textobjects.scm
+├── queries/ecma/
+├── queries/ecma/textobjects.scm
+├── queries/gleam/
+├── queries/gleam/textobjects.scm
+├── queries/wgsl/
+├── queries/wgsl/textobjects.scm
+├── queries/fish/
+├── queries/fish/textobjects.scm
+├── queries/slang/
+├── queries/slang/textobjects.scm
+├── queries/heex/
+├── queries/heex/textobjects.scm
+├── queries/r/
+├── queries/r/textobjects.scm
+├── queries/swift/
+├── queries/swift/textobjects.scm
+├── queries/java/
+├── queries/java/textobjects.scm
+├── queries/zsh/
+├── queries/zsh/textobjects.scm
+├── queries/cmake/
+├── queries/cmake/textobjects.scm
+├── queries/hack/
+├── queries/hack/textobjects.scm
+├── queries/vue/
+├── queries/vue/textobjects.scm
+├── queries/jsx/
+├── queries/jsx/textobjects.scm
+├── queries/tact/
+├── queries/tact/textobjects.scm
+├── queries/wgsl_bevy/
+├── queries/wgsl_bevy/textobjects.scm
+├── queries/go/
+├── queries/go/textobjects.scm
+├── queries/rst/
+├── queries/rst/textobjects.scm
+├── queries/supercollider/
+├── queries/supercollider/textobjects.scm
+├── queries/c/
+├── queries/c/textobjects.scm
+├── queries/markdown/
+├── queries/markdown/textobjects.scm
+├── queries/json/
+├── queries/json/textobjects.scm
+├── queries/inko/
+├── queries/inko/textobjects.scm
+├── queries/kotlin/
+├── queries/kotlin/textobjects.scm
+├── queries/php_only/
+├── queries/php_only/textobjects.scm
+├── queries/nasm/
+├── queries/nasm/textobjects.scm
+├── queries/hlsl/
+├── queries/hlsl/textobjects.scm
+├── queries/cuda/
+├── queries/cuda/textobjects.scm
+├── queries/cpp/
+├── queries/cpp/textobjects.scm
+├── queries/python/
+├── queries/python/textobjects.scm
+├── queries/yaml/
+├── queries/yaml/textobjects.scm
+├── queries/foam/
+├── queries/foam/textobjects.scm
+├── queries/scss/
+├── queries/scss/textobjects.scm
+├── queries/nim/
+├── queries/nim/textobjects.scm
+├── queries/twig/
+├── queries/twig/textobjects.scm
+├── queries/html/
+├── queries/html/textobjects.scm
+├── queries/typescript/
+├── queries/typescript/textobjects.scm
+├── queries/perl/
+├── queries/perl/textobjects.scm
+├── queries/query/
+├── queries/query/textobjects.scm
+├── queries/toml/
+├── queries/toml/textobjects.scm
+├── queries/css/
+├── queries/css/textobjects.scm
+├── queries/elm/
+├── queries/elm/textobjects.scm
+├── queries/v/
+├── queries/v/textobjects.scm
+├── queries/scala/
+├── queries/scala/textobjects.scm
+├── queries/latex/
+├── queries/latex/textobjects.scm
+├── queries/glimmer/
+├── queries/glimmer/textobjects.scm
+├── queries/ocaml/
+├── queries/ocaml/textobjects.scm
+├── queries/hcl/
+├── queries/hcl/textobjects.scm
+├── queries/astro/
+├── queries/astro/textobjects.scm
+├── queries/systemverilog/
+├── queries/systemverilog/textobjects.scm
+├── queries/dart/
+├── queries/dart/textobjects.scm
+├── queries/enforce/
+├── queries/enforce/textobjects.scm
+├── queries/ql/
+├── queries/ql/textobjects.scm
+├── queries/git_config/
+├── queries/git_config/textobjects.scm
+├── queries/zig/
+├── queries/zig/textobjects.scm
+├── queries/dockerfile/
+├── queries/dockerfile/textobjects.scm
+├── queries/svelte/
+├── queries/svelte/textobjects.scm
+├── queries/julia/
+├── queries/julia/textobjects.scm
+├── queries/gdscript/
+├── queries/gdscript/textobjects.scm
+├── queries/readline/
+├── queries/readline/textobjects.scm
+├── queries/nix/
+├── queries/nix/textobjects.scm
+├── queries/javascript/
+├── queries/javascript/textobjects.scm
+├── lazy-lock.json
+├── ftplugin/
+├── ftplugin/markdown.lua
+
+
+==============================
+📂 Dumping file contents...
+==============================
+
+==============================
+📄 File: lua/plugins/markview.lua
+------------------------------
+return {
+    "OXY2DEV/markview.nvim",
+    lazy = false,
+
+    -- For blink.cmp's completion
+    -- source
+    dependencies = {
+        "saghen/blink.cmp"
+    },
+};
+------------------------------
+📄 End: lua/plugins/markview.lua
+==============================
+
+==============================
+📄 File: lua/plugins/nvim-treesitter-objects.lua.bak
+------------------------------
+return {
+  {
+    "romus204/tree-sitter-manager.nvim",
+    config = function()
+      require("tree-sitter-manager").setup({
+        ensure_installed = { "lua", "python", "markdown", "markdown_inline", "vim", "bash", "json", "yaml" },
+      })
+    end,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    -- CRITICAL: Prevent the plugin from running its own internal startup logic
+    -- This stops the error about 'nvim-treesitter.configs' being missing
+    enabled = true,
+    event = "VeryLazy",
+    config = function()
+        -- Intentionally empty: We don't want the plugin's code to run
+    end,
+    -- Manually add the queries to the runtime path so mini.ai sees them
+    init = function()
+        local data_path = vim.fn.stdpath("data")
+        vim.opt.runtimepath:append(data_path .. "/lazy/nvim-treesitter-textobjects")
+    end
+  },
+}
+------------------------------
+📄 End: lua/plugins/nvim-treesitter-objects.lua.bak
+==============================
+
+==============================
+📄 File: lua/plugins/alpha.lua
+------------------------------
+return {
+  "goolord/alpha-nvim",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons"
+  },
+  config = function()
+    local alpha = require("alpha")
+    local dashboard = require("alpha.themes.startify")
+    alpha.setup(dashboard.opts)
+  end
+}
+------------------------------
+📄 End: lua/plugins/alpha.lua
+==============================
+
+==============================
+📄 File: lua/plugins/lsp-config.lua
+------------------------------
+vim.lsp.handlers["textDocument/signatureHelp"] = function() end
+return {
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup()
+    end,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require("mason-lspconfig").setup({
+        ensure_installed = {
+          "lua_ls",
+          "ts_ls",
+          "ruff",
+          "ty",
+        },
+      })
+    end,
+  },
+  {
+    'neovim/nvim-lspconfig',
+    dependencies = { 'saghen/blink.cmp' },
+    opts = {
+      servers = {
+        lua_ls = {},
+        ts_ls = {},
+        ty = {},
+        ruff = {
+          init_options = { settings = {} },
+        },
+      }
+    },
+    config = function(_, opts)
+      for server, config in pairs(opts.servers) do
+        -- Inject blink.cmp capabilities into the config
+        config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
+        -- Native Neovim 0.11+ API configuration & initialization
+        vim.lsp.config(server, config)
+        vim.lsp.enable(server)
+      end
+
+      -- LSP Keymaps
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP: hover" })
+      vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "LSP: Buffer Definition" })
+      vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP: Buffer Code Action" })
+      vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP: Rename symbol" })
+    end,
+  }
+}
+------------------------------
+📄 End: lua/plugins/lsp-config.lua
+==============================
+
+==============================
+📄 File: lua/plugins/snacks.lua
+------------------------------
+return {
+  "folke/snacks.nvim",
+  ---@type snacks.Config
+  opts = {
+    notifier = {}
+  }
+}
+------------------------------
+📄 End: lua/plugins/snacks.lua
+==============================
+
+==============================
+📄 File: lua/plugins/zk.lua
+------------------------------
+return {
+  "zk-org/zk-nvim",
+  config = function()
+    require("zk").setup({
+      picker = "telescope",
+
+      lsp = {
+        config = {
+          name = "zk",
+          cmd = { "zk", "lsp" },
+          filetypes = { "markdown" },
+        },
+
+        -- automatically attach buffers in a zk notebook that match the given filetypes
+        auto_attach = {
+          enabled = true,
+        },
+      },
+    })
+  end,
+}
+------------------------------
+📄 End: lua/plugins/zk.lua
+==============================
+
+==============================
+📄 File: lua/plugins/lualine.lua
+------------------------------
+return {
+  'nvim-lualine/lualine.nvim',
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
+  config = function()
+    require('lualine').setup({
+      options = {
+        theme = 'auto',
+        icons_enabled = true,
+      },
+      sections = {
+        lualine_a = {'mode'},
+        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_c = {
+          {
+            'filename',
+            file_status = true,      -- This tracks if the file is written/modified
+            path = 1,                -- 0: Just filename, 1: Relative path, 2: Absolute path
+          }
+        },
+        lualine_x = {'encoding', 'fileformat', 'filetype'},
+        lualine_y = {'progress'},
+        lualine_z = {'location'}
+      }
+    })
+  end
+}
+------------------------------
+📄 End: lua/plugins/lualine.lua
+==============================
+
+==============================
+📄 File: lua/plugins/mini.lua
+------------------------------
+return {
+  {
+    'echasnovski/mini.nvim',
+    version = false,
+    config = function()
+      local copy_keymap = function(mode, from_lhs, to_lhs)
+        local keymap = vim.fn.maparg(from_lhs, mode, false, true)
+        if keymap and (keymap.callback or keymap.rhs) then
+          vim.keymap.set(mode, to_lhs, keymap.callback or keymap.rhs, { desc = keymap.desc })
+        end
+      end
+      copy_keymap('x', 'an', '<C-Up>')
+      copy_keymap('x', 'in', '<C-Down>')
+
+      require('mini.files').setup({
+        mappings = {
+          go_in = '<Right>',
+          go_out = '<Left>',
+          go_in_plus = '<S-Right>',
+          go_out_plus = '<S-Left>'
+        }
+      })
+
+      require("mini.comment").setup()
+      require("mini.surround").setup()
+      require("mini.pairs").setup()
+
+      local ai = require("mini.ai")
+      ai.setup({
+        n_lines = 500,
+        custom_textobjects = {
+          ["="] = ai.gen_spec.treesitter({ a = "@assignment.outer", i = "@assignment.inner" }),
+          ["L"] = ai.gen_spec.treesitter({ a = "@assignment.lhs",   i = "@assignment.lhs" }),
+          ["R"] = ai.gen_spec.treesitter({ a = "@assignment.rhs",   i = "@assignment.rhs" }),
+          ["a"] = ai.gen_spec.treesitter({ a = "@parameter.outer",  i = "@parameter.inner" }),
+          ["i"] = ai.gen_spec.treesitter({ a = "@conditional.outer", i = "@conditional.inner" }),
+          ["l"] = ai.gen_spec.treesitter({ a = "@loop.outer",        i = "@loop.inner" }),
+          ["f"] = ai.gen_spec.treesitter({ a = "@call.outer",        i = "@call.inner" }),
+          ["m"] = ai.gen_spec.treesitter({ a = "@function.outer",    i = "@function.inner" }),
+          ["c"] = ai.gen_spec.treesitter({ a = "@class.outer",       i = "@class.inner" }),
+        }
+      })
+
+      vim.api.nvim_create_autocmd('FileType', {
+        callback = function()
+          local lang = vim.treesitter.language.get_lang(vim.bo.filetype) or vim.bo.filetype
+        end,
+      })
+    end,
+  }
+}
+------------------------------
+📄 End: lua/plugins/mini.lua
+==============================
+
+==============================
+📄 File: lua/plugins/tiny-cmd.lua
+------------------------------
+return {
+  {
+    "rachartier/tiny-cmdline.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons"
+    },
+    init = function()
+      vim.o.cmdheight = 0
+    end,
+    opts = {
+      width = { min = 40, max = 60 },
+      native_types = {"/", "?"},
+    },
+  }
+}
+------------------------------
+📄 End: lua/plugins/tiny-cmd.lua
+==============================
+
+==============================
+📄 File: lua/plugins/telescope.lua
+------------------------------
+return {
+  {
+    'nvim-telescope/telescope.nvim',
+    branch = 'master',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require("telescope").setup({
+        defaults = {
+          mappings = {
+            i = {
+              ["<Esc>"] = require("telescope.actions").close,
+            },
+          },
+        },
+      })
+
+      local builtin = require("telescope.builtin")
+      vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = "Telescope: Find Files" })
+      vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Telescope: Live Grep" })
+      vim.keymap.set('n', '<leader>s', builtin.lsp_dynamic_workspace_symbols, { desc = "Telescope: Workspace Symbols" })
+      vim.keymap.set('n', '<leader>ts', builtin.lsp_document_symbols, { desc = "Telescope: All Buffer LSP Symbols" })
+      vim.keymap.set('n', '<leader>b', function()
+        builtin.buffers({
+          sort_lastused = true,
+          sort_mru = true,
+          layout_strategy = "bottom_pane",
+          layout_config = {
+            height = 0.4,
+          },
+        })
+      end, { desc = "Telescope: Buffers (Bottom)" })
+
+      vim.keymap.set('n', '<leader>tf', function()
+        builtin.lsp_document_symbols({
+          symbols = { "class", "function", "method" }
+        })
+      end, { desc = "Telescope: Buffer Functions & Classes" })
+    end
+  },
+  {
+    'nvim-telescope/telescope-ui-select.nvim',
+    config = function()
+      require("telescope").setup({
+        extensions = {
+          ["ui-select"] = {
+            require("telescope.themes").get_dropdown {}
+          }
+        }
+      })
+      require("telescope").load_extension("ui-select")
+    end
+  }
+}
+
+------------------------------
+📄 End: lua/plugins/telescope.lua
+==============================
+
+==============================
+📄 File: lua/plugins/blink.lua
+------------------------------
+return {
+  'saghen/blink.cmp',
+  dependencies = { 'rafamadriz/friendly-snippets' },
+  version = '1.*',
+  opts = {
+    keymap = {
+      preset = 'default',
+      ['<CR>'] = { 'accept', 'fallback' },
+    },
+    appearance = {
+      nerd_font_variant = 'mono',
+    },
+    completion = {
+      documentation = {
+        auto_show = false,
+      },
+      trigger = {
+        show_on_trigger_character = true,
+      },
+    },
+    sources = {
+      default = { 'lsp', 'path', 'snippets', 'buffer' },
+    },
+    fuzzy = { implementation = "rust" },
+    cmdline = {
+      keymap = { preset = "super-tab" },
+      completion = { menu = { auto_show = true } },
+    },
+  },
+  opts_extend = { "sources.default" },
+}
+------------------------------
+📄 End: lua/plugins/blink.lua
+==============================
+
+==============================
+📄 File: lua/plugins/lsp-signature.lua
+------------------------------
+return {
+  "ray-x/lsp_signature.nvim",
+  event = "VeryLazy",
+  opts = {},
+  config = function()
+  require("lsp_signature").setup({
+    floating_window = false,
+    hint_prefix = " ",
+    toggle_key = "<C-s>",
+    bind = true,
+    doc_lines = 0,
+    auto_trigger = false,
+  })
+  end,
+}
+------------------------------
+📄 End: lua/plugins/lsp-signature.lua
+==============================
+
+==============================
+📄 File: lua/plugins/null-ls.lua
+------------------------------
+return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.black,
+        null_ls.builtins.formatting.isort,
+        null_ls.builtins.formatting.prettier,
+      },
+    })
+    vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+  end,
+}
+------------------------------
+📄 End: lua/plugins/null-ls.lua
+==============================
+
+==============================
+📄 File: lua/plugins/treesitter.lua.bak
+------------------------------
+return {
+  "nvim-treesitter/nvim-treesitter",
+  version = "*",
+  build = ":TSUpdate",
+  event = { "BufReadPre", "BufNewFile" },
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+  },
+  config = function()
+    local config = require("nvim-treesitter.configs")
+    config.setup({
+      ensure_installed = {
+        "lua", "python", "markdown", "markdown_inline", "vim", "bash", "json", "yaml"
+      },
+      auto_install = true,
+      highlight = { enable = true },
+      indent = { enable = true },
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          init_selection = "<C-Up>",
+          node_incremental = "<C-Up>",
+          scope_incremental = false,
+          node_decremental = "<C-Down>",
+        },
+      },
+      -- Merged textobjects configuration safely inside the main setup block
+      textobjects = {
+        select = {
+          enable = true,
+          lookahead = true,
+          keymaps = {
+            ["a="] = { query = "@assignment.outer", desc = "Select outer part of an assignment" },
+            ["i="] = { query = "@assignment.inner", desc = "Select inner part of an assignment" },
+            ["l="] = { query = "@assignment.lhs", desc = "Select left hand side of an assignment" },
+            ["r="] = { query = "@assignment.rhs", desc = "Select right hand side of an assignment" },
+
+            ["aa"] = { query = "@parameter.outer", desc = "Select outer part of a parameter/argument" },
+            ["ia"] = { query = "@parameter.inner", desc = "Select inner part of a parameter/argument" },
+
+            ["ai"] = { query = "@conditional.outer", desc = "Select outer part of a conditional" },
+            ["ii"] = { query = "@conditional.inner", desc = "Select inner part of a conditional" },
+
+            ["al"] = { query = "@loop.outer", desc = "Select outer part of a loop" },
+            ["il"] = { query = "@loop.inner", desc = "Select inner part of a loop" },
+
+            ["af"] = { query = "@call.outer", desc = "Select outer part of a function call" },
+            ["if"] = { query = "@call.inner", desc = "Select inner part of a function call" },
+
+            ["am"] = { query = "@function.outer", desc = "Select outer part of a method/function definition" },
+            ["im"] = { query = "@function.inner", desc = "Select inner part of a method/function definition" },
+
+            ["ac"] = { query = "@class.outer", desc = "Select outer part of a class" },
+            ["ic"] = { query = "@class.inner", desc = "Select inner part of a class" },
+          },
+        },
+      },
+    })
+  end,
+}
+------------------------------
+📄 End: lua/plugins/treesitter.lua.bak
+==============================
+
+==============================
+📄 File: lua/vim-options.lua
+------------------------------
+vim.cmd("set expandtab")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+-- require("vim._core.ui2").enable({ enabled = true })
+require("vim._core.ui2").enable({})
+
+-- Disable Vi compatibility mode
+vim.opt.compatible = false
+
+-- Enable highlighting of the current line
+vim.opt.cursorline = true
+
+-- Show line numbers
+vim.opt.number = true
+
+-- Configure backspace behavior
+vim.opt.backspace = { 'indent', 'eol', 'start' }
+
+-- Display incomplete commands
+vim.opt.showcmd = true
+
+-- Display the current mode in the command line
+vim.opt.showmode = true
+
+-- Automatically read files when changed outside of Neovim
+vim.opt.autoread = true
+
+-- Allow switching between unsaved buffers
+vim.opt.hidden = true
+
+-- Always display the status line
+vim.opt.laststatus = 2
+
+-- Show the cursor position
+vim.opt.ruler = true
+
+-- Enable command-line completion
+vim.opt.wildmenu = true
+
+-- Show relative line numbers
+vim.opt.relativenumber = true
+
+-- Disable error bells
+vim.opt.errorbells = false
+
+-- Enable visual bell instead of beeping
+vim.opt.visualbell = true
+
+-- Enable mouse support in all modes
+vim.opt.mouse = 'a'
+
+-- Set background color scheme
+vim.opt.background = 'dark'
+
+-- Set the window title to the filename
+vim.opt.title = true
+
+-- Disable swap file creation
+vim.opt.swapfile = false
+
+-- Disable backup file creation
+vim.opt.backup = false
+
+-- Disable write backup
+vim.opt.writebackup = false
+
+-- Enable automatic indentation
+vim.opt.autoindent = true
+
+-- Enable file type detection and load related plugins and indent settings
+vim.cmd('filetype plugin indent on')
+
+-- Set the number of spaces a <Tab> counts for
+vim.opt.tabstop = 4
+
+-- Set the number of spaces to use for each step of (auto)indent
+vim.opt.shiftwidth = 2
+
+-- Use spaces instead of tabs
+vim.opt.expandtab = true
+
+-- Configure the status line
+vim.opt.statusline = '%F%m%r%h%w%=(%{&ff}/%Y)\\ (line\\ %l/%L,\\ col\\ %c)'
+
+-- Keep 5 lines visible above and below the cursor
+vim.opt.scrolloff = 5
+
+-- Set the directory for undo files
+vim.opt.undodir = vim.fn.expand('~/.vim/undodir')
+
+-- Enable persistent undo
+vim.opt.undofile = true
+
+-- "UI" niceties
+vim.opt.updatetime = 50
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.signcolumn = "yes"
+vim.opt.laststatus = 3
+vim.opt.guicursor = "n-v-c:block-blinkon500-blinkoff500-blinkwait700,i-ci-ve:ver25-blinkon500-blinkoff500-blinkwait700,r-cr-o:hor20-blinkon500-blinkoff500-blinkwait700"
+
+-- Quicker file movement
+vim.keymap.set('n', '<C-u>', '10kzz', { noremap = true, desc = 'Up 10 lines & center' })
+vim.keymap.set('n', '<C-y>', '10jzz', { noremap = true, desc = 'Down 10 lines & center' })
+vim.keymap.set('v', '<C-u>', '10kzz', { noremap = true, desc = 'Extend selection 10 lines up & center' })
+vim.keymap.set('v', '<C-y>', '10jzz', { noremap = true, desc = 'Extend selection 10 lines down & center' })
+
+vim.keymap.set('n', '<C-i>', '<C-e>', { noremap = true, silent = true, desc = 'Scroll window down' })
+vim.keymap.set('n', '<C-e>', '<C-y>', { noremap = true, silent = true, desc = 'Scroll window up' })
+
+-- (need to explicitly handling selection scrolling)
+vim.keymap.set('x', '<C-i>', [[:<C-u>normal! <C-v><C-e><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll down' })
+vim.keymap.set('x', '<C-e>', [[:<C-u>normal! <C-v><C-y><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll up' })
+
+-- Escape the highlighting after search instead of doing `:noh`
+vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
+
+-- Make `Y` behave like `D` and `C`
+vim.keymap.set("n","Y","y$")
+
+-- Close buffers
+vim.keymap.set('n', '<leader>q', ':bp|bd #<CR>', { noremap = true, silent = true, desc = "Close current buffer" })
+
+-- Just some nice stuff
+vim.keymap.set('n', '<leader>w', ':write<CR>', { silent=true, noremap = true, desc = "Save file" })
+vim.keymap.set("n", "<leader>p", '"+p', { noremap = true, desc = "Paste from system clipboard" })
+vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, desc = "Yank to system clipboard" })
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in popup at cursor" })
+
+-- Terminal
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = 'Exit terminal mode' })
+
+-- mini.files
+vim.keymap.set('n', '<leader>fs', function()
+  require('mini.files').open()
+end, { desc = 'Open mini.files' })
+
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'MiniFilesBufferCreate',
+  callback = function(args)
+    local buf_id = args.data.buf_id
+    vim.keymap.set('n', '<Esc>', require('mini.files').close, { buffer = buf_id, desc = 'Close mini.files' })
+  end,
+})
+------------------------------
+📄 End: lua/vim-options.lua
+==============================
+
+==============================
+📄 File: lua/plugins.lua
+------------------------------
+return {
+}
+------------------------------
+📄 End: lua/plugins.lua
+==============================
+
+==============================
+📄 File: init.lua
+------------------------------
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+vim.g.clipboard = {
+  name = 'OSC 52',
+  copy = {
+    ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
+    ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
+  },
+  paste = {
+    ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
+    ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+  },
+}
+
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "--branch=stable",
+    lazyrepo,
+    lazypath
+  })
+
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+
+vim.opt.rtp:prepend(lazypath)
+
+vim.cmd("colorscheme blueberrypie")
+require("vim-options")
+require("lazy").setup("plugins")
+------------------------------
+📄 End: init.lua
+==============================
+
+==============================
+📄 File: colors/blueberrypie.lua
+------------------------------
+local colors = {
+  bg         = "#1c0c28",
+  fg         = "#ffffff",
+  cursor     = "#00ffff",
+  cursor_fg  = "#000000",
+  sel_bg     = "#606060",
+  sel_fg     = "#ffffff",
+
+  -- Accents 
+  cyan       = "#5cb1b3",
+  magenta    = "#9d54a7",
+  purple     = "#7e83cc",
+  pink       = "#bc94b7",
+  red        = "#c87272",
+  blue       = "#90a5bd",
+  green      = "#0aff99",
+  lgreen     = "#c6e960",
+  yellow     = "#ffd75f",
+  gray       = "#5e6071",
+}
+
+vim.cmd("highlight clear")
+vim.cmd("set background=dark")
+if vim.fn.exists("syntax_on") then
+  vim.cmd("syntax reset")
+end
+vim.g.colors_name = "blueberrypie"
+
+-- Basic UI
+vim.api.nvim_set_hl(0, "Normal",       { fg = colors.fg, bg = colors.bg })
+vim.api.nvim_set_hl(0, "Cursor",       { fg = colors.cursor_fg, bg = colors.cursor })
+vim.api.nvim_set_hl(0, "Visual",       { bg = colors.sel_bg })
+vim.api.nvim_set_hl(0, "Search",       { fg = colors.bg, bg = colors.green, bold = true })
+vim.api.nvim_set_hl(0, "LineNr",       { fg = colors.gray })
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.lgreen, bold = true })
+vim.api.nvim_set_hl(0, "StatusLine",   { fg = colors.fg, bg = colors.gray })
+vim.api.nvim_set_hl(0, "VertSplit",    { fg = colors.gray })
+
+-- Syntax
+vim.api.nvim_set_hl(0, "Comment",      { fg = colors.gray, italic = true })
+vim.api.nvim_set_hl(0, "Constant",     { fg = colors.cyan })
+vim.api.nvim_set_hl(0, "String",       { fg = colors.lgreen })
+
+vim.api.nvim_set_hl(0, "Character",    { fg = colors.pink })
+vim.api.nvim_set_hl(0, "Number",       { fg = colors.yellow })
+vim.api.nvim_set_hl(0, "Boolean",      { fg = colors.magenta, bold = true })
+vim.api.nvim_set_hl(0, "Identifier",   { fg = colors.cyan })
+vim.api.nvim_set_hl(0, "Function",     { fg = colors.purple, bold = true })
+vim.api.nvim_set_hl(0, "Statement",    { fg = colors.magenta, bold = true })
+vim.api.nvim_set_hl(0, "Keyword",      { fg = colors.red, bold = true })
+vim.api.nvim_set_hl(0, "PreProc",      { fg = colors.blue })
+vim.api.nvim_set_hl(0, "Type",         { fg = colors.yellow, bold = true })
+vim.api.nvim_set_hl(0, "Special",      { fg = colors.pink })
+vim.api.nvim_set_hl(0, "Underlined",   { fg = colors.green, underline = true })
+
+-- Diagnostics
+vim.api.nvim_set_hl(0, "DiagnosticError", { fg = colors.red })
+vim.api.nvim_set_hl(0, "DiagnosticWarn",  { fg = colors.yellow })
+vim.api.nvim_set_hl(0, "DiagnosticInfo",  { fg = colors.blue })
+vim.api.nvim_set_hl(0, "DiagnosticHint",  { fg = colors.green })
+
+------------------------------
+📄 End: colors/blueberrypie.lua
+==============================
+
+==============================
+📄 File: queries/glsl/textobjects.scm
+------------------------------
+; inherits: c
+------------------------------
+📄 End: queries/glsl/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/vim/textobjects.scm
+------------------------------
+(comment) @comment.outer
+
+(function_definition
+  (body) @function.inner) @function.outer
+
+(parameters
+  (identifier) @parameter.inner)
+
+(parameters
+  "," @parameter.outer
+  .
+  (identifier) @parameter.outer)
+
+(parameters
+  .
+  (identifier) @parameter.outer
+  .
+  "," @parameter.outer)
+
+(if_statement
+  (body) @conditional.inner) @conditional.outer
+
+(for_loop
+  (body) @loop.inner) @loop.outer
+
+(while_loop
+  (body) @loop.inner) @loop.outer
+
+(call_expression) @call.outer
+
+(return_statement
+  (_)? @return.inner) @return.outer
+
+(_
+  (body) @block.inner) @block.outer
+
+(body
+  (_) @statement.outer)
+
+((syntax_statement
+  (pattern) @regex.inner @regex.outer)
+  (#offset! @regex.outer 0 -1 0 1))
+
+[
+  (integer_literal)
+  (float_literal)
+] @number.inner
+
+(let_statement
+  (_) @assignment.lhs
+  (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(let_statement
+  (_) @assignment.inner)
+------------------------------
+📄 End: queries/vim/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/bibtex/textobjects.scm
+------------------------------
+(entry) @block.outer
+
+(field) @statement.outer
+------------------------------
+📄 End: queries/bibtex/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/lua/textobjects.scm
+------------------------------
+; block
+(_
+  (block) @block.inner) @block.outer
+
+; call
+(function_call) @call.outer
+
+(function_call
+  (arguments) @call.inner
+  (#match? @call.inner "^[^\\(]"))
+
+(function_call
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; class
+; comment
+(comment
+  (comment_content) @comment.inner) @comment.outer
+
+; conditional
+(if_statement
+  alternative: (_
+    (_) @conditional.inner)?) @conditional.outer
+
+(if_statement
+  consequence: (block)? @conditional.inner)
+
+(if_statement
+  condition: (_) @conditional.inner)
+
+; frame
+; function
+[
+  (function_declaration)
+  (function_definition)
+] @function.outer
+
+(function_declaration
+  body: (_) @function.inner)
+
+(function_definition
+  body: (_) @function.inner)
+
+; return
+(return_statement
+  (_)? @return.inner) @return.outer
+
+; loop
+[
+  (while_statement)
+  (for_statement)
+  (repeat_statement)
+] @loop.outer
+
+(while_statement
+  body: (_) @loop.inner)
+
+(for_statement
+  body: (_) @loop.inner)
+
+(repeat_statement
+  body: (_) @loop.inner)
+
+; parameter
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(table_constructor
+  (field) @parameter.inner @parameter.outer
+  ","? @parameter.outer)
+
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(parameters
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+; number
+(number) @number.inner
+
+(assignment_statement
+  (variable_list) @assignment.lhs
+  (expression_list) @assignment.inner @assignment.rhs) @assignment.outer
+
+(assignment_statement
+  (variable_list) @assignment.inner)
+
+; scopename
+; statement
+(statement) @statement.outer
+
+(return_statement) @statement.outer
+------------------------------
+📄 End: queries/lua/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/elixir/textobjects.scm
+------------------------------
+; Block Objects
+([
+  (do_block
+    "do"
+    _+ @block.inner
+    "end")
+  (do_block
+    "do"
+    .
+    ((_) @block.inner) @block.inner
+    .
+    "end")
+]) @block.outer
+
+; Class Objects (Modules, Protocols)
+; multiple children
+(call
+  target: ((identifier) @_identifier
+    (#any-of? @_identifier "defmodule" "defprotocol" "defimpl"))
+  (arguments
+    (alias))
+  (do_block
+    "do"
+    _+ @class.inner
+    "end")) @class.outer
+
+; single child match
+(call
+  target: ((identifier) @_identifier
+    (#any-of? @_identifier "defmodule" "defprotocol" "defimpl"))
+  (arguments
+    (alias))
+  (do_block
+    "do"
+    .
+    (_) @class.inner
+    .
+    "end")) @class.outer
+
+; Function, Parameter, and Call Objects
+(anonymous_function
+  (stab_clause
+    right: (body) @function.inner)) @function.outer
+
+(call
+  target: ((identifier) @_identifier
+    (#any-of? @_identifier "def" "defmacro" "defmacrop" "defn" "defnp" "defp"))
+  (arguments
+    [
+      (call
+        [
+          (arguments
+            (_) @parameter.inner @parameter.outer
+            .
+            "," @parameter.outer)
+          (arguments
+            ((_) @parameter.inner @parameter.outer) @parameter.outer .)
+        ])
+      (binary_operator
+        left: (call
+          [
+            (arguments
+              (_) @parameter.inner @parameter.outer
+              .
+              "," @parameter.outer)
+            (arguments
+              ((_) @parameter.inner @parameter.outer) @parameter.outer .)
+          ]))
+    ])
+  [
+    (do_block
+      "do"
+      _+ @function.inner
+      "end")
+    (do_block
+      "do"
+      .
+      ((_) @function.inner) @function.inner
+      .
+      "end")
+  ]) @function.outer
+
+(call
+  target: ((identifier) @_identifier
+    (#any-of? @_identifier "def" "defmacro" "defmacrop" "defn" "defnp" "defp"))
+  (arguments
+    [
+      (identifier)
+      (binary_operator
+        (identifier))
+    ])
+  [
+    (do_block
+      "do"
+      _+ @function.inner
+      "end")
+    (do_block
+      "do"
+      .
+      ((_) @function.inner) @function.inner
+      .
+      "end")
+  ]) @function.outer
+
+(call
+  target: ((identifier) @_identifier
+    (#any-of? @_identifier "def" "defmacro" "defmacrop" "defn" "defnp" "defp"))
+  (arguments
+    [
+      (call
+        [
+          (arguments
+            (_) @parameter.inner @parameter.outer
+            .
+            "," @parameter.outer)
+          (arguments
+            ((_) @parameter.inner @parameter.outer) @parameter.outer .)
+        ])
+      (binary_operator
+        left: (call
+          [
+            (arguments
+              (_) @parameter.inner @parameter.outer
+              .
+              "," @parameter.outer)
+            (arguments
+              ((_) @parameter.inner @parameter.outer) @parameter.outer .)
+          ]))
+    ]
+    (keywords
+      (pair
+        value: (_) @function.inner)))) @function.outer
+
+(call
+  target: ((identifier) @_identifier
+    (#any-of? @_identifier "def" "defmacro" "defmacrop" "defn" "defnp" "defp"))
+  (arguments
+    [
+      (identifier)
+      (binary_operator
+        (identifier))
+    ]
+    (keywords
+      (pair
+        value: (_) @function.inner)))) @function.outer
+
+; Comment Objects
+(comment) @comment.outer
+
+; Documentation Objects
+(unary_operator
+  operator: "@"
+  operand: (call
+    target: ((identifier) @_identifier
+      (#any-of? @_identifier "moduledoc" "typedoc" "shortdoc" "doc"))
+    (arguments
+      [
+        ; attributes style documentation
+        ; @doc deprecated: "...."
+        (keywords) @comment.inner
+        ; heredoc style documentation
+        ; @moduledoc """"""
+        (string
+          (quoted_content) @comment.inner)
+      ]))) @comment.outer
+
+; Regex Objects
+(sigil
+  (quoted_content) @regex.inner) @regex.outer
+------------------------------
+📄 End: queries/elixir/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/haskell/textobjects.scm
+------------------------------
+(apply
+  .
+  function: (_)
+  _+ @call.inner) @call.outer
+
+(infix
+  (_)
+  [
+    (infix_id
+      (variable)) ; x `plus` y
+    (operator) ; x + y
+  ]
+  (_)) @call.outer
+
+(decl/function) @function.outer
+
+(decl/function
+  patterns: (_)
+  match: _+ @function.inner)
+
+; also treat function signature as @function.outer
+(signature) @function.outer
+
+; treat signature with function as @function.outer
+(((decl/signature
+  name: (_) @_sig_name) @function.outer
+  .
+  (decl/function
+    name: (_) @_func_name) @function.outer)
+  (#eq? @_sig_name @_func_name))
+
+(class) @class.outer
+
+(class
+  "where"
+  _ @class.inner)
+
+(instance
+  "where"?
+  .
+  _ @class.inner) @class.outer
+
+(comment) @comment.outer
+
+(haddock) @comment.outer
+
+(expression/conditional) @conditional.outer
+
+(expression/conditional
+  (_) @conditional.inner)
+
+; e.g. forM [1..10] $ \i -> do...
+(infix
+  (apply
+    (name) @_name
+    (#any-of? @_name "for" "for_" "forM" "forM_"))
+  (operator) @_op
+  (#eq? @_op "$")
+  (lambda
+    (_)
+    (_) @loop.inner)) @loop.outer
+
+; e.g. forM [1..10] print
+(apply
+  (name) @_name
+  (#any-of? @_name "for" "for_" "forM" "forM_")
+  (_)
+  (_) @loop.inner) @loop.outer
+
+; e.g. func x
+(function
+  (patterns
+    (_) @parameter.outer))
+
+; e.g. func mb@(Just x)
+(function
+  (patterns
+    (parens
+      (_) @parameter.inner)))
+
+(function
+  (patterns
+    (as
+      (parens
+        (_) @parameter.inner))))
+
+(signature
+  (context
+    (function
+      (type/apply) @parameter.inner)))
+
+(signature
+  (context
+    (function
+      (type/name) @parameter.inner)))
+
+(signature
+  (function
+    (type/apply) @parameter.inner))
+
+(signature
+  (function
+    (type/name) @parameter.inner))
+
+(signature
+  (type/apply) @parameter.inner)
+
+(signature
+  (type/name) @parameter.inner)
+------------------------------
+📄 End: queries/haskell/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/php/textobjects.scm
+------------------------------
+; functions
+(function_definition
+  body: (compound_statement
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(function_definition) @function.outer
+
+(anonymous_function
+  body: (compound_statement
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(anonymous_function) @function.outer
+
+; methods
+(method_declaration
+  body: (compound_statement
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(method_declaration) @function.outer
+
+; traits
+(trait_declaration
+  body: (declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(trait_declaration) @class.outer
+
+; interfaces
+(interface_declaration
+  body: (declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(interface_declaration) @class.outer
+
+; enums
+(enum_declaration
+  body: (enum_declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(enum_declaration) @class.outer
+
+; classes
+(class_declaration
+  body: (declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(class_declaration) @class.outer
+
+; loops
+(for_statement
+  (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(for_statement) @loop.outer
+
+(foreach_statement
+  body: (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(foreach_statement) @loop.outer
+
+(while_statement
+  body: (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(while_statement) @loop.outer
+
+(do_statement
+  body: (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(do_statement) @loop.outer
+
+; conditionals
+(switch_statement
+  body: (switch_block
+    .
+    "{"
+    _+ @conditional.inner
+    "}"))
+
+(switch_statement) @conditional.outer
+
+(if_statement
+  body: (compound_statement
+    .
+    "{"
+    _+ @conditional.inner
+    "}"))
+
+(if_statement) @conditional.outer
+
+(else_clause
+  body: (compound_statement
+    .
+    "{"
+    _+ @conditional.inner
+    "}"))
+
+(else_if_clause
+  body: (compound_statement
+    .
+    "{"
+    _+ @conditional.inner
+    "}"))
+
+; blocks
+(_
+  (switch_block) @block.inner) @block.outer
+
+; parameters
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(formal_parameters
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(formal_parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; comments
+(comment) @comment.outer
+
+; call
+(function_call_expression) @call.outer
+
+(member_call_expression) @call.outer
+
+(nullsafe_member_call_expression) @call.outer
+
+(scoped_call_expression) @call.outer
+
+(function_call_expression
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(member_call_expression
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(nullsafe_member_call_expression
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(scoped_call_expression
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; statement
+[
+  (expression_statement)
+  (declare_statement)
+  (return_statement)
+  (namespace_use_declaration)
+  (namespace_definition)
+  (if_statement)
+  (empty_statement)
+  (switch_statement)
+  (while_statement)
+  (do_statement)
+  (for_statement)
+  (foreach_statement)
+  (goto_statement)
+  (continue_statement)
+  (break_statement)
+  (try_statement)
+  (echo_statement)
+  (unset_statement)
+  (const_declaration)
+  (function_definition)
+  (class_declaration)
+  (interface_declaration)
+  (trait_declaration)
+  (enum_declaration)
+  (global_declaration)
+  (function_static_declaration)
+] @statement.outer
+------------------------------
+📄 End: queries/php/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/bash/textobjects.scm
+------------------------------
+(function_definition) @function.outer
+
+(function_definition
+  body: (compound_statement
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(case_statement) @conditional.outer
+
+(if_statement
+  (_) @conditional.inner) @conditional.outer
+
+(for_statement
+  (_) @loop.inner) @loop.outer
+
+(while_statement
+  (_) @loop.inner) @loop.outer
+
+(comment) @comment.outer
+
+(regex) @regex.inner
+
+((word) @number.inner
+  (#lua-match? @number.inner "^[0-9]+$"))
+
+(variable_assignment) @assignment.outer
+
+(variable_assignment
+  name: (_) @assignment.inner @assignment.lhs)
+
+(variable_assignment
+  value: (_) @assignment.inner @assignment.rhs)
+
+(command
+  argument: (word) @parameter.inner)
+------------------------------
+📄 End: queries/bash/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/terraform/textobjects.scm
+------------------------------
+; inherits: hcl
+------------------------------
+📄 End: queries/terraform/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/rust/textobjects.scm
+------------------------------
+; functions
+(function_signature_item) @function.outer
+
+(function_item) @function.outer
+
+(function_item
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; quantifies as class(es)
+(struct_item) @class.outer
+
+(struct_item
+  body: (field_declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(enum_item) @class.outer
+
+(enum_item
+  body: (enum_variant_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(union_item) @class.outer
+
+(union_item
+  body: (field_declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(trait_item) @class.outer
+
+(trait_item
+  body: (declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(impl_item) @class.outer
+
+(impl_item
+  body: (declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(mod_item) @class.outer
+
+(mod_item
+  body: (declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+; conditionals
+(if_expression
+  alternative: (_
+    (_) @conditional.inner)?) @conditional.outer
+
+(if_expression
+  alternative: (else_clause
+    (block) @conditional.inner))
+
+(if_expression
+  condition: (_) @conditional.inner)
+
+(if_expression
+  consequence: (block) @conditional.inner)
+
+(match_arm
+  (_)) @conditional.inner
+
+(match_expression) @conditional.outer
+
+; loops
+(loop_expression
+  body: (block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(while_expression
+  body: (block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(for_expression
+  body: (block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+; blocks
+(block
+  (_)* @block.inner) @block.outer
+
+(unsafe_block
+  (_)* @block.inner) @block.outer
+
+; calls
+(macro_invocation) @call.outer
+
+(macro_invocation
+  (token_tree
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(call_expression) @call.outer
+
+(call_expression
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; returns
+(return_expression
+  (_)? @return.inner) @return.outer
+
+; statements
+(block
+  (_) @statement.outer)
+
+; comments
+(line_comment) @comment.outer
+
+(block_comment) @comment.outer
+
+; parameter
+(parameters
+  "," @parameter.outer
+  .
+  [
+    (self_parameter)
+    (parameter)
+    (type_identifier)
+  ] @parameter.inner @parameter.outer)
+
+(parameters
+  .
+  [
+    (self_parameter)
+    (parameter)
+    (type_identifier)
+  ] @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(parameters
+  [
+    (self_parameter)
+    (parameter)
+    (type_identifier)
+  ] @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(type_parameters
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(type_parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(type_parameters
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(tuple_pattern
+  "," @parameter.outer
+  .
+  (identifier) @parameter.inner @parameter.outer)
+
+(tuple_pattern
+  .
+  (identifier) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(tuple_pattern
+  (identifier) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(tuple_struct_pattern
+  "," @parameter.outer
+  .
+  (identifier) @parameter.inner @parameter.outer)
+
+(tuple_struct_pattern
+  .
+  (identifier) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(tuple_struct_pattern
+  (identifier) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(tuple_expression
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple_expression
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(tuple_expression
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(tuple_type
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple_type
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(tuple_type
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(enum_variant
+  body: (ordered_field_declaration_list
+    "," @parameter.outer
+    .
+    (_) @parameter.inner @parameter.outer))
+
+(enum_variant
+  body: (ordered_field_declaration_list
+    .
+    (_) @parameter.inner @parameter.outer
+    .
+    ","? @parameter.outer))
+
+; last element, with trailing comma
+(enum_variant
+  body: (ordered_field_declaration_list
+    (_) @parameter.outer
+    .
+    "," @parameter.outer .))
+
+(struct_item
+  body: (field_declaration_list
+    "," @parameter.outer
+    .
+    (_) @parameter.inner @parameter.outer))
+
+(struct_item
+  body: (field_declaration_list
+    .
+    (_) @parameter.inner @parameter.outer
+    .
+    ","? @parameter.outer))
+
+; last element, with trailing comma
+(struct_item
+  body: (field_declaration_list
+    (_) @parameter.outer
+    .
+    "," @parameter.outer .))
+
+(struct_expression
+  body: (field_initializer_list
+    "," @parameter.outer
+    .
+    (_) @parameter.inner @parameter.outer))
+
+(struct_expression
+  body: (field_initializer_list
+    .
+    (_) @parameter.inner @parameter.outer
+    .
+    ","? @parameter.outer))
+
+; last element, with trailing comma
+(struct_expression
+  body: (field_initializer_list
+    (_) @parameter.outer
+    .
+    "," @parameter.outer .))
+
+(closure_parameters
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(closure_parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(closure_parameters
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(arguments
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(type_arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(type_arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(type_arguments
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(token_tree
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(token_tree
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(token_tree
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+(scoped_use_list
+  list: (use_list
+    "," @parameter.outer
+    .
+    (_) @parameter.inner @parameter.outer))
+
+(scoped_use_list
+  list: (use_list
+    .
+    (_) @parameter.inner @parameter.outer
+    .
+    ","? @parameter.outer))
+
+; last element, with trailing comma
+(scoped_use_list
+  list: (use_list
+    (_) @parameter.outer
+    .
+    "," @parameter.outer .))
+
+[
+  (integer_literal)
+  (float_literal)
+] @number.inner
+
+(let_declaration
+  pattern: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(let_declaration
+  pattern: (_) @assignment.inner)
+
+(assignment_expression
+  left: (_) @assignment.lhs
+  right: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(assignment_expression
+  left: (_) @assignment.inner)
+------------------------------
+📄 End: queries/rust/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/tsx/textobjects.scm
+------------------------------
+; inherits: typescript,jsx
+------------------------------
+📄 End: queries/tsx/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/c_sharp/textobjects.scm
+------------------------------
+(class_declaration
+  body: (declaration_list
+    .
+    "{"
+    _* @class.inner
+    "}")) @class.outer
+
+(struct_declaration
+  body: (declaration_list
+    .
+    "{"
+    _* @class.inner
+    "}")) @class.outer
+
+(record_declaration
+  body: (declaration_list
+    .
+    "{"
+    _* @class.inner
+    "}")) @class.outer
+
+(interface_declaration
+  body: (declaration_list
+    .
+    "{"
+    _+ @class.inner
+    "}")) @class.outer
+
+(enum_declaration
+  body: (enum_member_declaration_list
+    .
+    "{"
+    _* @class.inner
+    "}")) @class.outer
+
+(method_declaration
+  body: (block
+    .
+    "{"
+    _* @function.inner
+    "}")) @function.outer
+
+(method_declaration
+  body: (arrow_expression_clause
+    "=>"
+    _+ @function.inner)) @function.outer
+
+; method without body(abstract method/decompiled metadata)
+(method_declaration
+  _+
+  ";") @function.outer
+
+(property_declaration
+  accessors: (accessor_list
+    (accessor_declaration
+      body: (block
+        .
+        "{"
+        _* @function.inner
+        "}")) @function.outer))
+
+(property_declaration
+  accessors: (accessor_list
+    (accessor_declaration
+      body: (arrow_expression_clause
+        "=>"
+        _* @function.inner)) @function.outer))
+
+(indexer_declaration
+  accessors: (accessor_list
+    (accessor_declaration
+      body: (arrow_expression_clause
+        "=>"
+        _+ @function.inner)) @function.outer))
+
+(indexer_declaration
+  accessors: (accessor_list
+    (accessor_declaration
+      body: (block
+        .
+        "{"
+        _* @function.inner
+        "}")) @function.outer))
+
+(conversion_operator_declaration
+  body: (block
+    .
+    "{"
+    _* @function.inner
+    "}")) @function.outer
+
+(conversion_operator_declaration
+  body: (arrow_expression_clause
+    "=>"
+    _+ @function.inner)) @function.outer
+
+(operator_declaration
+  body: (block
+    .
+    "{"
+    _* @function.inner
+    "}")) @function.outer
+
+; operator without body(abstract/decompiled metadata)
+(operator_declaration
+  _+
+  ";") @function.outer
+
+(operator_declaration
+  body: (arrow_expression_clause
+    "=>"
+    _+ @function.inner)) @function.outer
+
+(constructor_declaration
+  body: (block
+    .
+    "{"
+    _* @function.inner
+    "}")) @function.outer
+
+; constructor without body(metadata)
+(constructor_declaration
+  _+
+  ";") @function.outer
+
+(local_function_statement
+  body: (block
+    .
+    "{"
+    _* @function.inner
+    "}")) @function.outer
+
+(local_function_statement
+  body: (arrow_expression_clause
+    "=>"
+    _+ @function.inner)) @function.outer
+
+(anonymous_method_expression
+  (block
+    .
+    "{"
+    _* @function.inner
+    "}")) @function.outer
+
+(lambda_expression
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}")) @function.outer
+
+; loops
+(for_statement
+  body: (_) @loop.inner) @loop.outer
+
+(foreach_statement
+  body: (_) @loop.inner) @loop.outer
+
+(do_statement
+  (block) @loop.inner) @loop.outer
+
+(while_statement
+  (block) @loop.inner) @loop.outer
+
+; conditionals
+(if_statement
+  consequence: (_)? @conditional.inner
+  alternative: (_)? @conditional.inner) @conditional.outer
+
+(switch_statement
+  body: (switch_body) @conditional.inner) @conditional.outer
+
+; calls
+(invocation_expression) @call.outer
+
+(invocation_expression
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; blocks
+(_
+  (block) @block.inner) @block.outer
+
+; parameters
+(parameter_list
+  "," @parameter.outer
+  .
+  (parameter) @parameter.inner @parameter.outer)
+
+(parameter_list
+  .
+  (parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(argument_list
+  "," @parameter.outer
+  .
+  (argument) @parameter.inner @parameter.outer)
+
+(argument_list
+  .
+  (argument) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; comments
+(comment) @comment.outer
+------------------------------
+📄 End: queries/c_sharp/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/ruby/textobjects.scm
+------------------------------
+; @functions
+(method
+  body: (body_statement) @function.inner)
+
+(method) @function.outer
+
+(singleton_method
+  body: (body_statement) @function.inner)
+
+(singleton_method) @function.outer
+
+; @blocks
+(block
+  body: (block_body) @block.inner)
+
+(block) @block.outer
+
+(do_block
+  body: (body_statement) @block.inner)
+
+(do_block) @block.outer
+
+; @classes
+(class
+  body: (body_statement) @class.inner)
+
+(class) @class.outer
+
+(module
+  body: (body_statement) @class.inner)
+
+(module) @class.outer
+
+(singleton_class
+  body: (body_statement) @class.inner)
+
+(singleton_class) @class.outer
+
+; @parameters
+(block_parameters
+  (_) @parameter.inner)
+
+(method_parameters
+  (_) @parameter.inner)
+
+(lambda_parameters
+  (_) @parameter.inner)
+
+(argument_list
+  (_) @parameter.inner)
+
+[
+  (block_parameters)
+  (method_parameters)
+  (lambda_parameters)
+  (argument_list)
+] @parameter.outer
+
+; @comment
+(comment) @comment.outer
+
+; @regex
+(regex
+  (string_content) @regex.inner) @regex.outer
+------------------------------
+📄 End: queries/ruby/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/fennel/textobjects.scm
+------------------------------
+; https://fennel-lang.org/reference
+(comment
+  body: (comment_body) @comment.inner) @comment.outer
+
+(_
+  .
+  "("
+  ")" .) @statement.outer
+
+; functions
+; NOTE: Doesn't capture the comments before the first `item` field
+(fn_form
+  [
+    (table_metadata)
+    (docstring)
+  ]
+  .
+  item: (_) @function.inner
+  (_)? @function.inner
+  .
+  close: _ .)
+
+(fn_form
+  args: (_)
+  .
+  item: (_) @function.inner
+  (_)? @function.inner
+  .
+  close: _ .)
+
+(lambda_form
+  [
+    (table_metadata)
+    (docstring)
+  ]
+  .
+  item: (_) @function.inner
+  (_)? @function.inner
+  .
+  close: _ .)
+
+(lambda_form
+  args: (_)
+  .
+  item: (_) @function.inner
+  (_)? @function.inner
+  .
+  close: _ .)
+
+(macro_form
+  [
+    (table_metadata)
+    (docstring)
+  ]
+  .
+  item: (_) @function.inner
+  (_)? @function.inner
+  .
+  close: _ .)
+
+(macro_form
+  args: (_)
+  .
+  item: (_) @function.inner
+  (_)? @function.inner
+  .
+  close: _ .)
+
+[
+  (fn_form)
+  (lambda_form)
+  (macro_form)
+] @function.outer
+
+; function arguments
+(sequence_arguments
+  item: (_) @parameter.inner) @parameter.outer
+
+; call
+(list
+  call: (symbol) @_fn_name
+  item: (_) @call.inner
+  (_) @call.inner
+  .
+  close: _
+  (#not-any-of? @_fn_name "do" "while" "when")) @call.outer
+
+; assignment
+(local_form
+  (binding_pair
+    lhs: (_) @assignment.lhs
+    rhs: (_) @assignment.rhs) @assignment.inner) @assignment.outer
+
+(var_form
+  (binding_pair
+    lhs: (_) @assignment.lhs
+    rhs: (_) @assignment.rhs) @assignment.inner) @assignment.outer
+
+(global_form
+  (binding_pair
+    lhs: (_) @assignment.lhs
+    rhs: (_) @assignment.rhs) @assignment.inner) @assignment.outer
+
+(set_form
+  lhs: (_) @assignment.lhs @assignment.inner
+  rhs: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(let_vars
+  (binding_pair
+    lhs: (_) @assignment.lhs
+    rhs: (_) @assignment.rhs) @assignment.inner) @assignment.outer
+
+; conditionals
+(if_form
+  (if_pair
+    expression: (_) @conditional.inner)) @conditional.outer
+
+(if_form
+  else: (_) @conditional.inner) @conditional.outer
+
+(list
+  call: (symbol) @_cond
+  .
+  item: (_)
+  item: (_)* @conditional.inner
+  (#eq? @_cond "when")) @conditional.outer
+
+; loops
+(each_form
+  iter_body: (_)
+  _+ @loop.inner
+  close: _)
+
+(each_form) @loop.outer
+
+(collect_form
+  iter_body: (_)
+  _+ @loop.inner
+  close: _)
+
+(collect_form) @loop.outer
+
+(icollect_form
+  iter_body: (_)
+  _+ @loop.inner
+  close: _)
+
+(icollect_form) @loop.outer
+
+(accumulate_form
+  iter_body: (_)
+  _+ @loop.inner
+  close: _)
+
+(accumulate_form) @loop.outer
+
+(for_form
+  iter_body: (_)
+  _+ @loop.inner
+  close: _)
+
+(for_form) @loop.outer
+
+(fcollect_form
+  iter_body: (_)
+  _+ @loop.inner
+  close: _)
+
+(fcollect_form) @loop.outer
+
+(faccumulate_form
+  iter_body: (_)
+  _+ @loop.inner
+  close: _)
+
+(faccumulate_form) @loop.outer
+
+(list
+  call: (symbol) @_sym
+  .
+  item: (_)
+  item: (_)* @loop.inner
+  (#eq? @_sym "while"))
+
+(list
+  call: (symbol) @_sym
+  (#eq? @_sym "while")) @loop.outer
+------------------------------
+📄 End: queries/fennel/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/matlab/textobjects.scm
+------------------------------
+(_
+  (block) @block.inner) @block.outer
+
+(block
+  (_) @statement.outer)
+
+(source_file
+  (_) @statement.outer)
+
+(function_call
+  (arguments)? @call.inner) @call.outer
+
+(arguments
+  ","? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(arguments
+  (_) @parameter.inner @parameter.outer
+  .
+  "," @parameter.outer)
+
+(command) @call.outer
+
+(command
+  (command_argument) @parameter.inner @parameter.outer)
+
+(command
+  (command_argument)+ @call.inner)
+
+(if_statement
+  (block) @conditional.inner) @conditional.outer
+
+(if_statement
+  (elseif_clause
+    (block) @conditional.inner))
+
+(if_statement
+  (else_clause
+    (block) @conditional.inner))
+
+(switch_statement
+  (case_clause
+    (block) @conditional.inner)) @conditional.outer
+
+(switch_statement
+  (otherwise_clause
+    (block) @conditional.inner))
+
+(for_statement
+  (block) @loop.inner) @loop.outer
+
+(while_statement
+  (block) @loop.inner) @loop.outer
+
+(lambda
+  expression: (_) @function.inner) @function.outer
+
+(global_operator
+  (identifier) @parameter.inner)
+
+(persistent_operator
+  (identifier) @parameter.inner)
+
+(function_definition
+  (block) @function.inner) @function.outer
+
+(function_output
+  (identifier) @parameter.inner @parameter.outer)
+
+(function_arguments
+  ","? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(function_arguments
+  (_) @parameter.inner @parameter.outer
+  .
+  "," @parameter.outer)
+
+(multioutput_variable
+  ","? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(multioutput_variable
+  (_) @parameter.inner @parameter.outer
+  .
+  "," @parameter.outer)
+
+(try_statement
+  (block) @conditional.inner) @conditional.outer
+
+(catch_clause
+  (identifier) @parameter.inner @parameter.outer)
+
+(catch_clause
+  (block) @conditional.inner)
+
+(class_definition) @class.outer
+
+(number) @number.inner
+
+(_
+  (return_statement) @return.inner @return.outer)
+
+(comment) @comment.outer
+
+(matrix
+  (row) @parameter.outer)
+
+(cell
+  (row) @parameter.outer)
+
+(row
+  (_) @parameter.inner)
+
+(assignment
+  left: (_) @assignment.lhs
+  (_) @assignment.rhs) @assignment.outer
+
+(superclasses
+  "&"? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(superclasses
+  (_) @parameter.inner @parameter.outer
+  .
+  "&" @parameter.outer)
+
+(enum
+  (identifier) @parameter.inner @parameter.outer)
+
+(property
+  name: (_) @parameter.outer @parameter.inner)
+
+(enum
+  ","? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(enum
+  (_) @parameter.inner @parameter.outer
+  .
+  "," @parameter.outer)
+
+(validation_functions
+  ","? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(validation_functions
+  (_) @parameter.inner @parameter.outer
+  .
+  "," @parameter.outer)
+
+(dimensions
+  ","? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(dimensions
+  (_) @parameter.inner @parameter.outer
+  .
+  "," @parameter.outer)
+
+(attributes
+  ","? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(attributes
+  (_) @parameter.inner @parameter.outer
+  .
+  "," @parameter.outer)
+------------------------------
+📄 End: queries/matlab/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/odin/textobjects.scm
+------------------------------
+; procedures
+(procedure_declaration
+  (_
+    (block
+      .
+      "{"
+      _+ @function.inner
+      "}"))) @function.outer
+
+; returns
+(return_statement
+  (_)? @return.inner) @return.outer
+
+; call function in module
+(member_expression
+  (call_expression)) @call.outer
+
+; call arguments
+(call_expression
+  function: (_)
+  .
+  argument: (_) @call.inner
+  argument: (_) @call.inner .)
+
+; block
+(block
+  .
+  "{"
+  _+ @block.inner
+  "}") @block.outer
+
+; classes
+(struct_declaration
+  "{"
+  _+ @class.inner
+  "}") @class.outer
+
+(union_declaration
+  "{"
+  _+ @class.inner
+  "}") @class.outer
+
+(enum_declaration
+  "{"
+  _+ @class.inner
+  "}") @class.outer
+
+; comments
+(comment) @comment.outer
+
+(block_comment) @comment.outer
+
+; assignment
+; works also for multiple targets in lhs. ex. 'res, ok := get_res()'
+(assignment_statement
+  .
+  (_) @assignment.lhs
+  (_) @assignment.lhs
+  .
+  (_) @assignment.rhs @assignment.inner .) @assignment.outer
+
+; attribute
+(attribute
+  (_) @attribute.inner) @attribute.outer
+
+; number
+(number) @number.inner
+
+; parameters
+(parameters
+  "," @parameter.outer
+  .
+  (parameter) @parameter.inner @parameter.outer)
+
+(parameters
+  .
+  (parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(call_expression
+  function: (_)
+  "," @parameter.outer
+  .
+  argument: (_) @parameter.inner @parameter.outer)
+
+(call_expression
+  function: (_)
+  .
+  argument: (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+------------------------------
+📄 End: queries/odin/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/apex/textobjects.scm
+------------------------------
+(class_declaration
+  body: (class_body) @class.inner) @class.outer
+
+(method_declaration) @function.outer
+
+(method_declaration
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(constructor_declaration) @function.outer
+
+(constructor_declaration
+  body: (constructor_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(for_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(enhanced_for_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(while_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(do_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(if_statement
+  condition: (_
+    (parenthesized_expression) @conditional.inner) @conditional.outer)
+
+(if_statement
+  consequence: (_)? @conditional.inner
+  alternative: (_)? @conditional.inner) @conditional.outer
+
+(switch_expression
+  body: (_)? @conditional.inner) @conditional.outer
+
+; blocks
+(block) @block.outer
+
+(method_invocation) @call.outer
+
+(method_invocation
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; parameters
+(formal_parameters
+  "," @parameter.outer
+  .
+  (formal_parameter) @parameter.inner @parameter.outer)
+
+(formal_parameters
+  .
+  (formal_parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+[
+  (line_comment)
+  (block_comment)
+] @comment.outer
+
+; assignment
+(variable_declarator
+  name: (identifier) @assignment.lhs
+  value: (_) @assignment.rhs) @assignment.inner @assignment.outer
+------------------------------
+📄 End: queries/apex/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/ecma/textobjects.scm
+------------------------------
+(function_declaration
+  body: (statement_block)) @function.outer
+
+(generator_function_declaration
+  body: (statement_block)) @function.outer
+
+(function_expression
+  body: (statement_block)) @function.outer
+
+(function_declaration
+  body: (statement_block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(generator_function_declaration
+  body: (statement_block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(function_expression
+  body: (statement_block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(export_statement
+  (function_declaration)) @function.outer
+
+(arrow_function
+  body: (_) @function.inner) @function.outer
+
+(arrow_function
+  body: (statement_block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(method_definition
+  body: (statement_block)) @function.outer
+
+(method_definition
+  body: (statement_block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(class_declaration
+  body: (class_body)) @class.outer
+
+(class_declaration
+  body: (class_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(export_statement
+  (class_declaration)) @class.outer
+
+(for_in_statement
+  body: (statement_block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(for_statement
+  body: (statement_block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(while_statement
+  body: (statement_block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(do_statement
+  body: (statement_block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(if_statement
+  consequence: (statement_block
+    .
+    "{"
+    _+ @conditional.inner
+    "}")) @conditional.outer
+
+(if_statement
+  alternative: (else_clause
+    (statement_block
+      .
+      "{"
+      _+ @conditional.inner
+      "}"))) @conditional.outer
+
+(if_statement) @conditional.outer
+
+(switch_statement
+  body: (_)? @conditional.inner) @conditional.outer
+
+(call_expression) @call.outer
+
+(call_expression
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(new_expression
+  constructor: (identifier) @call.outer
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")") @call.outer)
+
+; blocks
+(statement_block
+  (_)* @block.inner) @block.outer
+
+; parameters
+; function ({ x }) ...
+; function ([ x ]) ...
+; function (v = default_value)
+(formal_parameters
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(formal_parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element with trailing comma
+(formal_parameters
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+; If the array/object pattern is the first parameter, treat its elements as the argument list
+(formal_parameters
+  .
+  (_
+    [
+      (object_pattern
+        "," @parameter.outer
+        .
+        (_) @parameter.inner @parameter.outer)
+      (array_pattern
+        "," @parameter.outer
+        .
+        (_) @parameter.inner @parameter.outer)
+    ]))
+
+(formal_parameters
+  .
+  (_
+    [
+      (object_pattern
+        .
+        (_) @parameter.inner @parameter.outer
+        .
+        ","? @parameter.outer)
+      (array_pattern
+        .
+        (_) @parameter.inner @parameter.outer
+        .
+        ","? @parameter.outer)
+    ]))
+
+; last element with trailing comma
+(formal_parameters
+  .
+  (_
+    [
+      (object_pattern
+        (_) @parameter.outer
+        .
+        "," @parameter.outer .)
+      (array_pattern
+        (_) @parameter.outer
+        .
+        "," @parameter.outer .)
+    ]))
+
+; arguments
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element with trailing comma
+(arguments
+  (_) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+; comment
+(comment) @comment.outer
+
+; regex
+(regex
+  (regex_pattern) @regex.inner) @regex.outer
+
+; number
+(number) @number.inner
+
+(lexical_declaration
+  (variable_declarator
+    name: (_) @assignment.lhs
+    value: (_) @assignment.inner @assignment.rhs)) @assignment.outer
+
+(variable_declarator
+  name: (_) @assignment.inner)
+
+(object
+  (pair
+    key: (_) @assignment.lhs
+    value: (_) @assignment.inner @assignment.rhs) @assignment.outer)
+
+(return_statement
+  (_) @return.inner) @return.outer
+
+(return_statement) @statement.outer
+
+[
+  (if_statement)
+  (expression_statement)
+  (for_statement)
+  (while_statement)
+  (do_statement)
+  (for_in_statement)
+  (export_statement)
+  (lexical_declaration)
+] @statement.outer
+
+; 1.  default import
+(import_statement
+  (import_clause
+    (identifier) @parameter.inner @parameter.outer))
+
+; 2.  namespace import  e.g. `* as React`
+(import_statement
+  (import_clause
+    (namespace_import
+      (identifier) @parameter.inner) @parameter.outer))
+
+; 3.  named import  e.g. `import { Bar, Baz } from ...`
+(import_statement
+  (import_clause
+    (named_imports
+      (import_specifier) @parameter.inner)))
+
+; 3‑A.  named import followed by a comma
+(import_statement
+  (import_clause
+    (named_imports
+      (import_specifier) @parameter.outer
+      .
+      "," @parameter.outer)))
+
+; 3‑B.  comma followed by named import
+(import_statement
+  (import_clause
+    (named_imports
+      "," @parameter.outer
+      .
+      (import_specifier) @parameter.outer)))
+
+; 3-C.  only one named import without a comma
+(import_statement
+  (import_clause
+    (named_imports
+      .
+      (import_specifier) @parameter.outer .)))
+
+; Treat list or object elements as @parameter
+; 1. parameter.inner
+(object
+  (_) @parameter.inner)
+
+(array
+  (_) @parameter.inner)
+
+(object_pattern
+  (_) @parameter.inner)
+
+(array_pattern
+  (_) @parameter.inner)
+
+; 2. parameter.outer: Only one element, no comma
+(object
+  .
+  (_) @parameter.outer .)
+
+(array
+  .
+  (_) @parameter.outer .)
+
+(object_pattern
+  .
+  (_) @parameter.outer .)
+
+(array_pattern
+  .
+  (_) @parameter.outer .)
+
+; 3. parameter.outer: Comma before or after
+[
+  (object
+    "," @parameter.outer
+    .
+    (_) @parameter.outer)
+  (array
+    "," @parameter.outer
+    .
+    (_) @parameter.outer)
+  (object_pattern
+    "," @parameter.outer
+    .
+    (_) @parameter.outer)
+  (array_pattern
+    "," @parameter.outer
+    .
+    (_) @parameter.outer)
+]
+
+[
+  (object
+    .
+    (_) @parameter.outer
+    .
+    "," @parameter.outer)
+  (array
+    .
+    (_) @parameter.outer
+    .
+    "," @parameter.outer)
+  (object_pattern
+    .
+    (_) @parameter.outer
+    .
+    "," @parameter.outer)
+  (array_pattern
+    .
+    (_) @parameter.outer
+    .
+    "," @parameter.outer)
+]
+------------------------------
+📄 End: queries/ecma/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/gleam/textobjects.scm
+------------------------------
+; assignments
+(let
+  pattern: (_) @assignment.lhs @assignment.inner
+  value: (_) @assignment.rhs) @assignment.outer
+
+(let
+  value: (_) @assignment.inner)
+
+(let_assert
+  pattern: (_) @assignment.lhs @assignment.inner
+  value: (_) @assignment.rhs) @assignment.outer
+
+(let_assert
+  value: (_) @assignment.inner)
+
+(use
+  assignments: (use_assignments) @assignment.lhs @assignment.inner
+  value: (_) @assignment.rhs) @assignment.outer
+
+(use
+  value: (_) @assignment.inner)
+
+; block
+(block
+  "{"
+  .
+  _+ @block.inner
+  .
+  "}") @block.outer
+
+; calls
+(function_call
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")")) @call.outer
+
+(record
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")")) @call.outer
+
+(record_update
+  ".." @call.inner
+  .
+  spread: (_) @call.inner
+  .
+  "," @call.inner
+  arguments: (record_update_arguments) @call.inner) @call.outer
+
+; class
+(type_definition
+  (data_constructors) @class.inner) @class.outer
+
+; comment
+(comment) @comment.outer
+
+; conditionals
+(case
+  clauses: (case_clauses
+    (case_clause) @conditional.inner)) @conditional.outer
+
+; numbers
+[
+  (integer)
+  (float)
+] @number.inner
+
+; parameters in functions declarations
+(function_parameters
+  "," @parameter.outer
+  .
+  (function_parameter) @parameter.inner @parameter.outer)
+
+(function_parameters
+  .
+  ; first parameter
+  (function_parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(function_parameters
+  (function_parameter) @parameter.inner @parameter.outer
+  .
+  ; trailing comma
+  "," @parameter.outer .)
+
+; parameters in calls
+(arguments
+  "," @parameter.outer
+  .
+  (argument) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  ; first parameter
+  (argument) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(arguments
+  (argument) @parameter.inner @parameter.outer
+  .
+  ; trailing comma
+  "," @parameter.outer .)
+
+; parameters for types and records
+(data_constructor_arguments
+  "," @parameter.outer
+  .
+  (data_constructor_argument) @parameter.inner @parameter.outer)
+
+(data_constructor_arguments
+  .
+  ; first parameter
+  (data_constructor_argument) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(data_constructor_arguments
+  (data_constructor_argument) @parameter.inner @parameter.outer
+  .
+  ; trailing comma
+  "," @parameter.outer .)
+
+(type_parameters
+  "," @parameter.outer
+  .
+  (type_parameter) @parameter.inner @parameter.outer)
+
+(type_parameters
+  .
+  ; first parameter
+  (type_parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(type_parameters
+  (type_parameter) @parameter.inner @parameter.outer
+  .
+  ; trailing comma
+  "," @parameter.outer .)
+
+(type_arguments
+  "," @parameter.outer
+  .
+  (type_argument) @parameter.inner @parameter.outer)
+
+(type_arguments
+  .
+  ; first parameter
+  (type_argument) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(type_arguments
+  (type_argument) @parameter.inner @parameter.outer
+  .
+  ; trailing comma
+  "," @parameter.outer .)
+
+(record_pattern_arguments
+  "," @parameter.outer
+  .
+  (record_pattern_argument) @parameter.inner @parameter.outer)
+
+(record_pattern_arguments
+  .
+  ; first parameter
+  (record_pattern_argument) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(record_pattern_arguments
+  (record_pattern_argument) @parameter.inner @parameter.outer
+  .
+  ; trailing comma
+  "," @parameter.outer .)
+
+(record_update
+  ".." @parameter.inner @parameter.outer
+  .
+  spread: (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(record_update
+  "," @parameter.outer
+  arguments: (record_update_arguments
+    .
+    ; first parameter after spread
+    (record_update_argument) @parameter.inner @parameter.outer))
+
+(record_update
+  arguments: (record_update_arguments
+    "," @parameter.outer
+    .
+    (record_update_argument) @parameter.inner @parameter.outer))
+
+(record_update
+  arguments: (record_update_arguments
+    (record_update_argument) @parameter.inner @parameter.outer
+    . ; trailing comma
+    "," @parameter.outer .))
+
+; parameters in lists
+(list
+  "," @parameter.outer
+  (_) @parameter.inner @parameter.outer)
+
+(list
+  .
+  ; first parameter
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(list
+  (_) @parameter.inner @parameter.outer
+  .
+  ;trailing comma
+  "," @parameter.outer .)
+
+(list_pattern
+  "," @parameter.outer
+  (_) @parameter.inner @parameter.outer)
+
+(list_pattern
+  .
+  ; first parameter
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(list_pattern
+  (_) @parameter.inner @parameter.outer
+  .
+  ;trailing comma
+  "," @parameter.outer .)
+
+; parameters in tuples
+(tuple
+  "," @parameter.outer
+  (_) @parameter.inner @parameter.outer)
+
+(tuple
+  .
+  ; first parameter
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(tuple
+  (_) @parameter.inner @parameter.outer
+  .
+  ;trailing comma
+  "," @parameter.outer .)
+
+; parameters in bit arrays
+(bit_array
+  "," @parameter.outer
+  (_) @parameter.inner @parameter.outer)
+
+(bit_array
+  .
+  ; first parameter
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(bit_array
+  (_) @parameter.inner @parameter.outer
+  .
+  ;trailing comma
+  "," @parameter.outer .)
+
+; functions
+(function
+  body: (block
+    "{"
+    .
+    _+ @function.inner
+    .
+    "}")) @function.outer
+
+(anonymous_function
+  body: (block
+    "{"
+    .
+    _+ @function.inner
+    .
+    "}")) @function.outer
+
+; returns
+(function
+  body: (block
+    (_) @return.inner @return.outer .))
+
+(anonymous_function
+  body: (block
+    (_) @return.inner @return.outer .))
+
+; statements
+(block
+  (_) @statement.outer)
+------------------------------
+📄 End: queries/gleam/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/wgsl/textobjects.scm
+------------------------------
+(function_declaration) @function.outer
+
+(function_declaration
+  body: (compound_statement
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(parameter_list
+  "," @parameter.outer
+  .
+  (parameter) @parameter.inner @parameter.outer)
+
+(parameter_list
+  .
+  (parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(compound_statement) @block.outer
+
+; loops
+(loop_statement
+  (_)? @loop.inner) @loop.outer
+
+(for_statement
+  (_)? @loop.inner) @loop.outer
+
+(while_statement
+  (_)? @loop.inner) @loop.outer
+
+(struct_declaration
+  "{"
+  _+ @class.inner
+  "}") @class.outer
+
+; conditional
+(if_statement
+  consequence: (_)? @conditional.inner
+  alternative: (_)? @conditional.inner) @conditional.outer
+
+(if_statement
+  condition: (_) @conditional.inner)
+
+(argument_list_expression
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(argument_list_expression
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+------------------------------
+📄 End: queries/wgsl/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/fish/textobjects.scm
+------------------------------
+; assignment
+(command
+  name: (word) @_command
+  argument: (word) @_varname @assignment.lhs @assignment.inner
+  argument: (_)* @assignment.rhs
+  (#not-lua-match? @_varname "[-].*")
+  (#eq? @_command "set")) @assignment.outer
+
+(command
+  name: (word) @_name
+  argument: (_)* @assignment.inner
+  (#eq? @_name "set"))
+
+; block
+([
+  (case_clause)
+  (if_statement)
+  (switch_statement)
+  (else_clause)
+  (for_statement)
+  (while_statement)
+]) @block.outer
+
+; call
+; call.inner doesn't work because it can't select *all* arguments
+(command) @call.outer
+
+; comment
+; leave space after comment marker if there is one
+((comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 2 0 0)
+  (#lua-match? @comment.outer "# .*"))
+
+; else remove everything accept comment marker
+((comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 1 0 0))
+
+; conditional
+(if_statement
+  (command) @conditional.inner) @conditional.outer
+
+(switch_statement
+  (_) @conditional.inner) @conditional.outer
+
+; function
+((function_definition) @function.inner @function.outer
+  (#offset! @function.inner 1 0 -1 1))
+
+; loop
+(for_statement
+  (_) @loop.inner) @loop.outer
+
+(while_statement
+  condition: (command)
+  (command) @loop.inner) @loop.outer
+
+; number
+[
+  (integer)
+  (float)
+] @number.inner
+
+; parameter
+(command
+  argument: (_) @parameter.outer)
+
+; return
+(return
+  (_) @return.inner) @return.outer
+
+; statement
+(command) @statement.outer
+------------------------------
+📄 End: queries/fish/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/slang/textobjects.scm
+------------------------------
+; inherits: hlsl
+
+(template_declaration
+  (interface_specifier)) @class.outer
+
+(template_declaration
+  (extension_specifier)) @class.outer
+
+(extension_specifier
+  body: (_) @class.inner) @class.outer
+
+(interface_specifier
+  body: (_) @class.inner) @class.outer
+------------------------------
+📄 End: queries/slang/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/heex/textobjects.scm
+------------------------------
+(tag) @function.outer
+
+(tag
+  (start_tag)
+  .
+  (_) @function.inner
+  .
+  (end_tag))
+
+(attribute_value) @attribute.inner
+
+(attribute) @attribute.outer
+
+(tag
+  (start_tag)
+  _+ @function.inner
+  (end_tag))
+------------------------------
+📄 End: queries/heex/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/r/textobjects.scm
+------------------------------
+; block
+; call
+(call) @call.outer
+
+(arguments) @call.inner
+
+; class
+; comment
+(comment) @comment.outer
+
+; conditional
+(if_statement
+  condition: (_)? @conditional.inner) @conditional.outer
+
+; function
+(function_definition
+  [
+    (call)
+    (binary_operator)
+    (braced_expression)
+  ] @function.inner) @function.outer
+
+; loop
+[
+  (while_statement)
+  (repeat_statement)
+  (for_statement)
+] @loop.outer
+
+(while_statement
+  body: (_) @loop.inner)
+
+(repeat_statement
+  body: (_) @loop.inner)
+
+(for_statement
+  body: (_) @loop.inner)
+
+; statement
+(braced_expression
+  (_) @statement.outer)
+
+(program
+  (_) @statement.outer)
+
+; parameter
+(parameters
+  (comma) @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  (comma)? @parameter.outer)
+
+(arguments
+  (comma)? @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  (comma)? @parameter.outer)
+
+; number
+(float) @number.inner
+
+; assignment
+(binary_operator
+  lhs: (_) @assignment.inner @assignment.lhs
+  rhs: (_) @assignment.rhs) @assignment.outer
+------------------------------
+📄 End: queries/r/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/swift/textobjects.scm
+------------------------------
+(class_declaration
+  body: (class_body
+    .
+    "{"
+    _+ @class.inner
+    "}")) @class.outer
+
+(class_declaration
+  body: (enum_class_body
+    .
+    "{"
+    _+ @class.inner
+    "}")) @class.outer
+
+(function_declaration
+  body: (function_body
+    .
+    "{"
+    _+ @function.inner
+    "}")) @function.outer
+
+(lambda_literal
+  ("{"
+    _+ @function.inner
+    "}")) @function.outer
+
+(call_suffix
+  (value_arguments
+    .
+    "("
+    _+ @call.inner
+    ")")) @call.outer
+
+(value_argument
+  value: (_) @parameter.inner) @parameter.outer
+
+(comment) @comment.outer
+
+(multiline_comment) @comment.outer
+------------------------------
+📄 End: queries/swift/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/java/textobjects.scm
+------------------------------
+(class_declaration
+  body: (class_body) @class.inner) @class.outer
+
+(method_declaration) @function.outer
+
+(method_declaration
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(constructor_declaration) @function.outer
+
+(constructor_declaration
+  body: (constructor_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(return_statement
+  (_)? @return.inner) @return.outer
+
+(for_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(enhanced_for_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(while_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(do_statement
+  body: (_)? @loop.inner) @loop.outer
+
+(if_statement
+  condition: (_
+    (parenthesized_expression) @conditional.inner) @conditional.outer)
+
+(if_statement
+  consequence: (_)? @conditional.inner
+  alternative: (_)? @conditional.inner) @conditional.outer
+
+(switch_expression
+  body: (_)? @conditional.inner) @conditional.outer
+
+; blocks
+(block) @block.outer
+
+(method_invocation) @call.outer
+
+(method_invocation
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; parameters
+(formal_parameters
+  "," @parameter.outer
+  .
+  (formal_parameter) @parameter.inner @parameter.outer)
+
+(formal_parameters
+  .
+  (formal_parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+[
+  (line_comment)
+  (block_comment)
+] @comment.outer
+
+[
+  (decimal_integer_literal)
+  (decimal_floating_point_literal)
+  (hex_integer_literal)
+  (binary_integer_literal)
+  (octal_integer_literal)
+] @number.inner
+
+; scopename
+; statement
+(statement) @statement.outer
+
+(return_statement) @statement.outer
+------------------------------
+📄 End: queries/java/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/zsh/textobjects.scm
+------------------------------
+(function_definition) @function.outer
+
+(function_definition
+  body: (compound_statement
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(case_statement) @conditional.outer
+
+(if_statement
+  (_) @conditional.inner) @conditional.outer
+
+(for_statement
+  (_) @loop.inner) @loop.outer
+
+(while_statement
+  (_) @loop.inner) @loop.outer
+
+(comment) @comment.outer
+
+(regex) @regex.inner
+
+((word) @number.inner
+  (#lua-match? @number.inner "^[0-9]+$"))
+
+(variable_assignment) @assignment.outer
+
+(variable_assignment
+  name: (_) @assignment.inner @assignment.lhs)
+
+(variable_assignment
+  value: (_) @assignment.inner @assignment.rhs)
+
+(command
+  argument: (word) @parameter.inner)
+------------------------------
+📄 End: queries/zsh/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/cmake/textobjects.scm
+------------------------------
+(function_def) @function.outer
+
+(function_def
+  .
+  (function_command)
+  _+ @function.inner
+  (endfunction_command) .)
+
+(if_condition) @conditional.outer
+
+(if_condition
+  .
+  (if_command)
+  _+ @conditional.inner
+  (endif_command) .)
+
+(foreach_loop) @loop.outer
+
+(foreach_loop
+  .
+  (foreach_command)
+  _+ @loop.inner
+  (endforeach_command) .)
+
+(normal_command) @call.outer
+
+(normal_command
+  "("
+  _+ @call.inner
+  ")")
+
+(line_comment) @comment.outer
+------------------------------
+📄 End: queries/cmake/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/hack/textobjects.scm
+------------------------------
+(method_declaration) @function.outer
+------------------------------
+📄 End: queries/hack/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/vue/textobjects.scm
+------------------------------
+(element) @function.outer
+
+[
+  (attribute)
+  (directive_attribute)
+] @call.outer
+
+(attribute_value) @parameter.outer
+------------------------------
+📄 End: queries/vue/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/jsx/textobjects.scm
+------------------------------
+; inherits: ecma
+
+(jsx_attribute) @attribute.outer
+
+(jsx_attribute
+  (property_identifier)
+  (_
+    (_) @attribute.inner))
+------------------------------
+📄 End: queries/jsx/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/tact/textobjects.scm
+------------------------------
+; See: https://github.com/nvim-treesitter/nvim-treesitter-textobjects#built-in-textobjects
+; function.inner & outer
+; ----------------------
+; global
+(global_function
+  body: (_)) @function.outer
+
+(global_function
+  body: (function_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; init
+(init_function
+  body: (_)) @function.outer
+
+(init_function
+  body: (function_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; bounced
+(bounced_function
+  body: (_)) @function.outer
+
+(bounced_function
+  body: (function_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; receive
+(receive_function
+  body: (_)) @function.outer
+
+(receive_function
+  body: (function_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; external
+(external_function
+  body: (_)) @function.outer
+
+(external_function
+  body: (function_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; contract/trait function
+(storage_function
+  body: (_)) @function.outer
+
+(storage_function
+  body: (function_body
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; class.inner & outer
+; -------------------
+(struct) @class.outer
+
+(struct
+  body: (struct_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(message) @class.outer
+
+(message
+  body: (message_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(contract) @class.outer
+
+(contract
+  body: (contract_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(trait) @class.outer
+
+(trait
+  body: (trait_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+; attribute.inner & outer
+; -----------------------
+("@name"
+  "("
+  func_name: (func_identifier) @attribute.inner
+  ")") @attribute.outer
+
+(contract_attributes
+  ("@interface"
+    "("
+    (string) @attribute.inner
+    ")") @attribute.outer)
+
+(trait_attributes
+  ("@interface"
+    "("
+    (string) @attribute.inner
+    ")") @attribute.outer)
+
+(trait_attributes
+  ("@interface"
+    "("
+    (string) @attribute.inner
+    ")") @attribute.outer)
+
+; loop.inner & outer
+; ------------------
+(while_statement) @loop.outer
+
+(while_statement
+  body: (block_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(repeat_statement) @loop.outer
+
+(repeat_statement
+  body: (block_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(do_until_statement) @loop.outer
+
+(do_until_statement
+  body: (block_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(foreach_statement) @loop.outer
+
+(foreach_statement
+  body: (block_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+; conditional.inner & outer
+; -------------------------
+(if_statement) @conditional.outer
+
+(if_statement
+  consequence: (block_statement
+    .
+    "{"
+    _+ @conditional.inner
+    "}"))
+
+(if_statement
+  alternative: (else_clause
+    (block_statement
+      .
+      "{"
+      _+ @conditional.inner
+      "}")))
+
+; block.inner & outer
+; -------------------
+(_
+  (block_statement) @block.inner) @block.outer
+
+; call.inner & outer
+; ------------------
+(method_call_expression) @call.outer
+
+(method_call_expression
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(static_call_expression) @call.outer
+
+(static_call_expression
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(instance_expression) @call.outer
+
+(instance_expression
+  arguments: (instance_argument_list
+    .
+    "{"
+    _+ @call.inner
+    "}"))
+
+(initOf
+  name: (identifier) @call.outer
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")") @call.outer)
+
+; return.inner & outer
+; --------------------
+(return_statement
+  (_) @return.inner) @return.outer
+
+; number.inner
+; ------------
+(integer) @number.inner
+
+; parameter.inner & outer
+; -----------------------
+; second and following
+(parameter_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+; first
+(parameter_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; second and following
+(argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+; first
+(argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; second and following
+(instance_argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+; first
+(instance_argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; single parameter
+(receive_function
+  parameter: (_) @parameter.inner @parameter.outer)
+
+(bounced_function
+  parameter: (_) @parameter.inner @parameter.outer)
+
+(external_function
+  parameter: (_) @parameter.inner @parameter.outer)
+
+; assignment.inner & outer w/ lhs & rhs
+; -------------------------------------
+(let_statement
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(storage_variable
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(global_constant
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(storage_constant
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(field
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+; comment.inner & outer
+; ---------------------
+(comment) @comment.inner @comment.outer
+
+; quantified captures aren't supported yet:
+; (comment)+ @comment.outer
+------------------------------
+📄 End: queries/tact/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/wgsl_bevy/textobjects.scm
+------------------------------
+; inherits wgsl
+------------------------------
+📄 End: queries/wgsl_bevy/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/go/textobjects.scm
+------------------------------
+; inner function textobject
+(function_declaration
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; inner function literals
+(func_literal
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; method as inner function textobject
+(method_declaration
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; outer function textobject
+(function_declaration) @function.outer
+
+; outer function literals
+(func_literal
+  (_)?) @function.outer
+
+; method as outer function textobject
+(method_declaration
+  body: (block)?) @function.outer
+
+; struct and interface declaration as class textobject?
+(type_declaration
+  (type_spec
+    (type_identifier)
+    (struct_type
+      (field_declaration_list
+        (_)?) @class.inner))) @class.outer
+
+(type_declaration
+  (type_spec
+    (type_identifier)
+    (interface_type) @class.inner)) @class.outer
+
+; struct literals as class textobject
+(composite_literal
+  (type_identifier)?
+  (struct_type
+    (_))?
+  (literal_value
+    (_)) @class.inner) @class.outer
+
+; conditionals
+(if_statement
+  alternative: (_
+    (_) @conditional.inner)?) @conditional.outer
+
+(if_statement
+  consequence: (block)? @conditional.inner)
+
+(if_statement
+  condition: (_) @conditional.inner)
+
+; loops
+(for_statement
+  body: (block)? @loop.inner) @loop.outer
+
+; blocks
+(_
+  (block) @block.inner) @block.outer
+
+; statements
+(block
+  (_) @statement.outer)
+
+; comments
+(comment) @comment.outer
+
+; calls
+(call_expression) @call.outer
+
+(call_expression
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; parameters
+(parameter_list
+  "," @parameter.outer
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer)
+
+(parameter_list
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(parameter_declaration
+  name: (identifier)
+  type: (_)) @parameter.inner
+
+(parameter_declaration
+  name: (identifier)
+  type: (_)) @parameter.inner
+
+(parameter_list
+  "," @parameter.outer
+  .
+  (variadic_parameter_declaration) @parameter.inner @parameter.outer)
+
+; arguments
+(argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; assignments
+(short_var_declaration
+  left: (_) @assignment.lhs
+  right: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(assignment_statement
+  left: (_) @assignment.lhs
+  right: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(var_spec
+  name: (_) @assignment.lhs
+  value: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(var_spec
+  name: (_) @assignment.inner
+  type: (_)) @assignment.outer
+
+(const_spec
+  name: (_) @assignment.lhs
+  value: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(const_spec
+  name: (_) @assignment.inner
+  type: (_)) @assignment.outer
+------------------------------
+📄 End: queries/go/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/rst/textobjects.scm
+------------------------------
+(directive
+  body: (body) @function.inner) @function.outer
+
+(section
+  (title) @class.inner) @class.outer
+
+(transition) @class.outer
+
+[
+  (bullet_list)
+  (enumerated_list)
+  (definition_list)
+  (field_list)
+  (literal_block)
+  (line_block)
+  (block_quote)
+  (doctest_block)
+] @block.outer
+
+(footnote
+  body: (body) @block.inner) @block.outer
+
+(citation
+  body: (body) @block.inner) @block.outer
+
+(target
+  link: (link) @block.inner) @block.outer
+
+(substitution_definition
+  body: (directive) @block.inner) @block.outer
+
+(comment) @comment.outer
+------------------------------
+📄 End: queries/rst/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/supercollider/textobjects.scm
+------------------------------
+; assignment
+(variable_definition
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(function_definition
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+; block
+(code_block
+  (_)* @block.inner) @block.outer
+
+; class
+(class_def
+  (class_def_body) @class.inner) @class.outer
+
+; call
+(function_call
+  arguments: (_
+    .
+    "("
+    _+ @call.inner
+    ")")?) @call.outer
+
+; comment
+(line_comment) @comment.outer
+
+(block_comment) @comment.outer
+
+; conditional:
+(function_call
+  name: (_) @_name
+  (#eq? @_name "if")
+  arguments: (parameter_call_list
+    (_) @conditional.inner)?) @conditional.outer
+
+; function
+((function_block) @function.inner @function.outer
+  (#offset! @function.inner 0 1 0 -1)) ; use offset to skip brackets
+
+; loop
+(function_call
+  name: (identifier) @_fname
+  (#eq? @_fname "while")
+  arguments: (parameter_call_list
+    (_) @loop.inner)?) @loop.outer
+
+(function_call
+  name: (identifier) @_fname
+  (#eq? @_fname "for")
+  arguments: (parameter_call_list
+    (_) @loop.inner .)?) @loop.outer
+
+(function_call
+  name: (identifier) @_fname
+  (#eq? @_fname "forBy")
+  arguments: (parameter_call_list
+    (_) @loop.inner .)?) @loop.outer
+
+; number
+(number) @number.inner
+
+;parameters
+(parameter_call_list
+  (_) @parameter.inner @parameter.outer
+  .
+  (",")? @parameter.outer)
+
+(parameter_call_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(parameter_list
+  (_) @parameter.inner @parameter.outer
+  .
+  (",")? @parameter.outer)
+
+(parameter_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+(collection
+  (_) @parameter.inner @parameter.outer
+  .
+  (",")? @parameter.outer)
+
+(collection
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer .)
+
+; return
+(return_statement
+  (_) @return.inner) @return.outer
+------------------------------
+📄 End: queries/supercollider/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/c/textobjects.scm
+------------------------------
+(declaration
+  declarator: (function_declarator)) @function.outer
+
+(function_definition
+  body: (compound_statement)) @function.outer
+
+(function_definition
+  body: (compound_statement
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(struct_specifier
+  body: (_) @class.inner) @class.outer
+
+(enum_specifier
+  body: (_) @class.inner) @class.outer
+
+; conditionals
+(if_statement
+  consequence: (compound_statement
+    .
+    "{"
+    _+ @conditional.inner
+    "}")) @conditional.outer
+
+(if_statement
+  alternative: (else_clause
+    (compound_statement
+      .
+      "{"
+      _+ @conditional.inner
+      "}"))) @conditional.outer
+
+(if_statement) @conditional.outer
+
+(if_statement
+  condition: (_) @conditional.inner
+  (#offset! @conditional.inner 0 1 0 -1))
+
+(while_statement
+  condition: (_) @conditional.inner
+  (#offset! @conditional.inner 0 1 0 -1))
+
+(do_statement
+  condition: (_) @conditional.inner
+  (#offset! @conditional.inner 0 1 0 -1))
+
+(for_statement
+  condition: (_) @conditional.inner)
+
+; loops
+(while_statement) @loop.outer
+
+(while_statement
+  body: (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(for_statement) @loop.outer
+
+(for_statement
+  body: (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(do_statement) @loop.outer
+
+(do_statement
+  body: (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(compound_statement) @block.outer
+
+(comment) @comment.outer
+
+(call_expression) @call.outer
+
+(call_expression
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(return_statement
+  (_)? @return.inner) @return.outer
+
+; Statements
+;(expression_statement ;; this is what we actually want to capture in most cases (";" is missing) probably
+;(_) @statement.inner) ;; the other statement like node type is declaration but declaration has a ";"
+(compound_statement
+  (_) @statement.outer)
+
+(field_declaration_list
+  (_) @statement.outer)
+
+(preproc_if
+  (_) @statement.outer)
+
+(preproc_elif
+  (_) @statement.outer)
+
+(preproc_else
+  (_) @statement.outer)
+
+(parameter_list
+  "," @parameter.outer
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer)
+
+(parameter_list
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(number_literal) @number.inner
+
+(declaration
+  declarator: (init_declarator
+    declarator: (_) @assignment.lhs
+    value: (_) @assignment.rhs) @assignment.inner) @assignment.outer
+
+(declaration
+  type: (primitive_type)
+  declarator: (_) @assignment.inner)
+
+(expression_statement
+  (assignment_expression
+    left: (_) @assignment.lhs
+    right: (_) @assignment.rhs) @assignment.inner) @assignment.outer
+------------------------------
+📄 End: queries/c/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/markdown/textobjects.scm
+------------------------------
+(atx_heading
+  heading_content: (_) @class.inner) @class.outer
+
+(setext_heading
+  heading_content: (_) @class.inner) @class.outer
+
+(thematic_break) @class.outer
+
+(fenced_code_block
+  (code_fence_content) @block.inner) @block.outer
+
+[
+  (paragraph)
+  (list)
+] @block.outer
+------------------------------
+📄 End: queries/markdown/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/json/textobjects.scm
+------------------------------
+(comment) @comment.outer
+------------------------------
+📄 End: queries/json/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/inko/textobjects.scm
+------------------------------
+; Classes
+(class) @class.outer
+
+(class
+  body: (class_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+; Traits
+(trait) @class.outer
+
+(trait
+  body: (trait_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+; Implementations
+(implement_trait) @class.outer
+
+(implement_trait
+  body: (implement_trait_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(reopen_class) @class.outer
+
+(reopen_class
+  body: (reopen_class_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+; Methods and closures
+(method) @function.outer
+
+(method
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(closure) @function.outer
+
+(closure
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; Loops
+(while
+  body: (block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+(while
+  condition: (_) @conditional.inner)
+
+(loop
+  body: (block
+    .
+    "{"
+    _+ @loop.inner
+    "}")) @loop.outer
+
+; Conditionals
+(if
+  alternative: (_
+    (_) @conditional.inner)?) @conditional.outer
+
+(if
+  consequence: (block) @conditional.inner)
+
+(if
+  condition: (_) @conditional.inner)
+
+(case) @conditional.inner
+
+(match) @conditional.outer
+
+; Method calls
+(call) @call.outer
+
+(call
+  arguments: (arguments
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(return
+  (_)? @return.inner) @return.outer
+
+; Call and type arguments
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(type_arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(type_arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; Patterns
+(class_pattern
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(class_pattern
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(tuple_pattern
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple_pattern
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; Sequence types
+(tuple
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(array
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(array
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; Blocks
+(block
+  (_)? @block.inner) @block.outer
+
+; Comments
+(line_comment) @comment.outer
+
+; Numbers
+[
+  (integer)
+  (float)
+] @number.inner
+
+; Variable definitions and assignments
+(identifier_pattern
+  name: (_) @assignment.lhs
+  type: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(define_constant
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(assign_local
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(assign_field
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(assign_receiver_field
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(replace_local
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(replace_field
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(compound_assign_local
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(compound_assign_field
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(compound_assign_receiver_field
+  name: (_) @assignment.lhs
+  value: (_) @assignment.inner @assignment.rhs) @assignment.outer
+------------------------------
+📄 End: queries/inko/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/kotlin/textobjects.scm
+------------------------------
+(class_declaration
+  [
+    (class_body)
+    (enum_class_body)
+  ]? @class.inner) @class.outer
+
+[
+  (function_declaration
+    (function_body) @function.inner)
+  (getter
+    (function_body) @function.inner)
+  (setter
+    (function_body) @function.inner)
+  (primary_constructor)
+] @function.outer
+
+(primary_constructor) @function.inner
+
+[
+  (parameter
+    (simple_identifier) @parameter.inner)
+  (class_parameter
+    (simple_identifier) @parameter.inner)
+] @parameter.outer
+
+(value_arguments
+  "," @parameter.outer
+  .
+  (value_argument) @parameter.inner @parameter.outer)
+
+(value_arguments
+  .
+  (value_argument) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; last element, with trailing comma
+(value_arguments
+  (value_argument) @parameter.outer
+  .
+  "," @parameter.outer .)
+
+[
+  (line_comment)
+  (multiline_comment)
+] @comment.outer
+
+(if_expression
+  (control_structure_body) @conditional.inner) @conditional.outer
+
+(when_expression
+  (when_entry) @conditional.inner) @conditional.outer
+
+[
+  (for_statement
+    (control_structure_body) @loop.inner)
+  (while_statement
+    (control_structure_body) @loop.inner)
+] @loop.outer
+
+[
+  (integer_literal)
+  (real_literal)
+] @number.inner
+------------------------------
+📄 End: queries/kotlin/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/php_only/textobjects.scm
+------------------------------
+; inherits php
+------------------------------
+📄 End: queries/php_only/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/nasm/textobjects.scm
+------------------------------
+; adapted from https://github.com/naclsn/tree-sitter-nasm/blob/main/queries/textobjects.scm
+(preproc_multiline_macro
+  body: (body) @function.inner) @function.outer
+
+(struc_declaration
+  body: (struc_declaration_body) @class.inner) @class.outer
+
+(struc_instance
+  body: (struc_instance_body) @class.inner) @class.outer
+
+(preproc_function_def_parameters
+  (word) @parameter.inner)
+
+(call_syntax_arguments
+  (_) @parameter.inner)
+
+(operand) @parameter.inner
+
+(comment) @comment.outer
+------------------------------
+📄 End: queries/nasm/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/hlsl/textobjects.scm
+------------------------------
+; inherits: cpp
+------------------------------
+📄 End: queries/hlsl/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/cuda/textobjects.scm
+------------------------------
+; inherits: cpp
+------------------------------
+📄 End: queries/cuda/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/cpp/textobjects.scm
+------------------------------
+; inherits: c
+
+(class_specifier
+  body: (_) @class.inner) @class.outer
+
+(field_declaration
+  type: (enum_specifier)
+  default_value: (initializer_list) @class.inner) @class.outer
+
+(for_range_loop) @loop.outer
+
+(for_range_loop
+  body: (compound_statement
+    .
+    "{"
+    _+ @loop.inner
+    "}"))
+
+(template_declaration
+  (function_definition)) @function.outer
+
+(template_declaration
+  (struct_specifier)) @class.outer
+
+(template_declaration
+  (class_specifier)) @class.outer
+
+(lambda_capture_specifier
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(lambda_capture_specifier
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(template_argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(template_argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(template_parameter_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(template_parameter_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(parameter_list
+  "," @parameter.outer
+  .
+  (optional_parameter_declaration) @parameter.inner @parameter.outer)
+
+(parameter_list
+  .
+  (optional_parameter_declaration) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(initializer_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(initializer_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(new_expression
+  (argument_list) @call.inner) @call.outer
+------------------------------
+📄 End: queries/cpp/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/python/textobjects.scm
+------------------------------
+(decorated_definition
+  (function_definition)) @function.outer
+
+(function_definition
+  body: (block)? @function.inner) @function.outer
+
+(decorated_definition
+  (class_definition)) @class.outer
+
+(class_definition
+  body: (block)? @class.inner) @class.outer
+
+(while_statement
+  body: (block)? @loop.inner) @loop.outer
+
+(for_statement
+  body: (block)? @loop.inner) @loop.outer
+
+(if_statement
+  alternative: (_
+    (_) @conditional.inner)?) @conditional.outer
+
+(if_statement
+  consequence: (block)? @conditional.inner)
+
+(if_statement
+  condition: (_) @conditional.inner)
+
+(_
+  (block) @block.inner) @block.outer
+
+; leave space after comment marker if there is one
+((comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 2 0 0)
+  (#lua-match? @comment.outer "# .*"))
+
+; else remove everything accept comment marker
+((comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 1 0 0))
+
+(block
+  (_) @statement.outer)
+
+(module
+  (_) @statement.outer)
+
+(call) @call.outer
+
+(call
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+(return_statement
+  (_)? @return.inner) @return.outer
+
+; Parameters
+(parameters
+  "," @parameter.outer
+  .
+  [
+    (identifier)
+    (tuple)
+    (typed_parameter)
+    (default_parameter)
+    (typed_default_parameter)
+    (dictionary_splat_pattern)
+    (list_splat_pattern)
+  ] @parameter.inner @parameter.outer)
+
+(parameters
+  .
+  [
+    (identifier)
+    (tuple)
+    (typed_parameter)
+    (default_parameter)
+    (typed_default_parameter)
+    (dictionary_splat_pattern)
+    (list_splat_pattern)
+  ] @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(lambda_parameters
+  "," @parameter.outer
+  .
+  [
+    (identifier)
+    (tuple)
+    (typed_parameter)
+    (default_parameter)
+    (typed_default_parameter)
+    (dictionary_splat_pattern)
+    (list_splat_pattern)
+  ] @parameter.inner @parameter.outer)
+
+(lambda_parameters
+  .
+  [
+    (identifier)
+    (tuple)
+    (typed_parameter)
+    (default_parameter)
+    (typed_default_parameter)
+    (dictionary_splat_pattern)
+    (list_splat_pattern)
+  ] @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(tuple
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple
+  "("
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(set
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(set
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(dictionary
+  .
+  (pair) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(dictionary
+  "," @parameter.outer
+  .
+  (pair) @parameter.inner @parameter.outer)
+
+(argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(subscript
+  "["
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(subscript
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(import_statement
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(import_statement
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(import_from_statement
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(import_from_statement
+  "import"
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+[
+  (integer)
+  (float)
+] @number.inner
+
+(assignment
+  left: (_) @assignment.lhs
+  right: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(assignment
+  left: (_) @assignment.inner)
+
+(augmented_assignment
+  left: (_) @assignment.lhs
+  right: (_) @assignment.inner @assignment.rhs) @assignment.outer
+
+(augmented_assignment
+  left: (_) @assignment.inner)
+
+; TODO: exclude comments using the future negate syntax from tree-sitter
+------------------------------
+📄 End: queries/python/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/yaml/textobjects.scm
+------------------------------
+; assignment, statement
+(block_mapping_pair
+  key: (_) @assignment.lhs
+  value: (_) @assignment.rhs) @assignment.outer @statement.outer
+
+(block_mapping_pair
+  key: (_) @assignment.inner)
+
+(block_mapping_pair
+  value: (_) @assignment.inner)
+
+; comment
+; leave space after comment marker if there is one
+((comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 2 0 0)
+  (#lua-match? @comment.outer "# .*"))
+
+; else remove everything accept comment marker
+((comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 1 0 0))
+
+; number
+[
+  (integer_scalar)
+  (float_scalar)
+] @number.inner
+------------------------------
+📄 End: queries/yaml/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/foam/textobjects.scm
+------------------------------
+(dict) @class.outer
+
+(dict_core) @class.inner
+
+(key_value
+  value: _? @function.inner
+  (_)* @function.inner
+  _? @parameter.inner @function.inner) @function.outer
+
+(code
+  (_)* @class.inner) @class.outer
+
+(comment)+ @comment.outer
+
+(comment) @comment.inner
+------------------------------
+📄 End: queries/foam/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/scss/textobjects.scm
+------------------------------
+; inherits: css
+------------------------------
+📄 End: queries/scss/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/nim/textobjects.scm
+------------------------------
+; ==============================================================================
+; @attribute.inner
+; @attribute.outer
+; ==============================================================================
+; @function.inner
+; @function.outer
+(proc_declaration
+  body: (statement_list) @function.inner) @function.outer
+
+(func_declaration
+  body: (statement_list) @function.inner) @function.outer
+
+(method_declaration
+  body: (statement_list) @function.inner) @function.outer
+
+(iterator_declaration
+  body: (statement_list) @function.inner) @function.outer
+
+(converter_declaration
+  body: (statement_list) @function.inner) @function.outer
+
+(template_declaration
+  body: (statement_list) @function.inner) @function.outer
+
+(macro_declaration
+  body: (statement_list) @function.inner) @function.outer
+
+(proc_expression
+  body: (statement_list) @function.inner) @function.outer
+
+(func_expression
+  body: (statement_list) @function.inner) @function.outer
+
+(iterator_expression
+  body: (statement_list) @function.inner) @function.outer
+
+; ==============================================================================
+; @class.inner
+; @class.outer
+; NOTE: seems pointless to handle just object declarations differently
+; ==============================================================================
+; @conditional.inner
+; @conditional.outer
+[
+  (if)
+  (when)
+  (conditional_declaration)
+  (case)
+  (variant_declaration)
+  (elif_branch)
+  (else_branch)
+  (of_branch)
+] @conditional.outer
+
+(if
+  condition: (_) @conditional.inner)
+
+(if
+  consequence: (statement_list) @conditional.inner)
+
+(when
+  condition: (_) @conditional.inner)
+
+(when
+  consequence: (statement_list) @conditional.inner)
+
+(conditional_declaration
+  condition: (_) @conditional.inner)
+
+(conditional_declaration
+  consequence: (field_declaration_list) @conditional.inner)
+
+(elif_branch
+  condition: (_) @conditional.inner)
+
+(elif_branch
+  consequence: [
+    (statement_list)
+    (field_declaration_list)
+  ] @conditional.inner)
+
+(else_branch
+  consequence: [
+    (statement_list)
+    (field_declaration_list)
+  ] @conditional.inner)
+
+(case
+  value: (_) @conditional.inner)
+
+(variant_declaration
+  (variant_discriminator_declaration) @conditional.inner)
+
+(of_branch
+  values: (expression_list) @conditional.inner)
+
+(of_branch
+  consequence: [
+    (statement_list)
+    (field_declaration_list)
+  ] @conditional.inner)
+
+; ==============================================================================
+; @loop.inner
+; @loop.outer
+[
+  (for)
+  (while)
+] @loop.outer
+
+(for
+  left: (_) @loop.inner
+  right: (_) @loop.inner)
+
+(for
+  body: (statement_list) @loop.inner)
+
+(while
+  condition: (_) @loop.inner)
+
+(while
+  body: (statement_list) @loop.inner)
+
+; ==============================================================================
+; @call.inner
+; @call.outer
+(call
+  (argument_list) @call.inner) @call.outer
+
+; NOTE: parenthesis are included in @call.inner
+; ==============================================================================
+; @block.inner
+; @block.outer
+(case
+  ":"
+  _+ @block.inner) @block.outer
+
+(object_declaration
+  (field_declaration_list) @block.inner) @block.outer
+
+(tuple_type
+  (field_declaration_list
+    .
+    "["
+    _+ @block.inner
+    "]" .)) @block.outer
+
+(enum_declaration
+  .
+  "enum"
+  _+ @block.inner) @block.outer
+
+(using_section
+  .
+  "using"
+  _+ @block.inner) @block.outer
+
+(const_section
+  .
+  "const"
+  _+ @block.inner) @block.outer
+
+(let_section
+  .
+  "let"
+  _+ @block.inner) @block.outer
+
+(var_section
+  .
+  "var"
+  _+ @block.inner) @block.outer
+
+(type_section
+  .
+  "type"
+  _+ @block.inner)
+
+(_
+  (statement_list) @block.inner) @block.outer
+
+; ==============================================================================
+; @parameter.inner
+; @parameter.outer
+; parameters when declaring
+(parameter_declaration_list
+  [
+    ","
+    ";"
+  ] @parameter.outer
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer)
+
+(parameter_declaration_list
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer
+  .
+  [
+    ","
+    ";"
+  ]? @parameter.outer)
+
+; generic parameters when declaring
+(generic_parameter_list
+  "," @parameter.outer
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer)
+
+(generic_parameter_list
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; arguments when calling
+(argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; containers
+(array_construction
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(array_construction
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(tuple_construction
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple_construction
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(curly_construction
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(curly_construction
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; generic arguments when calling
+; subscript operator
+; generic types
+(bracket_expression
+  right: (argument_list
+    "," @parameter.outer
+    .
+    (_) @parameter.inner @parameter.outer))
+
+(bracket_expression
+  right: (argument_list
+    .
+    (_) @parameter.inner @parameter.outer
+    .
+    ","? @parameter.outer))
+
+; import x,x
+; import except x,x
+; include x,x
+; from import x,x
+; bind x,x
+; mixin x,x
+; case of x,x
+; try except x,x
+(expression_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(expression_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; pragmas
+(pragma_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(pragma_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; variable_declaration
+; for
+; identifier_declaration `x,y: type = value`
+(symbol_declaration_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(symbol_declaration_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; infix_expression
+(infix_expression
+  operator: (_) @parameter.outer
+  right: (_) @parameter.inner @parameter.outer)
+
+(infix_expression
+  left: (_) @parameter.inner @parameter.outer
+  operator: (_) @parameter.outer)
+
+; tuple_type inline
+(field_declaration_list
+  [
+    ","
+    ";"
+  ] @parameter.outer
+  .
+  (field_declaration) @parameter.inner @parameter.outer)
+
+(field_declaration_list
+  .
+  (field_declaration) @parameter.inner @parameter.outer
+  .
+  [
+    ","
+    ";"
+  ]? @parameter.outer)
+
+; enum
+(enum_declaration
+  "," @parameter.outer
+  .
+  (enum_field_declaration) @parameter.inner @parameter.outer)
+
+(enum_declaration
+  .
+  (enum_field_declaration) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; tuple_deconstruct_declaration
+(tuple_deconstruct_declaration
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple_deconstruct_declaration
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; concept parameter list
+; concept refinement list
+(parameter_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(parameter_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(refinement_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(refinement_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; dot_generic_call `v.call[:type, type]()
+(generic_argument_list
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(generic_argument_list
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; ==============================================================================
+; @regex.inner
+; @regex.outer
+; ==============================================================================
+; @comment.inner
+; @comment.outer
+(comment
+  (comment_content) @comment.inner) @comment.outer
+
+(block_comment
+  (comment_content) @comment.inner) @comment.outer
+
+(documentation_comment
+  (comment_content) @comment.inner) @comment.outer
+
+(block_documentation_comment
+  (comment_content) @comment.inner) @comment.outer
+
+; ==============================================================================
+; @assignment.inner
+; @assignment.outer
+; @assignment.lhs
+; @assignment.rhs
+(variable_declaration
+  (symbol_declaration_list) @assignment.lhs
+  type: (type_expression)? @assignment.lhs
+  value: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(type_declaration
+  (type_symbol_declaration) @assignment.lhs
+  .
+  "="
+  .
+  (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+(assignment
+  left: (_) @assignment.lhs
+  right: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+; default parameter in proc decl
+; keyword argument in call
+; array construction
+(colon_expression
+  left: (_) @assignment.lhs
+  right: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+; object construction
+; tuple construction
+; table construction
+(equal_expression
+  left: (_) @assignment.lhs
+  right: (_) @assignment.rhs @assignment.inner) @assignment.outer
+
+; object declaration fields
+; tuple declaration fields
+(field_declaration
+  (symbol_declaration_list) @assignment.lhs
+  type: (type_expression)? @assignment.lhs
+  value: (_)? @assignment.rhs @assignment.inner) @assignment.outer
+
+; enum types
+(enum_field_declaration
+  (symbol_declaration) @assignment.lhs
+  "="?
+  value: (_)? @assignment.rhs @assignment.inner) @assignment.outer
+
+; ==============================================================================
+; @return.inner
+; @return.outer
+(return_statement
+  (_) @return.inner) @return.outer
+
+; ==============================================================================
+; @statement.outer
+[
+  ; simple
+  (import_statement)
+  (import_from_statement)
+  (export_statement)
+  (include_statement)
+  (discard_statement)
+  (return_statement)
+  (raise_statement)
+  (yield_statement)
+  (break_statement)
+  (continue_statement)
+  (assembly_statement)
+  (bind_statement)
+  (mixin_statement)
+  (pragma_statement)
+  ; complex
+  (while)
+  (static_statement)
+  (defer)
+  ; declarations
+  (proc_declaration)
+  (func_declaration)
+  (method_declaration)
+  (iterator_declaration)
+  (macro_declaration)
+  (template_declaration)
+  (converter_declaration)
+  (using_section)
+  (const_section)
+  (let_section)
+  (var_section)
+  (type_section)
+  ; expression statements
+  (block)
+  (if)
+  (when)
+  (case)
+  (try)
+  (for)
+  (assignment)
+  ; NOTE: not including
+  ; simple_expression, call, infix_expression, prefix_expression
+  ; because it would confusing
+] @statement.outer
+
+; ==============================================================================
+; @scopename.inner
+; ==============================================================================
+; @number.inner
+[
+  (integer_literal)
+  (float_literal)
+] @number.inner
+------------------------------
+📄 End: queries/nim/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/twig/textobjects.scm
+------------------------------
+; comments
+(comment) @comment.outer
+
+; statement
+(statement_directive) @statement.outer
+
+; @parameter
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(parameters
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+------------------------------
+📄 End: queries/twig/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/html/textobjects.scm
+------------------------------
+(element) @function.outer
+
+(element
+  (start_tag)
+  .
+  (_) @function.inner
+  .
+  (end_tag))
+
+(attribute_value) @attribute.inner
+
+(attribute) @attribute.outer
+
+(element
+  (start_tag)
+  _+ @function.inner
+  (end_tag))
+
+(script_element) @function.outer
+
+(script_element
+  (start_tag)
+  .
+  (_) @function.inner
+  .
+  (end_tag))
+
+(style_element) @function.outer
+
+(style_element
+  (start_tag)
+  .
+  (_) @function.inner
+  .
+  (end_tag))
+
+((element
+  (start_tag
+    (tag_name) @_tag)) @class.outer
+  (#match? @_tag "^(html|section|h[0-9]|header|title|head|body)$"))
+
+((element
+  (start_tag
+    (tag_name) @_tag)
+  .
+  (_) @class.inner
+  .
+  (end_tag))
+  (#match? @_tag "^(html|section|h[0-9]|header|title|head|body)$"))
+
+((element
+  (start_tag
+    (tag_name) @_tag)
+  _+ @class.inner
+  (end_tag))
+  (#match? @_tag "^(html|section|h[0-9]|header|title|head|body)$"))
+
+(comment) @comment.outer
+------------------------------
+📄 End: queries/html/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/typescript/textobjects.scm
+------------------------------
+; inherits: ecma
+
+(interface_declaration) @class.outer
+
+(interface_declaration
+  body: (interface_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(type_alias_declaration) @class.outer
+
+(type_alias_declaration
+  value: (object_type
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+(enum_declaration) @class.outer
+
+(enum_declaration
+  body: (enum_body
+    .
+    "{"
+    _+ @class.inner
+    "}"))
+
+; type, interface items as @parameter
+; 1. parameter.inner
+(property_signature) @parameter.inner
+
+; 2. parameter.outer: Only one element, no comma
+(object_type
+  .
+  (property_signature) @parameter.outer .)
+
+(interface_body
+  .
+  (property_signature) @parameter.outer .)
+
+; 3. parameter.outer: Comma/semicolon before or after
+[
+  (object_type
+    [
+      ","
+      ";"
+    ] @parameter.outer
+    .
+    (property_signature) @parameter.outer)
+  (interface_body
+    [
+      ","
+      ";"
+    ] @parameter.outer
+    .
+    (property_signature) @parameter.outer)
+]
+
+[
+  (object_type
+    .
+    (property_signature) @parameter.outer
+    .
+    [
+      ","
+      ";"
+    ] @parameter.outer)
+  (interface_body
+    .
+    (property_signature) @parameter.outer
+    .
+    [
+      ","
+      ";"
+    ] @parameter.outer)
+]
+
+; last element with trailing comma/semicolon
+[
+  (object_type
+    (property_signature) @parameter.outer
+    .
+    [
+      ","
+      ";"
+    ] @parameter.outer .)
+  (interface_body
+    (property_signature) @parameter.outer
+    .
+    [
+      ","
+      ";"
+    ] @parameter.outer .)
+]
+------------------------------
+📄 End: queries/typescript/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/perl/textobjects.scm
+------------------------------
+(comment) @comment.outer
+
+(quoted_regexp) @regex.outer
+
+(match_regexp) @regex.outer
+------------------------------
+📄 End: queries/perl/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/query/textobjects.scm
+------------------------------
+(comment) @comment.outer
+
+[
+  (named_node)
+  (grouping)
+  (list)
+] @block.outer
+
+(program
+  [
+    (named_node)
+    (grouping)
+    (list)
+  ] @statement.outer)
+
+(parameters
+  (_) @parameter.inner)
+------------------------------
+📄 End: queries/query/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/toml/textobjects.scm
+------------------------------
+[
+  (integer)
+  (float)
+] @number.inner
+
+(table
+  (pair) @parameter.inner @parameter.outer)
+
+(inline_table
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(inline_table
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(array
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(array
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(comment) @comment.outer
+------------------------------
+📄 End: queries/toml/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/css/textobjects.scm
+------------------------------
+[
+  (integer_value)
+  (float_value)
+  (color_value)
+] @number.inner
+
+(declaration
+  (property_name) @assignment.lhs
+  .
+  ":"
+  _+ @assignment.inner @assignment.rhs
+  ";") @assignment.outer
+
+(declaration
+  (property_name) @assignment.inner)
+
+(comment) @comment.outer
+------------------------------
+📄 End: queries/css/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/elm/textobjects.scm
+------------------------------
+; Functions
+; top level function with type annotation and doc comment
+((module_declaration)
+  (block_comment) @function.outer
+  .
+  (type_annotation)
+  .
+  (value_declaration
+    body: (_)? @function.inner) @function.outer)
+
+; top level function with type annotation
+((module_declaration)
+  (type_annotation) @function.outer
+  .
+  (value_declaration
+    body: (_)? @function.inner) @function.outer)
+
+; top level function without type annotation
+((module_declaration)
+  (value_declaration
+    body: (_)? @function.inner) @function.outer)
+
+; Comments
+[
+  (block_comment)
+  (line_comment)
+] @comment.outer
+
+; Conditionals
+(if_else_expr
+  exprList: (_)
+  exprList: (_) @conditional.inner) @conditional.outer
+
+(case_of_expr
+  branch: (case_of_branch) @conditional.inner) @conditional.outer
+
+; Parameters
+; type annotations
+(type_expression
+  (arrow) @parameter.outer
+  .
+  (type_ref) @parameter.inner @parameter.outer)
+
+(type_expression
+  .
+  (type_ref) @parameter.inner @parameter.outer
+  .
+  (arrow)? @parameter.outer)
+
+; list items
+(list_expr
+  "," @parameter.outer
+  .
+  exprList: (_) @parameter.inner @parameter.outer)
+
+(list_expr
+  .
+  exprList: (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; tuple items
+(tuple_expr
+  "," @parameter.outer
+  .
+  expr: (_) @parameter.inner @parameter.outer)
+
+(tuple_expr
+  .
+  expr: (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+------------------------------
+📄 End: queries/elm/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/v/textobjects.scm
+------------------------------
+; assignment
+[
+  (var_declaration
+    var_list: (_) @assignment.lhs
+    expression_list: (_)* @assignment.rhs)
+  (assignment_statement
+    left: (_) @assignment.lhs
+    right: (_)* @assignment.rhs)
+]
+
+[
+  (var_declaration
+    var_list: (_) @assignment.inner)
+  (assignment_statement
+    left: (_) @assignment.inner)
+]
+
+[
+  (var_declaration
+    expression_list: (_) @assignment.inner)
+  (assignment_statement
+    right: (_) @assignment.inner)
+]
+
+; block
+(_
+  (block
+    .
+    "{"
+    _+ @block.inner
+    "}")) @block.outer
+
+; call
+(call_expression) @call.outer
+
+(call_expression
+  arguments: (argument_list
+    .
+    "("
+    _+ @call.inner
+    ")"))
+
+; class: structs
+(struct_declaration
+  ("{"
+    _+ @class.inner
+    "}"))
+
+(struct_declaration) @class.outer
+
+; comment
+; leave space after comment marker if there is one
+((line_comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 3 0 0)
+  (#lua-match? @comment.outer "// .*"))
+
+; else remove everything accept comment marker
+((line_comment) @comment.inner @comment.outer
+  (#offset! @comment.inner 0 2 0 0))
+
+(block_comment) @comment.inner @comment.outer
+
+; conditional
+(if_expression
+  block: (block
+    .
+    "{"
+    _+ @conditional.inner
+    "}")?) @conditional.outer
+
+; function
+(function_declaration
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(function_declaration) @function.outer
+
+; loop
+(for_statement
+  body: (block
+    .
+    "{"
+    _+ @loop.inner
+    "}")?) @loop.outer
+
+[
+  (int_literal)
+  (float_literal)
+] @number.inner
+
+; parameter
+(parameter_list
+  "," @parameter.outer
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer)
+
+(parameter_list
+  .
+  (parameter_declaration) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; return
+(return_statement
+  (_)* @return.inner) @return.outer
+
+; statements
+(block
+  (_) @statement.outer)
+------------------------------
+📄 End: queries/v/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/scala/textobjects.scm
+------------------------------
+(class_definition
+  body: (template_body)? @class.inner) @class.outer
+
+(object_definition
+  body: (template_body)? @class.inner) @class.outer
+
+(function_definition
+  body: [
+    (indented_block)
+    (expression)
+    (indented_cases)
+    (block)
+  ] @function.inner) @function.outer
+
+(parameter
+  name: (identifier) @parameter.inner) @parameter.outer
+
+(class_parameter
+  name: (identifier) @parameter.inner) @parameter.outer
+
+(case_clause
+  body: (_) @conditional.inner) @conditional.outer
+
+(comment) @comment.outer
+------------------------------
+📄 End: queries/scala/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/latex/textobjects.scm
+------------------------------
+(generic_environment
+  .
+  (_)
+  _+ @block.inner
+  (_) .) @block.outer
+
+((generic_environment
+  (begin
+    name: (curly_group_text
+      (text) @_frame))
+  _+ @frame.inner
+  (_) .) @frame.outer
+  (#eq? @_frame "frame"))
+
+[
+  (generic_command)
+  (text_mode)
+] @call.outer
+
+(text_mode
+  (curly_group
+    "{"
+    _+ @call.inner
+    "}"))
+
+(generic_command
+  (curly_group
+    "{"
+    _+ @call.inner
+    "}"))
+
+(part
+  text: (_)
+  _+ @class.inner)
+
+(part
+  text: (_)) @class.outer
+
+(chapter
+  text: (_)
+  _+ @class.inner)
+
+(chapter
+  text: (_)) @class.outer
+
+(section
+  text: (_)
+  _+ @class.inner)
+
+(section
+  text: (_)) @class.outer
+
+(subsection
+  text: (_)
+  _+ @class.inner)
+
+(subsection
+  text: (_)) @class.outer
+
+(subsubsection
+  text: (_)
+  _+ @class.inner)
+
+(subsubsection
+  text: (_)) @class.outer
+
+(paragraph
+  text: (_)
+  _+ @class.inner)
+
+(paragraph
+  text: (_)) @class.outer
+
+(subparagraph
+  text: (_)
+  _+ @class.inner)
+
+(subparagraph
+  text: (_)) @class.outer
+------------------------------
+📄 End: queries/latex/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/glimmer/textobjects.scm
+------------------------------
+[
+  (element_node)
+  (block_statement)
+] @function.outer
+
+[
+  (mustache_statement)
+  (block_statement_start)
+] @block.outer
+
+(attribute_node) @attribute.outer
+
+(attribute_node
+  [
+    (concat_statement)
+    (mustache_statement)
+  ] @attribute.inner)
+
+(element_node
+  (element_node_start)
+  .
+  (_) @function.inner
+  .
+  (element_node_end))
+
+(block_statement
+  (block_statement_start)
+  .
+  (_) @function.inner
+  .
+  (block_statement_end))
+
+(element_node
+  (element_node_start)
+  _+ @function.inner
+  (element_node_end))
+
+(block_statement
+  (block_statement_start)
+  _+ @function.inner
+  (block_statement_end))
+
+(mustache_statement
+  .
+  "{{"
+  (_) @block.inner
+  .
+  "}}")
+
+(block_statement_start
+  .
+  "{{#"
+  (_) @block.inner
+  .
+  "}}")
+
+(comment_statement) @comment.outer
+------------------------------
+📄 End: queries/glimmer/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/ocaml/textobjects.scm
+------------------------------
+(value_definition
+  (let_binding
+    ; let f x = 1 but not let x = 1
+    (parameter)+
+    body: (_) @function.inner)) @function.outer
+
+(value_definition
+  (let_binding
+    ; let f = function | A | B -> body
+    body: (function_expression) @function.inner)) @function.outer
+
+(value_definition
+  (let_binding
+    ; let f = fun x -> body
+    body: (fun_expression) @function.inner)) @function.outer
+
+; standalone function expression, e.g. List.iter ~f:(function | A | B -> body)
+(parenthesized_expression
+  (function_expression) @function.inner) @function.outer
+
+; standalone function expression, e.g. List.iter ~f:(fun x -> body)
+(parenthesized_expression
+  (fun_expression) @function.inner) @function.outer
+
+(method_definition
+  body: (_) @function.inner) @function.outer
+
+; let pattern = body (also matches let f x = expr due to grammar limits)
+; Since we want @assignment.inner to match both pattern and body we have to split it into two:
+(value_definition
+  (let_binding
+    pattern: (_) @assignment.lhs @assignment.inner)) @assignment.outer
+
+(value_definition
+  (let_binding
+    body: (_) @assignment.rhs @assignment.inner))
+
+; module M = struct ... end
+(module_definition
+  (module_binding
+    body: (structure) @class.inner)) @class.outer
+
+; struct ... end
+(structure
+  (_structure_item)+ @block.inner) @block.outer
+
+(class_definition
+  (class_binding
+    body: (_) @class.inner)) @class.outer
+
+(for_expression
+  (do_clause
+    (_) @loop.inner)) @loop.outer
+
+(while_expression
+  (do_clause
+    (_) @loop.inner)) @loop.outer
+
+(if_expression
+  condition: (_)
+  (then_clause
+    (_) @conditional.inner)
+  (else_clause
+    (_) @conditional.inner)) @conditional.outer
+
+(if_expression
+  condition: (_)
+  (then_clause
+    (_) @conditional.inner)) @conditional.outer
+
+(function_expression
+  (match_case)+ @conditional.inner) @conditional.outer
+
+(match_expression
+  (match_case)+ @conditional.inner) @conditional.outer
+
+(comment) @comment.outer
+
+(parameter) @parameter.outer
+
+(application_expression
+  argument: (_) @parameter.outer) @call.outer
+
+(application_expression
+  argument: (_)+ @call.inner)
+
+; parenthesized selections are handled well by vi(
+------------------------------
+📄 End: queries/ocaml/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/hcl/textobjects.scm
+------------------------------
+(attribute
+  (identifier) @assignment.lhs
+  (expression) @assignment.inner @assignment.rhs) @assignment.outer
+
+(attribute
+  (identifier) @assignment.inner)
+
+(block
+  (body)? @block.inner) @block.outer
+
+(block
+  (body
+    (_) @statement.outer))
+
+(function_call
+  (function_arguments) @call.inner) @call.outer
+
+(comment) @comment.outer
+
+(conditional
+  (expression) @conditional.inner) @conditional.outer
+
+(for_cond
+  (expression) @conditional.inner) @conditional.outer
+
+(for_expr
+  (for_object_expr
+    (for_intro) @loop.inner
+    (expression) @loop.inner
+    (expression) @loop.inner
+    (for_cond)? @loop.inner)) @loop.outer
+
+(for_expr
+  (for_object_expr
+    (for_intro) @loop.inner))
+
+(for_expr
+  (for_object_expr
+    (expression) @loop.inner))
+
+(for_expr
+  (for_tuple_expr
+    (for_intro) @loop.inner
+    (expression) @loop.inner
+    (for_cond)? @loop.inner)) @loop.outer
+
+(for_expr
+  (for_tuple_expr
+    (for_intro) @loop.inner))
+
+(for_expr
+  (for_tuple_expr
+    (expression) @loop.inner))
+
+(numeric_lit) @number.inner
+
+(function_arguments
+  "," @parameter.outer
+  .
+  (expression) @parameter.inner @parameter.outer)
+
+(function_arguments
+  .
+  (expression) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+------------------------------
+📄 End: queries/hcl/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/astro/textobjects.scm
+------------------------------
+; inherits: html
+------------------------------
+📄 End: queries/astro/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/systemverilog/textobjects.scm
+------------------------------
+(function_declaration
+  (function_body_declaration
+    (tf_port_list)
+    .
+    _+ @function.inner
+    .
+    "endfunction")) @function.outer
+
+(task_declaration
+  (task_body_declaration
+    (tf_port_list)
+    .
+    _+ @function.inner
+    .
+    "endtask")) @function.outer
+
+[
+  (seq_block)
+  (generate_block)
+] @block.outer
+
+(seq_block
+  "begin"
+  (simple_identifier)?
+  .
+  _+ @block.inner
+  .
+  "end")
+
+(generate_block
+  "begin"
+  (simple_identifier)?
+  .
+  _+ @block.inner
+  .
+  "end")
+
+[
+  (one_line_comment)
+  (block_comment)
+] @comment.outer
+------------------------------
+📄 End: queries/systemverilog/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/dart/textobjects.scm
+------------------------------
+; class
+((annotation)? @class.outer
+  .
+  (class_definition
+    body: (class_body) @class.inner) @class.outer)
+
+(mixin_declaration
+  (class_body) @class.inner) @class.outer
+
+(enum_declaration
+  body: (enum_body) @class.inner) @class.outer
+
+(extension_declaration
+  body: (extension_body) @class.inner) @class.outer
+
+; function/method
+((annotation)? @function.outer
+  .
+  [
+    (method_signature)
+    (function_signature)
+  ] @function.outer
+  .
+  (function_body) @function.outer)
+
+(function_body
+  (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+(type_alias
+  (function_type)? @function.inner) @function.outer
+
+; parameter
+[
+  (formal_parameter)
+  (normal_parameter_type)
+  (type_parameter)
+] @parameter.inner
+
+("," @parameter.outer
+  .
+  [
+    (formal_parameter)
+    (normal_parameter_type)
+    (type_parameter)
+  ] @parameter.outer)
+
+([
+  (formal_parameter)
+  (normal_parameter_type)
+  (type_parameter)
+] @parameter.outer
+  .
+  "," @parameter.outer)
+
+; TODO: (_)* not supported yet -> for now this works correctly only with simple arguments
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+; call
+((identifier) @call.outer
+  .
+  (selector
+    (argument_part) @call.outer))
+
+((identifier)
+  .
+  (selector
+    (argument_part
+      (arguments
+        .
+        "("
+        _+ @call.inner
+        ")"))))
+
+; block
+(block) @block.outer
+
+; conditional
+(if_statement
+  [
+    condition: (_)
+    consequence: (_)
+    alternative: (_)?
+  ] @conditional.inner) @conditional.outer
+
+(switch_statement
+  body: (switch_block) @conditional.inner) @conditional.outer
+
+(conditional_expression
+  [
+    consequence: (_)
+    alternative: (_)
+  ] @conditional.inner) @conditional.outer
+
+; loop
+(for_statement
+  body: (block) @loop.inner) @loop.outer
+
+(while_statement
+  body: (block) @loop.inner) @loop.outer
+
+(do_statement
+  body: (block) @loop.inner) @loop.outer
+
+; comment
+[
+  (comment)
+  (documentation_comment)
+] @comment.outer
+
+; statement
+[
+  (break_statement)
+  (do_statement)
+  (expression_statement)
+  (for_statement)
+  (if_statement)
+  (return_statement)
+  (switch_statement)
+  (while_statement)
+  (assert_statement)
+  ;(labeled_statement)
+  (yield_statement)
+  (yield_each_statement)
+  (continue_statement)
+  (try_statement)
+] @statement.outer
+------------------------------
+📄 End: queries/dart/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/enforce/textobjects.scm
+------------------------------
+[
+  (comment_line)
+  (comment_block)
+  (doc_line)
+  (doc_block)
+] @comment.outer
+
+[
+  (literal_int)
+  (literal_float)
+] @number.inner
+
+; TODO: capture inside braces
+(decl_class
+  body: (_) @class.inner) @class.outer
+
+(decl_method
+  body: (_) @function.inner) @function.outer
+
+(for
+  body: (_) @loop.inner) @loop.outer
+
+(while
+  body: (_) @loop.inner) @loop.outer
+
+(return
+  (_)? @return.inner) @return.outer
+
+; blocks
+(block) @block.outer
+
+(invokation) @call.outer
+
+(formal_parameters
+  "," @parameter.outer
+  .
+  (formal_parameter) @parameter.inner @parameter.outer)
+
+(formal_parameters
+  .
+  (formal_parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(actual_parameters
+  "," @parameter.outer
+  .
+  (actual_parameter) @parameter.inner @parameter.outer)
+
+(actual_parameters
+  .
+  (actual_parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+------------------------------
+📄 End: queries/enforce/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/ql/textobjects.scm
+------------------------------
+; class textobject
+(dataclass
+  (typeExpr)
+  (_) @class.inner) @class.outer
+
+; function textobject
+(charpred
+  (className)
+  (_) @function.inner) @function.outer
+
+(memberPredicate
+  (body) @function.inner) @function.outer
+
+(classlessPredicate
+  (body) @function.inner) @function.outer
+
+; scope name textobject
+(dataclass
+  name: (className) @scopename.inner)
+
+(classlessPredicate
+  name: (predicateName) @scopename.inner)
+
+(memberPredicate
+  name: (predicateName) @scopename.inner)
+
+(charpred
+  (className) @scopename.inner)
+------------------------------
+📄 End: queries/ql/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/git_config/textobjects.scm
+------------------------------
+; assignments
+(variable
+  (_) @assignment.lhs @assignment.inner
+  value: (_) @assignment.rhs) @assignment.outer
+
+(variable
+  value: (_) @assignment.inner)
+
+; blocks
+(section
+  (section_header)
+  (_)+ @block.inner) @block.outer
+
+; comments
+(comment) @comment.outer
+
+; statements
+(section
+  (section_header)
+  (_) @statement.outer)
+------------------------------
+📄 End: queries/git_config/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/zig/textobjects.scm
+------------------------------
+; "Classes"
+(variable_declaration
+  (struct_declaration)) @class.outer
+
+(variable_declaration
+  (struct_declaration
+    "struct"
+    "{"
+    _+ @class.inner
+    "}"))
+
+; functions
+(function_declaration) @function.outer
+
+(function_declaration
+  body: (block
+    .
+    "{"
+    _+ @function.inner
+    "}"))
+
+; loops
+(for_statement) @loop.outer
+
+(for_statement
+  body: (_) @loop.inner)
+
+(while_statement) @loop.outer
+
+(while_statement
+  body: (_) @loop.inner)
+
+; blocks
+(block) @block.outer
+
+(block
+  "{"
+  _+ @block.inner
+  "}")
+
+; statements
+(statement) @statement.outer
+
+; parameters
+(parameters
+  "," @parameter.outer
+  .
+  (parameter) @parameter.inner @parameter.outer)
+
+(parameters
+  .
+  (parameter) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+; arguments
+(call_expression
+  function: (_)
+  arguments: (arguments
+    "("
+    "," @parameter.outer
+    .
+    (_) @parameter.inner @parameter.outer
+    ")"))
+
+(call_expression
+  function: (_)
+  arguments: (arguments
+    "("
+    .
+    (_) @parameter.inner @parameter.outer
+    .
+    ","? @parameter.outer
+    ")"))
+
+; comments
+(comment) @comment.outer
+
+; conditionals
+(if_statement) @conditional.outer
+
+(if_statement
+  condition: (_) @conditional.inner)
+
+(if_statement
+  body: (_) @conditional.inner)
+
+(switch_expression) @conditional.outer
+
+(switch_expression
+  "("
+  (_) @conditional.inner
+  ")")
+
+(switch_expression
+  "{"
+  _+ @conditional.inner
+  "}")
+
+(while_statement
+  condition: (_) @conditional.inner)
+
+; calls
+(call_expression) @call.outer
+
+(call_expression
+  arguments: (arguments
+    "("
+    _+ @call.inner
+    ")"))
+------------------------------
+📄 End: queries/zig/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/dockerfile/textobjects.scm
+------------------------------
+(expose_instruction
+  (expose_port) @number.inner)
+------------------------------
+📄 End: queries/dockerfile/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/svelte/textobjects.scm
+------------------------------
+; inherits: html
+
+; Svelte-specific text objects
+; based on grammar defined at
+; https://github.com/tree-sitter-grammars/tree-sitter-svelte
+; if block
+(if_statement) @block.outer @conditional.outer
+
+(if_statement
+  (if_start)
+  .
+  _+ @block.inner @conditional.inner
+  .
+  (if_end))
+
+; each block
+(each_statement) @block.outer @loop.outer
+
+(each_statement
+  (each_start)
+  .
+  _+ @block.inner @loop.inner
+  .
+  (each_end))
+
+; key block
+(key_statement) @block.outer
+
+(key_statement
+  (key_start)
+  .
+  _+ @block.inner
+  .
+  (key_end))
+
+; await block
+(await_statement) @block.outer
+
+(await_statement
+  (await_start)
+  .
+  _+ @block.inner
+  .
+  (await_end))
+
+; snippet block
+(snippet_statement) @block.outer
+
+(snippet_statement
+  (snippet_start)
+  .
+  _+ @block.inner
+  .
+  (snippet_end))
+------------------------------
+📄 End: queries/svelte/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/julia/textobjects.scm
+------------------------------
+; Blocks
+(compound_statement) @block.outer
+
+(compound_statement
+  .
+  (_) @block.inner
+  (_)? @block.inner .)
+
+(quote_statement) @block.outer
+
+(quote_statement
+  .
+  (_) @block.inner
+  (_)? @block.inner .)
+
+(let_statement) @block.outer
+
+(let_statement
+  .
+  (_) @block.inner
+  (_)? @block.inner .)
+
+; Conditionals
+(if_statement
+  condition: (_) @conditional.inner) @conditional.outer
+
+(if_statement
+  alternative: (elseif_clause
+    condition: (_) @conditional.inner))
+
+((if_statement
+  condition: (_)
+  .
+  (_) @conditional.inner
+  (_)? @conditional.inner
+  .
+  [
+    "end"
+    (elseif_clause)
+    (else_clause)
+  ]) @conditional.outer
+  (elseif_clause
+    condition: (_)
+    .
+    (_) @conditional.inner
+    (_)? @conditional.inner .))
+
+(else_clause
+  .
+  (_) @conditional.inner
+  (_)? @conditional.inner .)
+
+; Loops
+(for_statement) @loop.outer
+
+(for_statement
+  .
+  (_) @loop.inner
+  (_)? @loop.inner .)
+
+(while_statement
+  condition: (_) @loop.inner) @loop.outer
+
+(while_statement
+  condition: (_)
+  .
+  (_) @loop.inner
+  (_)? @loop.inner .)
+
+; Type definitions
+(struct_definition) @class.outer
+
+(struct_definition
+  (type_head)
+  .
+  (_) @class.inner
+  (_)? @class.inner .)
+
+; Function definitions
+(function_definition) @function.outer
+
+(function_definition
+  (signature)
+  .
+  (_) @function.inner
+  (_)? @function.inner .)
+
+(assignment
+  (call_expression)
+  (operator)
+  (_) @function.inner) @function.outer
+
+(arrow_function_expression
+  [
+    (identifier)
+    (argument_list)
+  ]
+  "->"
+  (_) @function.inner) @function.outer
+
+(macro_definition) @function.outer
+
+(macro_definition
+  (signature)
+  .
+  (_) @function.inner
+  (_)? @function.inner .)
+
+; Calls
+(call_expression) @call.outer
+
+(call_expression
+  (argument_list
+    .
+    "("
+    .
+    (_) @call.inner
+    (_)? @call.inner
+    .
+    ")"))
+
+(macrocall_expression) @call.outer
+
+(macrocall_expression
+  (argument_list
+    .
+    "("
+    .
+    (_) @call.inner
+    (_)? @call.inner
+    .
+    ")"))
+
+(broadcast_call_expression) @call.outer
+
+(broadcast_call_expression
+  (argument_list
+    .
+    "("
+    .
+    (_) @call.inner
+    (_)? @call.inner
+    .
+    ")"))
+
+; Parameters
+((argument_list
+  [
+    ","
+    ";"
+  ] @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+  (argument_list
+    (_) @parameter.inner @parameter.outer
+    .
+    [
+      ","
+      ";"
+    ] @parameter.outer))
+
+(tuple_expression
+  [
+    ","
+    ";"
+  ] @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(tuple_expression
+  "("
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  [
+    ","
+    ";"
+  ]? @parameter.outer)
+
+(vector_expression
+  [
+    ","
+    ";"
+  ] @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(vector_expression
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  [
+    ","
+    ";"
+  ]? @parameter.outer)
+
+; Assignment
+(assignment
+  .
+  (_) @assignment.lhs
+  (_) @assignment.inner @assignment.rhs .) @assignment.outer
+
+(assignment
+  .
+  (_) @assignment.inner)
+
+(compound_assignment_expression
+  .
+  (_) @assignment.lhs
+  (_) @assignment.inner @assignment.rhs .) @assignment.outer
+
+(compound_assignment_expression
+  .
+  (_) @assignment.inner)
+
+; Comments
+[
+  (line_comment)
+  (block_comment)
+] @comment.outer
+
+; Regex
+((prefixed_string_literal
+  prefix: (identifier) @_prefix) @regex.inner @regex.outer
+  (#eq? @_prefix "r")
+  (#offset! @regex.inner 0 2 0 -1))
+------------------------------
+📄 End: queries/julia/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/gdscript/textobjects.scm
+------------------------------
+(function_definition
+  body: (_) @function.inner) @function.outer
+
+(constructor_definition
+  body: (_) @function.inner) @function.outer
+
+(class_definition
+  body: (_) @class.inner) @class.outer
+
+(if_statement
+  body: (_) @conditional.inner) @conditional.outer
+
+(if_statement
+  alternative: (_
+    (_) @conditional.inner)?) @conditional.outer
+
+(if_statement
+  condition: (_) @conditional.inner)
+
+[
+  (for_statement)
+  (while_statement)
+] @loop.outer
+
+(while_statement
+  body: (_) @loop.inner)
+
+(for_statement
+  body: (_) @loop.inner)
+
+(comment) @comment.outer
+
+(parameters
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(parameters
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(arguments
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(arguments
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+
+(array
+  "," @parameter.outer
+  .
+  (_) @parameter.inner @parameter.outer)
+
+(array
+  .
+  (_) @parameter.inner @parameter.outer
+  .
+  ","? @parameter.outer)
+------------------------------
+📄 End: queries/gdscript/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/readline/textobjects.scm
+------------------------------
+(variable_setting) @statement.outer
+
+(comment) @comment.outer
+
+((comment) @comment.inner
+  (#offset! @comment.inner 0 1 0 0))
+
+[
+  (alternative)
+  (consequence)
+  (test)
+] @conditional.inner
+
+(conditional_construct) @conditional.outer
+
+[
+  (number_value)
+  (version_number)
+] @number.inner
+------------------------------
+📄 End: queries/readline/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/nix/textobjects.scm
+------------------------------
+; named function
+(binding
+  (function_expression)) @function.outer
+
+; anonymous function
+(function_expression
+  (_) ; argument
+  (_) @function.inner) @function.outer
+
+(function_expression
+  (formals
+    (formal) @parameter.inner))
+
+(function_expression
+  (_) @parameter.outer
+  (_))
+
+(comment) @comment.outer
+
+(if_expression
+  (_) @conditional.inner) @conditional.outer
+
+[
+  (integer_expression)
+  (float_expression)
+] @number.inner
+------------------------------
+📄 End: queries/nix/textobjects.scm
+==============================
+
+==============================
+📄 File: queries/javascript/textobjects.scm
+------------------------------
+; inherits: ecma,jsx
+------------------------------
+📄 End: queries/javascript/textobjects.scm
+==============================
+
+==============================
+📄 File: lazy-lock.json
+------------------------------
+{
+  "alpha-nvim": { "branch": "main", "commit": "6c6a89d5b068b5251c8bdf0dd57bb921bcfeeb09" },
+  "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
+  "friendly-snippets": { "branch": "main", "commit": "6cd7280adead7f586db6fccbd15d2cac7e2188b9" },
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "lsp_signature.nvim": { "branch": "master", "commit": "2b30d8582126a12a493b737e9761969eb869a05b" },
+  "lualine.nvim": { "branch": "master", "commit": "221ce6b2d999187044529f49da6554a92f740a96" },
+  "markview.nvim": { "branch": "main", "commit": "576e50fa99091ff47a9920e1b6ef94b2a7c2f036" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "21c5b3ebeaa0412e28096bb0701434c51c1fbf76" },
+  "mason.nvim": { "branch": "main", "commit": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d" },
+  "mini.nvim": { "branch": "main", "commit": "bf8169f3e518be8de3f88073ace37d91f576cb04" },
+  "none-ls.nvim": { "branch": "main", "commit": "01f8e62ea11603e59ad9ff7afcfa94fd183f76d6" },
+  "nvim-lspconfig": { "branch": "master", "commit": "a683e0ddf0cf64c6cd689e18ffb480ade3c162b7" },
+  "nvim-web-devicons": { "branch": "master", "commit": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c" },
+  "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
+  "snacks.nvim": { "branch": "main", "commit": "882c996cf28183f4d63640de0b4c02ec886d01f2" },
+  "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
+  "telescope.nvim": { "branch": "master", "commit": "9377230aa5305d9e9aca4ed8dadf1070fb4aa9fc" },
+  "tiny-cmdline.nvim": { "branch": "main", "commit": "b1db8607a78f0c23b3bae08e079b1b7f147619d7" },
+  "tree-sitter-manager.nvim": { "branch": "main", "commit": "ff0c04f418c610540148cb5a29a5960251f9a223" },
+  "zk-nvim": { "branch": "main", "commit": "bc3b39374b25fad977cecc936588cb060f15a773" }
+}
+------------------------------
+📄 End: lazy-lock.json
+==============================
+
+==============================
+📄 File: ftplugin/markdown.lua
+------------------------------
+if require("zk.util").notebook_root(vim.fn.expand("%:p")) ~= nil then
+  local map = function(mode, lhs, rhs, opts)
+    vim.api.nvim_buf_set_keymap(0, mode, lhs, rhs, opts or { noremap=true, silent=true })
+  end
+
+  map("n", "<leader>zb", "<Cmd>ZkBacklinks<CR>")
+  map("n", "<leader>zl", "<Cmd>ZkLinks<CR>")
+end
+------------------------------
+📄 End: ftplugin/markdown.lua
+==============================

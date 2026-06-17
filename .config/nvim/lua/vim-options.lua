@@ -111,6 +111,15 @@ vim.keymap.set('v', '<C-y>', '10jzz', { noremap = true, desc = 'Extend selection
 vim.keymap.set('n', '<C-i>', '<C-e>', { noremap = true, silent = true, desc = 'Scroll window down' })
 vim.keymap.set('n', '<C-e>', '<C-y>', { noremap = true, silent = true, desc = 'Scroll window up' })
 
+-- TreeSitter incremental selection
+vim.keymap.set({"n", "x"}, "<C-Up>", function()
+  require("vim.treesitter._select").select_parent(vim.v.count1)
+end, { desc = "Expand Tree-sitter node selection" })
+
+vim.keymap.set("x", "<C-Down>", function()
+  require("vim.treesitter._select").select_child(vim.v.count1)
+end, { desc = "Shrink Tree-sitter node selection" })
+
 -- (need to explicitly handling selection scrolling)
 vim.keymap.set('x', '<C-i>', [[:<C-u>normal! <C-v><C-e><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll down' })
 vim.keymap.set('x', '<C-e>', [[:<C-u>normal! <C-v><C-y><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll up' })
