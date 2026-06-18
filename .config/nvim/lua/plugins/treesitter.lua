@@ -5,10 +5,12 @@ return {
     lazy = false,
     config = function()
       require("tree-sitter-manager").setup({
-        ensure_installed = { 
+        ensure_installed = {
           "lua", "python", "markdown", "markdown_inline", "vim", "bash", "json", "yaml"
         },
       })
+
+      vim.opt.runtimepath:append(require("tree-sitter-manager.util").PLUGIN_ROOT .. "/runtime")
 
       vim.api.nvim_create_autocmd("FileType", {
         callback = function(args)

@@ -4,6 +4,16 @@ vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set('v', '<leader>lf', function()
+  local start = vim.api.nvim_buf_get_mark(0, '<')
+  local finish = vim.api.nvim_buf_get_mark(0, '>')
+  vim.lsp.buf.format({ range = { start = start, ['end'] = finish } })
+end, { desc = 'LSP: format selection' })
+vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, { desc = "LSP: hover" })
+vim.o.winborder = "rounded"
+
 -- require("vim._core.ui2").enable({ enabled = true })
 require("vim._core.ui2").enable({})
 
@@ -100,7 +110,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
 vim.opt.laststatus = 3
-vim.opt.guicursor = "n-v-c:block-blinkon500-blinkoff500-blinkwait700,i-ci-ve:ver25-blinkon500-blinkoff500-blinkwait700,r-cr-o:hor20-blinkon500-blinkoff500-blinkwait700"
+vim.opt.guicursor =
+"n-v-c:block-blinkon500-blinkoff500-blinkwait700,i-ci-ve:ver25-blinkon500-blinkoff500-blinkwait700,r-cr-o:hor20-blinkon500-blinkoff500-blinkwait700"
 
 -- Quicker file movement
 vim.keymap.set('n', '<C-u>', '10kzz', { noremap = true, desc = 'Up 10 lines & center' })
@@ -112,7 +123,7 @@ vim.keymap.set('n', '<C-i>', '<C-e>', { noremap = true, silent = true, desc = 'S
 vim.keymap.set('n', '<C-e>', '<C-y>', { noremap = true, silent = true, desc = 'Scroll window up' })
 
 -- TreeSitter incremental selection
-vim.keymap.set({"n", "x"}, "<C-Up>", function()
+vim.keymap.set({ "n", "x" }, "<C-Up>", function()
   require("vim.treesitter._select").select_parent(vim.v.count1)
 end, { desc = "Expand Tree-sitter node selection" })
 
@@ -121,20 +132,22 @@ vim.keymap.set("x", "<C-Down>", function()
 end, { desc = "Shrink Tree-sitter node selection" })
 
 -- (need to explicitly handling selection scrolling)
-vim.keymap.set('x', '<C-i>', [[:<C-u>normal! <C-v><C-e><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll down' })
-vim.keymap.set('x', '<C-e>', [[:<C-u>normal! <C-v><C-y><CR>gv]], { noremap = true, silent = true, desc = 'Visual scroll up' })
+vim.keymap.set('x', '<C-i>', [[:<C-u>normal! <C-v><C-e><CR>gv]],
+  { noremap = true, silent = true, desc = 'Visual scroll down' })
+vim.keymap.set('x', '<C-e>', [[:<C-u>normal! <C-v><C-y><CR>gv]],
+  { noremap = true, silent = true, desc = 'Visual scroll up' })
 
 -- Escape the highlighting after search instead of doing `:noh`
-vim.keymap.set("n","<Esc>", "<cmd>nohlsearch<CR>", {silent=true})
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { silent = true })
 
 -- Make `Y` behave like `D` and `C`
-vim.keymap.set("n","Y","y$")
+vim.keymap.set("n", "Y", "y$")
 
 -- Close buffers
 vim.keymap.set('n', '<leader>q', ':bp|bd #<CR>', { noremap = true, silent = true, desc = "Close current buffer" })
 
 -- Just some nice stuff
-vim.keymap.set('n', '<leader>w', ':write<CR>', { silent=true, noremap = true, desc = "Save file" })
+vim.keymap.set('n', '<leader>w', ':write<CR>', { silent = true, noremap = true, desc = "Save file" })
 vim.keymap.set("n", "<leader>p", '"+p', { noremap = true, desc = "Paste from system clipboard" })
 vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, desc = "Yank to system clipboard" })
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics in popup at cursor" })

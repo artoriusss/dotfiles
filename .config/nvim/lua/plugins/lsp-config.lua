@@ -46,7 +46,6 @@ return {
       end
 
       -- LSP Keymaps
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP: hover" })
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "LSP: Buffer Definition" })
       vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP: Buffer Code Action" })
       vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "LSP: Rename symbol" })

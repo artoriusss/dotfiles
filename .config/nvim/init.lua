@@ -13,23 +13,6 @@ vim.g.clipboard = {
   },
 }
 
--- Formatting
-vim.keymap.set("n", "<leader>fm", function()
-  vim.lsp.buf.format({ async = true })
-end, { desc = "LSP: Format entire buffer" })
-
-vim.keymap.set("v", "<leader>fm", function()
-  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<ESC>", true, false, true), "n", false)
-  vim.schedule(function()
-    vim.lsp.buf.format({
-      range = {
-        ["start"] = vim.api.nvim_buf_get_mark(0, "<"),
-        ["end"] = vim.api.nvim_buf_get_mark(0, ">"),
-      },
-    })
-  end)
-end, { desc = "LSP: Format visual selection" })
-
 -- Lazy.nvim
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
