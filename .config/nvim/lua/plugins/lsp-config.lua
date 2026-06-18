@@ -15,6 +15,8 @@ return {
           "ts_ls",
           "ruff",
           "ty",
+          "bashls",
+          "yamlls",
         },
       })
     end,
@@ -30,6 +32,8 @@ return {
         ruff = {
           init_options = { settings = {} },
         },
+        bashls = {},
+        yamlls = {},
       }
     },
     config = function(_, opts)

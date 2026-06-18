@@ -6,7 +6,7 @@ return {
     config = function()
       require("tree-sitter-manager").setup({
         ensure_installed = { 
-          "lua", "python", "markdown", "markdown_inline", "vim", "bash", "json", "yaml" 
+          "lua", "python", "markdown", "markdown_inline", "vim", "bash", "json", "yaml"
         },
       })
 
