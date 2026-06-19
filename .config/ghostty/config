@@ -1,6 +1,6 @@
 theme = BlueBerryPie
 font-size = 16
-font-family = "Maple Mono NF CN"
+font-family = "Maple Mono NF"
 cursor-style = block
 cursor-style-blink = true
 
