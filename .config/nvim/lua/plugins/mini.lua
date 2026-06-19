@@ -31,6 +31,7 @@ return {
           ["c"] = ai.gen_spec.treesitter({ a = "@class.outer",       i = "@class.inner" }),
         }
       })
+      vim.cmd("colorscheme minicyan")
 
       local select_capture = function(id)
         local region = ai.find_textobject("a", id)
