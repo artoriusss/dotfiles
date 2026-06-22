@@ -4,7 +4,6 @@ vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('v', '<leader>lf', function()
   local start = vim.api.nvim_buf_get_mark(0, '<')
