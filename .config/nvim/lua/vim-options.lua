@@ -143,6 +143,23 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { silent = true })
 -- Make `Y` behave like `D` and `C`
 vim.keymap.set("n", "Y", "y$")
 
+-- Window/split navigation: Ctrl+Shift + n/e/i/o = left/down/up/right (Colemak)
+-- (needs ghostty + tmux extended-keys; create/close stay on <C-w>v / <C-w>s / <C-w>c)
+vim.keymap.set('n', '<C-S-n>', '<C-w>h', { silent = true, desc = 'Go to left split' })
+-- Ctrl+Shift+i folds to <S-Tab> in the terminal (because <C-i> == <Tab>), so map that
+vim.keymap.set('n', '<S-Tab>', '<C-w>j', { silent = true, desc = 'Go to split below' })
+vim.keymap.set('n', '<C-S-e>', '<C-w>k', { silent = true, desc = 'Go to split above' })
+vim.keymap.set('n', '<C-S-o>', '<C-w>l', { silent = true, desc = 'Go to right split' })
+-- Extra horizontal hops on ctrl+arrows (free; <C-Up>/<C-Down> stay with Tree-sitter)
+vim.keymap.set('n', '<C-Left>',  '<C-w>h', { silent = true, desc = 'Go to left split' })
+vim.keymap.set('n', '<C-Right>', '<C-w>l', { silent = true, desc = 'Go to right split' })
+
+-- Resize splits: Ctrl+Shift + arrows (repeatable; free in ghostty & nvim)
+vim.keymap.set('n', '<C-S-Left>',  '<C-w>2<', { silent = true, desc = 'Narrower split' })
+vim.keymap.set('n', '<C-S-Right>', '<C-w>2>', { silent = true, desc = 'Wider split' })
+vim.keymap.set('n', '<C-S-Up>',    '<C-w>2+', { silent = true, desc = 'Taller split' })
+vim.keymap.set('n', '<C-S-Down>',  '<C-w>2-', { silent = true, desc = 'Shorter split' })
+
 -- Close buffers
 vim.keymap.set('n', '<leader>q', ':bp|bd #<CR>', { noremap = true, silent = true, desc = "Close current buffer" })
 
