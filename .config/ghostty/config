@@ -8,11 +8,13 @@ keybind = ctrl+page_up=unbind
 keybind = ctrl+page_down=unbind
 keybind = ctrl+enter=unbind
 
-# Free ctrl+shift+n/e/i/o for Neovim split navigation (n/e/i/o = left/down/up/right)
+# Reserved NeoVim keybinds
 keybind = ctrl+shift+n=unbind
 keybind = ctrl+shift+e=unbind
 keybind = ctrl+shift+i=unbind
 keybind = ctrl+shift+o=unbind
+keybind = ctrl+shift+p=unbind
+
 # Move new_window off ctrl+shift+n onto ctrl+shift+t (drops the unused new_tab)
 keybind = ctrl+shift+t=new_window
 
