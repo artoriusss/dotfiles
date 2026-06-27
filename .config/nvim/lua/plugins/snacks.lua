@@ -8,6 +8,9 @@ return {
     },
     picker = {
       ui_select = true, -- replace vim.ui.select
+      sources = {
+        buffers = { sort_lastused = true },
+      },
       win = {
         input = {
           keys = {
@@ -27,11 +30,12 @@ return {
     { "<leader>.n", function() Snacks.notifier.show_history() end, desc = "Notification History Buffer" },
 
     -- Picker
-    { "<C-p>",      function() Snacks.picker.files() end,                   desc = "Pick: Find Files" },
-    { "<leader>fg", function() Snacks.picker.grep() end,                    desc = "Pick: Live Grep" },
-    { "<leader>b",  function() Snacks.picker.buffers() end,                 desc = "Pick: Buffers" },
-    { "<leader>s",  function() Snacks.picker.lsp_workspace_symbols() end,   desc = "Pick: Workspace Symbols" },
-    { "<leader>ts", function() Snacks.picker.lsp_symbols() end,            desc = "Pick: Document Symbols" },
+    { "<C-p>",      function() Snacks.picker.files() end, desc = "Pick: Find Files" },
+    { "<leader>fg", function() Snacks.picker.grep() end, desc = "Pick: Live Grep" },
+    { "<leader>b",  function() Snacks.picker.buffers({ current = false }) end, desc = "Pick: Buffers" },
+    { "<leader>s",  function() Snacks.picker.lsp_workspace_symbols() end, desc = "Pick: Workspace Symbols" },
+    { "<leader>ts", function() Snacks.picker.lsp_symbols() end, desc = "Pick: Document Symbols" },
+    { "<leader>fk", function() Snacks.picker.keymaps() end, desc = "Pick: Keymaps" },
     {
       "<leader>tf",
       function() Snacks.picker.lsp_symbols({ filter = { default = { "Class", "Function", "Method" } } }) end,

@@ -16,6 +16,14 @@ vim.o.winborder = "rounded"
 -- require("vim._core.ui2").enable({ enabled = true })
 require("vim._core.ui2").enable({})
 
+local function set_linenr_highlights()
+  vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#6A9DB8", bold = true })
+  vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#AAAAAA", bold = true })
+  vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#B87A90", bold = true })
+end
+set_linenr_highlights()
+vim.api.nvim_create_autocmd("ColorScheme", { callback = set_linenr_highlights })
+
 -- Disable Vi compatibility mode
 vim.opt.compatible = false
 
@@ -104,6 +112,7 @@ vim.opt.undodir = vim.fn.expand('~/.vim/undodir')
 vim.opt.undofile = true
 
 -- "UI" niceties
+vim.opt.wrap = false
 vim.opt.updatetime = 50
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -159,8 +168,9 @@ vim.keymap.set('n', '<C-S-Right>', '<C-w>2>', { silent = true, desc = 'Wider spl
 vim.keymap.set('n', '<C-S-Up>',    '<C-w>2+', { silent = true, desc = 'Taller split' })
 vim.keymap.set('n', '<C-S-Down>',  '<C-w>2-', { silent = true, desc = 'Shorter split' })
 
--- Close buffers
+-- Buffer management
 vim.keymap.set('n', '<leader>q', ':bp|bd #<CR>', { noremap = true, silent = true, desc = "Close current buffer" })
+vim.keymap.set('n', '<C-S-p>', ':b#<CR>', { noremap = true, silent = true, desc = "Switch to previous buffer" })
 
 -- Just some nice stuff
 vim.keymap.set('n', '<leader>w', ':write<CR>', { silent = true, noremap = true, desc = "Save file" })

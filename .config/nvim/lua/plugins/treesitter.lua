@@ -1,4 +1,3 @@
--- File: lua/plugins/treesitter.lua
 return {
   {
     "romus204/tree-sitter-manager.nvim",
