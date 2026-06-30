@@ -13,6 +13,9 @@ end, { desc = 'LSP: format selection' })
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, { desc = "LSP: hover" })
 vim.o.winborder = "rounded"
 
+-- Enable 24-bit RGB color
+vim.opt.termguicolors = true
+
 -- require("vim._core.ui2").enable({ enabled = true })
 require("vim._core.ui2").enable({})
 
