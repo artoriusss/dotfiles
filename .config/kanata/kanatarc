@@ -1,0 +1,42 @@
+(defcfg
+  linux-dev /dev/input/by-path/platform-i8042-serio-0-event-kbd
+  process-unmapped-keys yes 
+)
+
+;; 1. Expand defsrc to visualize your whole grid
+(defsrc
+  q   w   e   r   t   y   u   i   o   p   bspc
+  a   s   d   f   g   h   j   k   l   scln '
+  z   x   c   v   b   n   m   ,   .   /
+  lalt
+)
+
+(defalias
+  a (tap-hold 200 200 a lmet)
+  s (tap-hold 200 200 s lalt)
+  d (tap-hold 200 200 d lsft)
+  f (tap-hold 200 200 f lctl)
+
+  j (tap-hold 200 200 j rctl)
+  k (tap-hold 200 200 k rsft)
+  l (tap-hold 200 200 l lalt)
+  scln (tap-hold 200 200 scln lmet)
+
+  nav (tap-hold 200 200 lalt (layer-toggle navig))
+)
+
+;; 2. Default layer matches defsrc but injects your aliases
+(deflayer default
+  q   w   e   r   t   y   u   i   o   p   bspc
+  @a  @s  @d  @f  g   h   @j  @k  @l  @scln '
+  z   x   c   v   b   n   m   ,   .   /
+  @nav
+)
+
+;; The underscores (_) fall back to standard letters so HRMs still work!
+(deflayer navig
+  C-pgup _  _ C-pgdn  _   _ S-M-left  pgup   pgdn S-M-right del
+  _      _  _      _  _ M-left  left     up   down     right M-right
+  _      _ C-S-c C-S-v  _   _ C-left   A-up A-down   C-right
+  _
+)
