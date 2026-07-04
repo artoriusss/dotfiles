@@ -4,11 +4,12 @@
 )
 
 ;; 1. Expand defsrc to visualize your whole grid
+;; tab/caps play the role of cleo's outer-left column (esc/tab positions).
 (defsrc
-  q   w   e   r   t   y   u   i   o   p   bspc
-  a   s   d   f   g   h   j   k   l   scln '
+  tab  q   w   e   r   t   y   u   i   o   p   bspc
+  caps a   s   d   f   g   h   j   k   l   scln '
   z   x   c   v   b   n   m   ,   .   /
-  lalt
+  lalt ralt
 )
 
 ;; Mirrors the QMK boards: TAPPING_TERM 200 + FLOW_TAP_TERM 150.
@@ -40,21 +41,41 @@
   l (t! hrm l lalt)
   scln (t! hrm scln lmet)
 
+  ;; Rover home-row digits keep the same mods as the letters under them,
+  ;; matching cleo's R_HM_* keys.
+  1 (t! hrm 1 lmet)
+  2 (t! hrm 2 lalt)
+  3 (t! hrm 3 lsft)
+  4 (t! hrm 4 lctl)
+  7 (t! hrm 7 rctl)
+  8 (t! hrm 8 rsft)
+  9 (t! hrm 9 lalt)
+  0 (t! hrm 0 lmet)
+
   nav (tap-hold 200 200 lalt (layer-toggle navig))
+  rov (tap-hold 200 200 ralt (layer-toggle rover))
 )
 
 ;; 2. Default layer matches defsrc but injects your aliases
 (deflayer default
-  q   w   e   r   t   y   u   i   o   p   bspc
-  @a  @s  @d  @f  g   h   @j  @k  @l  @scln '
+  tab  q   w   e   r   t   y   u   i   o   p   bspc
+  caps @a  @s  @d  @f  g   h   @j  @k  @l  @scln '
   z   x   c   v   b   n   m   ,   .   /
-  @nav
+  @nav @rov
 )
 
 ;; The underscores (_) fall back to standard letters so HRMs still work!
 (deflayer navig
-  C-pgup _  _ C-pgdn  _   _ S-M-left  pgup   pgdn S-M-right del
-  _      _  _      _  _ M-left  left     up   down     right M-right
+  _ C-pgup _  _ C-pgdn  _   _ S-M-left  pgup   pgdn S-M-right del
+  _ _      _  _      _  _ M-left  left     up   down     right M-right
   _      _ C-S-c C-S-v  _   _ C-left   A-up A-down   C-right
-  _
+  _ _
+)
+
+;; Cleo's _ROVER layer: symbols on top, digits with home-row mods, math row.
+(deflayer rover
+  grv    S-1  S-2  S-3  S-4  S-5   S-6  S-7  S-8  S-9  S-0  bspc
+  S-\    @1   @2   @3   @4   5     6    @7   @8   @9   @0   \
+  XX   XX   XX   S-min eql   S-eql min  ,    .    /
+  _ _
 )
