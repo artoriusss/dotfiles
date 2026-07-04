@@ -11,16 +11,34 @@
   lalt
 )
 
-(defalias
-  a (tap-hold 200 200 a lmet)
-  s (tap-hold 200 200 s lalt)
-  d (tap-hold 200 200 d lsft)
-  f (tap-hold 200 200 f lctl)
+;; Mirrors the QMK boards: TAPPING_TERM 200 + FLOW_TAP_TERM 150.
+;; The switch replicates QMK Flow Tap: a home-row key pressed within 150ms
+;; of the previous (non-modifier) keystroke resolves as plain tap instantly,
+;; so mods never fire mid-word. The modifier exclusion keeps staggered mod
+;; chords (e.g. hold ctrl, then add shift) working, like QMK's flow-tap does.
+(deftemplate hrm (key mod)
+  (switch
+    ((and
+       (key-timing 1 less-than 150)
+       (not (key-history lsft 1) (key-history rsft 1)
+            (key-history lctl 1) (key-history rctl 1)
+            (key-history lalt 1) (key-history ralt 1)
+            (key-history lmet 1) (key-history rmet 1))))
+      $key break
+    () (tap-hold 200 200 $key $mod) break
+  )
+)
 
-  j (tap-hold 200 200 j rctl)
-  k (tap-hold 200 200 k rsft)
-  l (tap-hold 200 200 l lalt)
-  scln (tap-hold 200 200 scln lmet)
+(defalias
+  a (t! hrm a lmet)
+  s (t! hrm s lalt)
+  d (t! hrm d lsft)
+  f (t! hrm f lctl)
+
+  j (t! hrm j rctl)
+  k (t! hrm k rsft)
+  l (t! hrm l lalt)
+  scln (t! hrm scln lmet)
 
   nav (tap-hold 200 200 lalt (layer-toggle navig))
 )

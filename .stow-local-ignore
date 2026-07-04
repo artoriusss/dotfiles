@@ -1,4 +1,5 @@
 .*\.ini$
 \.git$
+.gitignore
 ^no-stow$
 ^no-stow/.*
