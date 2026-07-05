@@ -3,21 +3,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-autoload -Uz vcs_info add-zsh-hook
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git:*' formats '%b'
-zstyle ':vcs_info:git:*' actionformats '%b|%a'
-
-_prompt_render() {
-  vcs_info
-  local git_seg=""
-  if [[ -n $vcs_info_msg_0_ ]]; then
-    git_seg=" on %B%F{magenta}${vcs_info_msg_0_//\%/%%}%f%b"
-  fi
-  PROMPT="%B%F{cyan}%3~%f%b${git_seg}"$'\n'"%(?.%B%F{green}>%f%b.%B%F{red}>%f%b) "
-}
-add-zsh-hook precmd _prompt_render
-
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -56,6 +41,7 @@ for keymap in emacs viins; do
 done
 unset keymap
 
+eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
