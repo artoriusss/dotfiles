@@ -3,9 +3,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export EDITOR="nvim"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+alias v="nvim"
 alias datalogtool="$HOME/Luftronix-daily/ubuntu/DataLogTool"
 alias logviewer="$HOME/Luftronix-daily/ubuntu/LogViewer-x86_64.AppImage"
 alias mltunnels="$HOME/Scripts/ml-tunnels.sh"
