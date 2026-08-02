@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Track real-session history, ignoring technical (_*) sessions.
+# Runs on client-session-changed. Maintains two globals:
+#   @active_real       -> current real session
+#   @last_real_session -> real session before that
+
+s=$(tmux display-message -p "#{session_name}")
+
+case "$s" in
+    _*) exit 0 ;;   # technical session: leave history untouched
+esac
+
+prev=$(tmux show-option -gqv @active_real)
+if [[ -n "$prev" && "$prev" != "$s" ]]; then
+    tmux set-option -g @last_real_session "$prev"
+fi
+tmux set-option -g @active_real "$s"

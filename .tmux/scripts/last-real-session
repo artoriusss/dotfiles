@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Switch to previous REAL session, ignoring technical (_*) sessions.
+# Two-way toggle between the two most recent real sessions. From a
+# technical session, jumps to the most recent real one.
+
+current=$(tmux display-message -p "#{session_name}")
+active=$(tmux show-option -gqv @active_real)
+last=$(tmux show-option -gqv @last_real_session)
+
+if [[ "$current" == "$active" ]]; then
+    target="$last"
+else
+    target="$active"
+fi
+
+if [[ -n "$target" ]] && tmux has-session -t "$target" 2>/dev/null; then
+    tmux switch-client -t "$target"
+fi
