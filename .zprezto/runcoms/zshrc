@@ -44,7 +44,7 @@ for keymap in emacs viins; do
 done
 unset keymap
 
-eval "$(starship init zsh)"
+eval "$(oh-my-posh init zsh --config "${XDG_CONFIG_HOME:-$HOME/.config}/oh-my-posh.toml")"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
