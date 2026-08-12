@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# LogViewer AppImage wrapper. Forced onto xcb: Qt app misbehaves under Wayland.
+exec env QT_QPA_PLATFORM=xcb "$HOME/Luftronix-daily/ubuntu/LogViewer-x86_64.AppImage" "$@"

@@ -10,7 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias v="nvim"
 alias lg="lazygit"
 alias datalogtool="$HOME/Luftronix-daily/ubuntu/DataLogTool"
-alias logviewer="$HOME/Luftronix-daily/ubuntu/LogViewer-x86_64.AppImage"
+# logviewer lives in ~/.local/bin so yazi/desktop launchers can reach it too
 alias mltunnels="$HOME/Scripts/ml-tunnels.sh"
 
 function sesh-sessions() {

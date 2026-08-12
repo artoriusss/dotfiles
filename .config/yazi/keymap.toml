@@ -4,6 +4,11 @@ run  = "plugin custom-shell -- custom auto 'ghostty --directory=\"$YAZI_CWD\"'"
 desc = "Open Ghostty in focused dir"
 
 [[mgr.prepend_keymap]]
+on   = ["<C-l>"]
+run  = 'shell --orphan -- logviewer "$@" >/dev/null 2>&1'
+desc = "Open selection in LogViewer"
+
+[[mgr.prepend_keymap]]
 on   = [ "g", "m" ]
 run  = 'cd /mnt'
 desc = "Go /mnt"
