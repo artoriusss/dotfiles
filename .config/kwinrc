@@ -25,6 +25,9 @@ ShowTabBox=false
 [Tiling]
 padding=4
 
+[Tiling][0e5f8196-ff38-597f-93e1-217eaf09f28c]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
