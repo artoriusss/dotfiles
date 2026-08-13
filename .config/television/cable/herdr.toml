@@ -1,0 +1,29 @@
+[metadata]
+name = "herdr"
+description = "Herdr workspaces plus zoxide directories not open yet"
+requirements = [ "herdr", "zoxide",]
+
+[source]
+no_sort = true
+display = "{split: :1..|join: }"
+output = "{split: :0}"
+[[source.command]]
+name = "All"
+run = "herdr-pick-workspace --list"
+
+[preview]
+command = "herdr-pick-workspace --preview '{split: :0}'"
+
+[keybindings]
+enter = "actions:open"
+ctrl-d = [ "actions:forget", "reload_source",]
+
+[actions.open]
+description = "Focus workspace, or create one rooted at the directory"
+command = "herdr-pick-workspace --open '{split: :0}'"
+mode = "execute"
+
+[actions.forget]
+description = "Close workspace / remove directory from zoxide"
+command = "herdr-pick-workspace --forget '{split: :0}'"
+mode = "fork"

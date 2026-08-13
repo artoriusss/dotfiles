@@ -1,2 +1,48 @@
 [experimental]
 kitty_graphics = true
+
+[ui]
+sidebar_start_collapsed = true
+sidebar_collapsed_mode = "hidden"   # prefix+b brings it back
+tab_bar_position = "bottom"
+
+[keys]
+# workspaces  (= tmux sessions)
+# built-in picker stays on its default prefix+w; alt+s uses the filtered one below
+goto = "alt+a"                      # was M-a  (choose-tree)
+
+# tabs  (= tmux windows)
+previous_tab = "alt+n"              # was M-n, Colemak left
+next_tab     = "alt+o"              # was M-o, Colemak right
+
+[[keys.command]]
+key = "alt+s"                       # was M-s (tv sesh popup)
+type = "popup"
+command = "herdr-pick-workspace"
+description = "workspace picker (hides _*)"
+width = "80%"
+height = "70%"
+
+[[keys.command]]
+key = "alt+l"                       # was M-l (last-real-session)
+type = "plugin_action"
+command = "local.workspace-history.last-real"
+description = "jump to last real workspace (skips _*)"
+
+[[keys.command]]
+key = "alt+f"                       # was M-f (_fs)
+type = "plugin_action"
+command = "local.workspace-history.toggle-fs"
+description = "toggle _fs workspace (yazi)"
+
+[[keys.command]]
+key = "alt+d"                       # was M-d (_services)
+type = "plugin_action"
+command = "local.workspace-history.toggle-services"
+description = "toggle _services workspace"
+
+[[keys.command]]
+key = "alt+m"                       # was M-m (_monitor)
+type = "plugin_action"
+command = "local.workspace-history.toggle-monitor"
+description = "toggle _monitor workspace (htop)"

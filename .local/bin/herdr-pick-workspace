@@ -1,0 +1,107 @@
+#!/usr/bin/env bash
+# Backend for the television "herdr" channel (~/.config/television/cable/herdr.toml).
+#
+# Lists open Herdr workspaces (hiding technical _* ones) followed by zoxide
+# directories that have no workspace yet. Picking a directory creates a
+# workspace rooted there; herdr's default terminal.new_cwd = "follow" then
+# starts every new tab of that workspace in the same directory.
+#
+#   herdr-pick-workspace            open the picker (tv)
+#   herdr-pick-workspace --list     emit rows: "<key> <display>"
+#   herdr-pick-workspace --open     focus workspace / create one from a dir
+#   herdr-pick-workspace --forget   close workspace / drop dir from zoxide
+#   herdr-pick-workspace --preview  preview pane for a row
+#
+# Keys are "wN" for workspaces and "d:<base64 path>" for directories, so paths
+# with spaces survive tv's whitespace-delimited templates.
+
+set -euo pipefail
+
+WS_ICON=$''   # same glyphs sesh uses, so the list looks familiar
+DIR_ICON=$''
+
+die() { printf '%s\n' "$1" >&2; exit 1; }
+
+key_path() { base64 -d <<<"${1#d:}"; }
+
+tilde() { local p=$1; printf '%s' "${p/#$HOME/\~}"; }
+
+cmd_list() {
+    local open labels
+    open=$(
+        herdr workspace list \
+        | jq -r --arg icon "$WS_ICON" '
+            .result.workspaces[]
+            | select(.label | startswith("_") | not)
+            | "\(.workspace_id) \($icon) \(.label) · \(.tab_count) tab\(if .tab_count == 1 then "" else "s" end)"'
+    )
+    [[ -n $open ]] && printf '%s\n' "$open"
+
+    labels=$(herdr workspace list | jq -r '.result.workspaces[].label')
+
+    zoxide query -l 2>/dev/null | while IFS= read -r dir; do
+        [[ -d $dir ]] || continue
+        if printf '%s\n' "$labels" | grep -qxF -- "${dir##*/}"; then
+            continue
+        fi
+        printf 'd:%s %s %s\n' \
+            "$(printf %s "$dir" | base64 -w0)" "$DIR_ICON" "$(tilde "$dir")"
+    done
+}
+
+cmd_open() {
+    local key=${1:-}
+    [[ -n $key ]] || die "no entry selected"
+    case $key in
+        w*) herdr workspace focus "$key" >/dev/null ;;
+        d:*)
+            local dir; dir=$(key_path "$key")
+            herdr workspace create --cwd "$dir" --label "${dir##*/}" --focus >/dev/null ;;
+        *) die "unknown entry: $key" ;;
+    esac
+}
+
+cmd_forget() {
+    local key=${1:-}
+    [[ -n $key ]] || die "no entry selected"
+    case $key in
+        w*)  herdr workspace close "$key" >/dev/null ;;
+        d:*) zoxide remove "$(key_path "$key")" ;;
+        *)   die "unknown entry: $key" ;;
+    esac
+}
+
+cmd_preview() {
+    local key=${1:-}
+    case $key in
+        w*)
+            herdr api snapshot | jq -r --arg ws "$key" '
+                .result.snapshot as $s
+                | $s.tabs[]
+                | select(.workspace_id == $ws)
+                | . as $t
+                | "\($t.number). \($t.label)",
+                  ( $s.panes[]
+                    | select(.tab_id == $t.tab_id)
+                    | "    \(.foreground_cwd // .cwd)"
+                      + (if .agent then "  [\(.agent) \(.agent_status)]" else "" end) )'
+            ;;
+        d:*)
+            local dir; dir=$(key_path "$key")
+            if [[ -d $dir/.git ]]; then
+                git -C "$dir" --no-pager log --oneline -5 2>/dev/null || true
+                printf '\n'
+            fi
+            ls -A --color=always "$dir" 2>/dev/null | head -50
+            ;;
+    esac
+}
+
+case ${1:-} in
+    --list)    cmd_list ;;
+    --open)    shift; cmd_open "${1:-}" ;;
+    --forget)  shift; cmd_forget "${1:-}" ;;
+    --preview) shift; cmd_preview "${1:-}" ;;
+    "")        exec tv herdr ;;
+    *)         die "usage: ${0##*/} [--list|--open KEY|--forget KEY|--preview KEY]" ;;
+esac

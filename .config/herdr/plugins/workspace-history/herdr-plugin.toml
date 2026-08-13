@@ -1,0 +1,43 @@
+id = "local.workspace-history"
+name = "Workspace history"
+version = "0.2.0"
+description = "Tracks recently focused real workspaces (ignoring technical _* ones) and exposes fast workspace-toggle actions"
+min_herdr_version = "0.8.0"
+platforms = ["linux"]
+
+[[events]]
+on = "workspace.focused"
+command = ["herdr-record-workspace"]
+
+# Actions are exec'd as argv, skipping the `/bin/sh -lc` that
+# `type = "shell"` keybindings pay on every press.
+
+[[actions]]
+id = "last-real"
+title = "Jump to last real workspace"
+contexts = ["global"]
+command = ["herdr-last-real-workspace"]
+
+[[actions]]
+id = "toggle-fs"
+title = "Toggle _fs workspace (yazi)"
+contexts = ["global"]
+command = ["herdr-toggle-workspace", "_fs", "yazi"]
+
+[[actions]]
+id = "toggle-services"
+title = "Toggle _services workspace"
+contexts = ["global"]
+command = ["herdr-toggle-workspace", "_services"]
+
+[[actions]]
+id = "toggle-monitor"
+title = "Toggle _monitor workspace (htop)"
+contexts = ["global"]
+command = ["herdr-toggle-workspace", "_monitor", "htop"]
+
+[[panes]]
+id = "monitor"
+title = "System monitor"
+placement = "overlay"
+command = ["htop"]

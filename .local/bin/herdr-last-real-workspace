@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Switch to the previous REAL workspace, ignoring technical (_*) ones.
+# Two-way toggle between the two most recently focused real workspaces.
+# From a technical workspace, jumps to the most recent real one.
+# History is maintained by the workspace-history plugin (herdr-record-workspace).
+
+set -euo pipefail
+
+state="${XDG_RUNTIME_DIR:-/tmp}/herdr-workspace-history"
+
+active=$(sed -n 1p "$state" 2>/dev/null || true)
+last=$(sed -n 2p "$state" 2>/dev/null || true)
+[[ -z $active && -z $last ]] && exit 0
+
+# One `herdr` call and one `jq` call: current workspace plus liveness of both
+# history entries, since a recorded workspace may have been closed since.
+read -r current active_live last_live < <(
+    herdr workspace list | jq -r --arg a "$active" --arg l "$last" '
+        [.result.workspaces[].workspace_id] as $ids |
+        ([.result.workspaces[]|select(.focused)|.workspace_id][0] // "-") + " " +
+        (if $ids|index($a) then "y" else "n" end) + " " +
+        (if $ids|index($l) then "y" else "n" end)'
+)
+
+if [[ $current == "$active" ]]; then
+    target=$last live=$last_live
+else
+    target=$active live=$active_live
+fi
+
+[[ -z $target || $live != "y" ]] && exit 0
+herdr workspace focus "$target" >/dev/null
