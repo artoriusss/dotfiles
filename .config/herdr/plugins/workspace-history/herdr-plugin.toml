@@ -11,6 +11,8 @@ command = ["herdr-record-workspace"]
 
 # Actions are exec'd as argv, skipping the `/bin/sh -lc` that
 # `type = "shell"` keybindings pay on every press.
+# prefix stays ctrl+b (default)
+
 
 [[actions]]
 id = "last-real"
