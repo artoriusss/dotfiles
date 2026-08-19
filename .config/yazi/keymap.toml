@@ -5,7 +5,7 @@ desc = "Open Ghostty in focused dir"
 
 [[mgr.prepend_keymap]]
 on   = ["<C-l>"]
-run  = 'shell --orphan -- logviewer "$@" >/dev/null 2>&1'
+run  = 'plugin logviewer'
 desc = "Open selection in LogViewer"
 
 [[mgr.prepend_keymap]]
