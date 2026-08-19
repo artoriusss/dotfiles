@@ -1,3 +1,4 @@
+onboarding = false
 [experimental]
 kitty_graphics = true
 
@@ -46,3 +47,7 @@ key = "alt+m"                       # was M-m (_monitor)
 type = "plugin_action"
 command = "local.workspace-history.toggle-monitor"
 description = "toggle _monitor workspace (htop)"
+
+[theme]
+name = "terminal"
+auto_switch = false
