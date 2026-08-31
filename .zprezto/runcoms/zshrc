@@ -2,17 +2,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-export EDITOR="nvim"
+# Path and Environment Variables
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+# Aliases
 alias v="nvim"
 alias lg="lazygit"
 alias datalogtool="$HOME/Luftronix-daily/ubuntu/DataLogTool"
-# logviewer lives in ~/.local/bin so yazi/desktop launchers can reach it too
 alias mltunnels="$HOME/Scripts/ml-tunnels.sh"
 
+# Custom Functions
 function sesh-sessions() {
   {
     exec </dev/tty
@@ -27,15 +27,13 @@ function sesh-sessions() {
   }
 }
 
-zle     -N             sesh-sessions
-bindkey -M emacs '\es' sesh-sessions
-bindkey -M vicmd '\es' sesh-sessions
-bindkey -M viins '\es' sesh-sessions
+# External Tool Initializations
+eval "$(oh-my-posh init zsh --config "${XDG_CONFIG_HOME:-$HOME/.config}/oh-my-posh.toml")"
+eval "$(zoxide init --cmd cd zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# history-substring-search binds arrows via $terminfo[kcuu1] (\eOA, application
-# keypad mode). Returning from tmux leaves the terminal in normal keypad mode,
-# where arrows send \e[A and fall back to plain history. Bind both modes so the
-# substring search works regardless of keypad state.
+# History Substring Search Keybindings
 for keymap in emacs viins; do
   bindkey -M $keymap '^[[A' history-substring-search-up
   bindkey -M $keymap '^[[B' history-substring-search-down
@@ -44,8 +42,17 @@ for keymap in emacs viins; do
 done
 unset keymap
 
-eval "$(oh-my-posh init zsh --config "${XDG_CONFIG_HOME:-$HOME/.config}/oh-my-posh.toml")"
-eval "$(zoxide init --cmd cd zsh)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fpath+=${ZDOTDIR:-~}/.zsh_functions
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+autoload -U edit-command-line
+zle -N edit-command-line
+zle -N sesh-sessions
+
+bindkey -M emacs '\es' sesh-sessions
+bindkey -M vicmd '\es' sesh-sessions
+bindkey -M viins '\es' sesh-sessions
+bindkey -M emacs '^Xe' edit-command-line
+bindkey -M viins '^Xe' edit-command-line
+bindkey -M vicmd 'v'   edit-command-line
 
