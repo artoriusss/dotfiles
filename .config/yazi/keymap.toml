@@ -9,6 +9,11 @@ run  = 'plugin logviewer'
 desc = "Open selection in LogViewer"
 
 [[mgr.prepend_keymap]]
+on   = ["<A-z>"]
+run  = 'plugin zipper'
+desc = "Zip contents of hovered dir (interactive)"
+
+[[mgr.prepend_keymap]]
 on   = [ "g", "m" ]
 run  = 'cd /mnt'
 desc = "Go /mnt"
@@ -18,3 +23,7 @@ on   = [ "g", "w" ]
 run  = 'cd ~/Workspace'
 desc = "Go ~/Workspace"
 
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "a" ]
+run  = "plugin compress"
+desc = "Archive selected files"
