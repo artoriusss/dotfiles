@@ -24,6 +24,11 @@ run  = 'cd ~/Workspace'
 desc = "Go ~/Workspace"
 
 [[mgr.prepend_keymap]]
+on   = [ "g", "l" ]
+run  = 'cd ~/Logs'
+desc = "Go ~/Logs"
+
+[[mgr.prepend_keymap]]
 on   = [ "c", "a", "a" ]
 run  = "plugin compress"
 desc = "Archive selected files"
