@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 # LogViewer AppImage wrapper. Forced onto xcb: Qt app misbehaves under Wayland.
-exec env QT_QPA_PLATFORM=xcb "$HOME/Luftronix-daily/ubuntu/LogViewer-x86_64.AppImage" "$@"
+# XAUTHORITY isn't set under GNOME's XWayland session, so xcb clients fail to
+# authenticate; mutter's cookie file naming (.mutter-Xwaylandauth.*) isn't
+# stable enough to rely on, so pull it straight from the running Xwayland
+# process's -auth arg if unset.
+: "${XAUTHORITY:=$(pgrep -a -u "$(id -u)" -x Xwayland | grep -oP -- '-auth \K\S+' | tail -n1)}"
+exec env QT_QPA_PLATFORM=xcb XAUTHORITY="$XAUTHORITY" "$HOME/Luftronix-daily/ubuntu/LogViewer-x86_64.AppImage" "$@"
