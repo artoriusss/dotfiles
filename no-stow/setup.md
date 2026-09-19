@@ -9,7 +9,15 @@ plugin registry `~/.config/herdr/plugins.json` is not -- it stores absolute
 `plugin_root` paths, so it is per-machine and must be rebuilt by re-running the
 install/link commands below.
 
-1. Local plugins: `herdr plugin link ~/.config/herdr/plugins/workspace-history`
+1. Local plugins:
+     `herdr plugin link ~/.config/herdr/plugins/workspace-history`
+     `herdr plugin link ~/.config/herdr/plugins/session-bootstrap`
+   session-bootstrap resets the session on every server launch (herdr always
+   restores `~/.config/herdr/session.json` and has no key to stop it) and brings
+   the technical `_*` workspaces up with their commands running. It holds off
+   when the launch inherited a live session, i.e. `herdr update --handoff`.
+   Reset by hand with:
+     `herdr plugin action invoke reset --plugin local.session-bootstrap`
 2. Remote plugins (checkout is gitignored; herdr clones it into the stowed
    `plugins/github/`, complete with its own nested `.git`):
      `herdr plugin install rohankewal/herdr-nerd-font-tab-name --yes`

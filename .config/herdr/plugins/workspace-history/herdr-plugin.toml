@@ -24,7 +24,7 @@ command = ["herdr-last-real-workspace"]
 id = "toggle-fs"
 title = "Toggle _fs workspace (yazi)"
 contexts = ["global"]
-command = ["herdr-toggle-workspace", "_fs", "yazi"]
+command = ["herdr-toggle-workspace", "_fs"]
 
 [[actions]]
 id = "toggle-services"
@@ -36,7 +36,7 @@ command = ["herdr-toggle-workspace", "_services"]
 id = "toggle-monitor"
 title = "Toggle _monitor workspace (htop)"
 contexts = ["global"]
-command = ["herdr-toggle-workspace", "_monitor", "htop"]
+command = ["herdr-toggle-workspace", "_monitor"]
 
 [[panes]]
 id = "monitor"

@@ -1,0 +1,24 @@
+id = "local.session-bootstrap"
+name = "Session bootstrap"
+version = "0.1.0"
+description = "Resets the session on every server launch: drops the workspaces herdr restored and brings the technical _* ones up with their commands running"
+min_herdr_version = "0.8.0"
+platforms = ["linux"]
+
+# Herdr restores ~/.config/herdr/session.json on every launch and offers no way
+# to opt out; the startup hook is the earliest point a plugin can undo it. It
+# fires after restore with the socket API already listening, and the reset takes
+# ~100ms, so whether the restored workspaces are ever drawn comes down to
+# whether the client has attached yet — untested, and cosmetic either way.
+[[startup]]
+command = ["herdr-session-bootstrap", "--on-startup"]
+
+# The same reset on demand, for when a session has drifted. Unconditional:
+# --on-startup holds off when the launch inherited a live session, which is
+# never what someone asking for a reset by hand means.
+[[actions]]
+id = "reset"
+title = "Reset session to a clean slate"
+description = "Close every workspace and rebuild the technical _* ones"
+contexts = ["global"]
+command = ["herdr-session-bootstrap"]

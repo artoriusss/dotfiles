@@ -1,4 +1,10 @@
 onboarding = false
+
+[session]
+# Every server launch is reset to a clean slate by the session-bootstrap
+# plugin, so a resumed agent would be killed seconds after herdr restored it.
+resume_agents_on_restore = false
+
 [experimental]
 kitty_graphics = true
 

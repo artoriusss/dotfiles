@@ -3,12 +3,11 @@
 #   already there -> jump back to the workspace we came from
 #   elsewhere     -> focus it, creating it (and running its command) if missing
 #
-# Usage: herdr-toggle-workspace <label> [command]
+# Usage: herdr-toggle-workspace <label>
 
 set -euo pipefail
 
 label=$1
-cmd=${2:-}
 state="${XDG_RUNTIME_DIR:-/tmp}/herdr-toggle-$label"
 
 # One `herdr` call and one `jq` call on the hot path: this runs on a keypress.
@@ -26,12 +25,9 @@ fi
 
 printf '%s' "$current" > "$state"
 
-if [[ $target == "-" ]]; then
-    created=$(herdr workspace create --label "$label" --cwd "$HOME" --focus)
-    if [[ -n $cmd ]]; then
-        herdr pane send-text \
-            "$(jq -r '.result.root_pane.pane_id' <<<"$created")" "$cmd"$'\n' >/dev/null
-    fi
-else
-    herdr workspace focus "$target" >/dev/null
-fi
+# Cold path only: session-bootstrap already built these at server launch, so
+# this fires when one has been closed by hand. It owns the label -> command
+# table, so the command lives in exactly one place.
+[[ $target == "-" ]] && target=$(herdr-session-bootstrap --ensure "$label")
+
+herdr workspace focus "$target" >/dev/null
